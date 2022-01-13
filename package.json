@@ -1,5 +1,5 @@
 {
-  "name": "@example/docs",
+  "name": "@example/with-tailwindcss",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,14 +8,12 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "dependencies": {
-    "@babel/core": "^7.16.7",
-    "@docsearch/react": "^1.0.0-alpha.28",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
   "devDependencies": {
-    "@astrojs/renderer-preact": "^0.4.0",
-    "astro": "^0.22.10"
+    "astro": "^0.22.10",
+    "autoprefixer": "^10.4.0",
+    "tailwindcss": "^3.0.5"
+  },
+  "dependencies": {
+    "postcss": "^8.4.5"
   }
 }

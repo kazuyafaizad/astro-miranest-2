@@ -1,6 +1,6 @@
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
-import { imagetools } from "vite-imagetools";
+
 // @type-check enabled!
 // VSCode and other TypeScript-enabled text editors will provide auto-completion,
 // helpful tooltips, and warnings if your exported object is invalid.
@@ -8,10 +8,10 @@ import { imagetools } from "vite-imagetools";
 
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
-  // Enable the Preact renderer to support Preact JSX components.
-  renderers: ["@astrojs/renderer-preact"],
-  vite: {
-    // for example only - adapt for your own project
-    plugins: [imagetools({ force: true })],
-  },
+	renderers: [
+		// Enable the Preact renderer to support Preact JSX components.
+		'@astrojs/renderer-preact',
+		// Enable the React renderer, for the Algolia search component
+		'@astrojs/renderer-react',
+	],
 });

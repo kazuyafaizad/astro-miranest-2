@@ -1,0 +1,24 @@
+---
+import LogoText from '../images/logo.png';
+import CartImg from '../images/cart-ico.svg';
+import FbImg from '../images/fb-ico.svg';
+import IgImg from '../images/ig-ico.svg';
+---
+
+<nav class="flex h-24 bg-greenTheme items-center justify-center flex-col">
+        <img src={LogoText} class=" h-1/2"/>
+        <div class="w-full flex-row flex">
+        <ul class="flex justify-evenly py-2 w-10/12">
+            <li class="block"><a href="#" class="text-white px-5">ミラネストの効果</a></li>
+            <li class="block"><a href="#" class="text-white px-5">ミラネストについて</a></li>
+            <li class="block"><a href="#" class="text-white px-5">ツバメの巣について</a></li>
+            <li class="block"><a href="#" class="text-white px-5">商品購入</a></li>
+            <li class="block"><a href="#" class="text-white px-5">ご案内</a></li>
+        </ul>
+        <ul class="flex  w-1/12">
+            <li class="block"><embed src={CartImg} class="h-10 mx-5"/></li>
+            <li class="block"><embed src={FbImg} class="h-10 mx-2"/></li>
+            <li class="block"><embed src={IgImg} class="h-10"/></li>
+        </ul>
+        </div>
+</nav>

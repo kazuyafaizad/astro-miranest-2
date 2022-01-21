@@ -8,4 +8,10 @@ html {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 18px;
+  line-height: 32px;
 }

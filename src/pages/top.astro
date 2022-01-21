@@ -5,35 +5,463 @@ import HeroImgSP from '../images/top/sp/img-01.png';
 
 import DocImg from '../images/top/pc/img (7).png';
 import MiranestPrdImg from '../images/top/pc/image_45.png';
----
+import PrdBoxImg from '../images/top/pc/img (23).png';
+import Img21 from '../images/top/pc/img (21).png';
+import Img40 from '../images/top/pc/img (40).svg';
+import Img51 from '../images/top/pc/img (51).png';
+import Img45sp from '../images/top/sp/img_(45).png';
+import Img32 from '../images/top/pc/img (32).png';
+import Img37 from '../images/top/pc/img (37).png';
+import Img9 from '../images/top/pc/img (9).jpg';
+import Img50 from '../images/top/pc/img (50).png';
+import Img52 from '../images/top/pc/img (52).png';
+import Img38 from '../images/top/pc/img (38).png';
+import Img39 from '../images/top/pc/img (39).png';
+import Img14 from '../images/top/pc/img (14).png';
+import Img45 from '../images/top/pc/img (45).png';
+import Img36 from '../images/top/pc/img (36).png';
+import Img28 from '../images/top/pc/img (28).png';
+import Img27 from '../images/top/pc/img (27).png';
+import Img19 from '../images/top/pc/img (19).png';
+import Img4 from '../images/top/pc/img (4).png';
+import Img8 from '../images/top/pc/img (8).png';
+import Img3 from '../images/top/pc/img (3).png';
+import Img6 from '../images/top/pc/img (6).png';
+import Img26 from '../images/top/pc/img (26).png';
+import Img42sp from '../images/top/sp/img_(42).png';
+import Img24 from '../images/top/pc/img (24).png';
+import Img34 from '../images/top/pc/img (34).png';
+import Img20 from '../images/top/pc/img (20).png';
+import Img30 from '../images/top/pc/img (30).png';
+import Img45 from '../images/top/pc/img (45).png';
+import Img29 from '../images/top/pc/img (29).png';
+import Img16 from '../images/top/pc/img (16).png';
+import Img17 from '../images/top/pc/img (17).png';
+import Img18 from '../images/top/pc/img (18).png';
 
+
+---
+<style lang="scss">
+.grid-01 {
+	grid-template-columns: repeat(6, 1fr);
+	padding: 5%;
+	align-items: center;
+	img {
+		&:nth-child(1) {
+			grid-column: 1/4;
+			grid-row: 1;
+			z-index: 1;
+		}
+		&:nth-child(2) {
+			grid-column: 3/8;
+			grid-row: 1;
+		}
+	}
+}
+
+.grid-02 {
+	grid-auto-flow: row;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: "a b ." "a c .";
+	align-items: center;
+	justify-items: center;
+}
+.grid-03 {
+	grid-template-columns: repeat(6, 1fr);
+	padding: 5%;
+	align-items: center;
+	img {
+		&:nth-child(1) {
+			grid-column: 1/5;
+			grid-row: 1;
+		}
+		&:nth-child(2) {
+			grid-column: 4/7;
+			grid-row: 1;
+			z-index: 1;
+		}
+	}
+}
+
+.grid-04 {
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: ". b a" ". c a";
+	align-items: center;
+	justify-items: center;
+}
+.grid-05 {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+.grid-06{
+    grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: ". . .";
+	width: 100%;
+	height: 100%;
+}
+.grid-07 {
+	grid-template-columns: repeat(3, .25fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 3rem;
+	grid-row-gap: 0px;
+}
+a {
+
+.right {
+	display: inline-block;
+	width: 4em;
+	height: 4em;
+	border: 0.5em solid #ff7924;
+	border-radius: 50%;
+	margin-left: 1.5em;
+	background-color: #ff7924;
+	&:after {
+		content: "";
+		display: inline-block;
+		margin-top: 26%;
+		margin-left: 20%;
+		width: 1.4em;
+		height: 1.4em;
+		border-top: 0.5em solid white;
+		border-right: 0.5em solid white;
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+}
+}
+@media only screen and (max-width: 992px) {
+.grid-01 {
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: repeat(9, 1fr);
+		img {
+			&:nth-child(1) {
+				grid-area: 5 / 1 / 10 / 10;
+				z-index: 0;
+			}
+			&:nth-child(2) {
+				grid-area: 1 / 2 / 6 / 11;
+			}
+		}
+	}
+	.grid-02 {
+		grid-auto-flow: column;
+		grid-template-areas: "b b b" "a a a" "c c c";
+		img {
+			max-height: 190px;
+			width: auto;
+		}
+	}
+	.grid-03 {
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: repeat(9, 1fr);
+		img {
+			&:nth-child(1) {
+				grid-area: 1 / 2 / 6 / 11;
+				z-index: 0;
+			}
+			&:nth-child(2) {
+				grid-area: 5 / 1 / 10 / 10;
+			}
+		}
+	}
+	.grid-04 {
+		grid-auto-flow: column;
+		grid-template-areas: "b b b" "a a a" "c c c";
+		img {
+			max-height: 190px;
+			width: auto;
+		}
+	}
+	.grid-05 {
+		img {
+			width: 100%;
+		}
+		width: 90%;
+	}
+	.grid-06 {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.grid-07 {
+		display: block;
+		margin: 0 5%;
+		display: none;
+	}
+}
+</style>
 <BaseLayout>
-    <section class="relative h-[800px]">
-    <h1 class="absolute text-3xl left-[30%] w-[27%] top-[20%] -translate-x-1/2 translate-y-1/2 leading-[70px] text-left">大切な家族だからこそ本当に体にいいものを食べさせたい</h1>
+    <section class="relative md:h-[800px]">
+    <h1 class="absolute text-md md:text-3xl left-[30%] w-1/2 md:w-[27%] top-0 md:top-[20%] -translate-x-1/2 translate-y-1/2 leading-[70px] text-left">大切な家族だからこそ本当に体にいいものを食べさせたい</h1>
              <picture>
                 <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
                 <img src={HeroImgPC} class="w-full"/>
             </picture>
     </section>
-    <section class="mt-10 flex p-12 gap-8">
-        <div class="flex flex-col justify-between w-1/3">
-            <h2 class="text-4xl">NEWS</h2>
+    <section class="mt-10 md:flex md:py-12 gap-8 md:px-32">
+        <div class="md:flex flex-col justify-between md:w-1/3 p-3">
+
+            <h2 class="text-4xl text-main-light-green">NEWS</h2>
             <p>ミラネストの新商品、店舗展開、イベントなどの新着情報</p>
-            <div class="mx-auto mb-[10%]  w-8/12">
-                    <a href="../whatsnew" class="w-full text-center bg-lightRed text-white shadow-xl px-3 py-2 inline-block text-xl" >全て見る <i class="v v-right ms-2"></i></a>
-           </div>
+              <a href="../whatsnew" class="hidden md:inline-block w-full text-center bg-main-red text-white shadow-xl px-3 py-2  text-xl" >全て見る <i class="v v-right ms-2"></i></a>
         </div>
 
-        <div class="flex flex-col justify-between w-1/3">
-            <img src={DocImg} class="max-h-[412px]"/>
-            <p class="text-muted">2018/01/10</p>
+        <div class="md:flex flex-col justify-between md:w-1/3 p-3">
+            <img src={DocImg} class="w-full max-h-[412px]"/>
+            <div>
+            <p class="text-gray-400">2018/01/10</p>
             <p>福岡市「イオン動物病院」様でミラネストのお試しセットを〇〇○です。</p>
+            </div>
         </div>
 
-        <div class="flex flex-col justify-between w-1/3">
-            <img src={MiranestPrdImg} class="max-h-[412px]"/>
-            <p class="text-muted">2018/01/10</p>
+        <div class="md:flex flex-col justify-between md:w-1/3 p-3">
+            <img src={MiranestPrdImg} class="w-full max-h-[412px]"/>
+            <div>
+            <p class="text-gray-400">2018/01/10</p>
             <p>2019年3月1日より「ミラネスト」定期購入が10%OFFに</p>
+            </div>
+
+        </div>
+        <div class="block md:hidden w-full p-3">
+        <a href="../whatsnew" class="inline-block w-full text-center bg-main-red text-white shadow-xl px-3 py-2  text-xl" >全て見る <i class="v v-right ms-2"></i></a>
         </div>
     </section>
+
+    <section class="mt-10 flex flex-col-reverse md:flex-row  py-12 gap-20 px-3 md:px-32 bg-main-gray">
+        <div class="flex flex-col justify-evenly">
+            <h2 class="text-h2 md:text-3xl text-main-light-green mb-5">世界初！天然アナツバメの巣を配合したペット用栄養補助食品。皮膚炎治療の救世主。それが「ミラネスト」です。</h2>
+            <p class="text-base mb-5">元気な姿に戻してあげたい！」という想いが「ミラネスト」誕生の原動力でした。あらゆる食品の中でアナツバメの巣だけが持つ驚異の成分が大切な家族を健やかな姿へと導きます。</p>
+            <a href="" class="mt-8 w-10/12 md:w-8/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl" >詳しく <i class="v v-right ms-2"></i></a>
+        </div>
+        <img src={PrdBoxImg} />
+    </section>
+
+    <section class="mt-10 md:mt-32 py-12 px-3 md:px-32">
+            <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7">「ミラネスト」が大切なペットの元気をサポートします。</h2>
+            <h3 class="text-h3 md:text-3xl text-goldeni text-center">「ミラネスト」が大切なペットの元気をサポートします。</h3>
+
+            <div class="grid-06 grid justify-evenly items-end mb-20">
+                <img src={Img21} alt="">
+                <div class="scrolling-img">
+                <img src={Img40} alt="" >
+              </div>
+                <img src={Img51} alt="">
+            </div>
+            <div class="flex justify-center">
+            <a href="../whatis" class="w-10/12 md:w-5/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">美巣について詳しく</a>
+            </div>
+    </section>
+
+    <section class="mt-10 md:mt-32  relative ">
+            <div class="h-full flex justify-between flex-col md:h-auto py-12 px-3 md:w-5/12 absolute md:left-[30%] top-0 md:top-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2" >
+                <div>
+                <h2 class="text-h2 md:text-3xl mb-8">「ミラネスト」で使用しているのは地球上でもっとも美しいツバメの巣です</h2>
+                <p class="text-base mb-8">「ミラネスト」と「美巣」が使用している最高級天然アナツバメの巣は、マレーシア山間部で採取した＜本物＞です。ニセモノや養殖とは安全性や成分、効果・効能がまったく違います。</p>
+                </div>
+                <div class="flex justify-center">
+                <a href="" class="mb-12 md:mb-auto w-full md:w-5/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">詳しく</a>
+                </div>
+            </div>
+
+            <picture>
+                <source srcset={Img45sp} type="image/png" class="h-full" media="(max-width:480px)" />
+                <img src={Img32} class="w-full">
+            </picture>
+
+
+    </section>
+
+    <section class="mt-10 md:mt-32 md:py-12 px-3 md:px-32">
+            <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-3 md:mb-7">「ミラネストは安心・安全・自然環境にもこだわった、 国産のプレミアムフードです。</h2>
+            <h3 class="text-h3 md:text-3xl text-goldeni text-center">「世界最高峰マレーシア産 100%天然アナツバメの巣を使用しています</h3>
+    </section>
+    <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
+             <div class="grid-01 grid">
+                <img src={Img37} alt="" class="w-100">
+                <img src={Img9} alt="" class="w-100">
+            </div>
+            <div class="grid-02 grid my-5">
+                <img src={Img50} alt="" style="grid-area: a">
+                <div class="text-center" style="grid-area: b">
+                    <h3 class="text-h2 md:text-3xl">日本人唯一のツバメの巣ハンターが秘境で採取</h3>
+                    <p class="text-base my-5">ツバメの巣は多くのニセモノや養殖品が市場に出回っています。ミラネストは天然にこだわり、世界最高峰の品質と評されるマレーシア産天然アナツバメの巣だけを使用。代表自らが『日本人唯一のツバメの巣ハンター』として秘境まで足を運び、採取しています。</p>
+                </div>
+                <div class="flex justify-center w-full mt-12" style="grid-area: c">
+                    <a href="" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">詳しく</a>
+                </div>
+            </div>
+    </section>
+
+    <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
+            <div class="grid-03 grid">
+                <img src={Img52} alt="" class="w-100">
+                <img src={Img38} alt="" class="w-100">
+            </div>
+
+            <div class="grid-04 grid">
+                <div class="text-center" style="grid-area: b">
+                    <h3 class="text-h2 md:text-3xl">トップブリーダーも絶賛！</h3>
+                    <p class="text-base my-5">「『ミラネスト』のパワーには驚かされました。皮膚病でかゆがっていた犬もきれいな毛並みを取り戻しています。」 日本警察犬協会理事 内閣総理大臣賞受賞 優良犬作出ブリーダー（Outstanding Breede）浪江成泰様</p>
+                </div>
+                <div class="flex justify-center w-full mt-12" style="grid-area: c">
+                  <a href="" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">詳しく</a>
+              </div>
+                <img src={Img45} alt="" style="grid-area: a">
+            </div>
+    </section>
+
+        <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
+             <div class="grid-01 grid">
+                <img src={Img39} alt="" class="w-100">
+                <img src={Img14} alt="" class="w-100">
+            </div>
+            <div class="grid-02 grid my-5">
+                <img src={Img36} alt="" style="grid-area: a">
+                <div class="text-center" style="grid-area: b">
+                    <h3 class="text-h2 md:text-3xl">ツバメの巣研究所で作る国産プレミアムフード</h3>
+                    <p class="text-base my-5">マレーシアで採取したツバメの巣はISO認証の工場で徹底管理しています。その後、日本国内に設立した『ツバメの巣研究所』で独自技術によりツバメの巣エキスを抽出。「ミラネスト」に配合しているエキスは、世界最高峰の品質です。</p>
+                </div>
+                <div class="flex justify-center w-full mt-12" style="grid-area: c">
+                    <a href="" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">詳しく</a>
+                </div>
+            </div>
+    </section>
+
+    <section class="mt-32 py-12 bg-main-gray shadow" >
+            <div class="relative">
+                <div class="px-3 text-center md:text-left md:w-4/12 absolute md:left-[22%] top-20 md:top-1/2 mad:transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-left" >
+                    <h3 class="text-h2 md:text-3xl mb-4">CONCEPT</h3>
+                    <p class="text-base">最高級アナツバメの巣だけが持つ効果・効能 で苦しむペットと飼い主さんたちを救いたい！その想いがすべてのはじまりでした。</p>
+                </div>
+                <picture>
+                    <source srcset={Img42sp} type="image/png" media="(max-width:480px)" />
+                    <img src={Img24} alt="" class="w-full">
+                </picture>
+
+            </div>
+
+            <div class="mt-20 mb-12 md:px-32 text-center flex flex-col items-center justify-center" >
+                <img src={Img34} alt="" class="h-8">
+                <img src={Img20} alt="" class="mt-3 h-8">
+            </div>
+            <div class="grid-05 grid mb-24 mx-auto w-full md:px-32 ">
+                <img src={Img28} alt="" class="w-full">
+                <img src={Img27} alt="" class="w-full">
+                <img src={Img19} alt="" class="w-full">
+                <img src={Img4} alt="" class="w-full">
+
+
+                <img src={Img8} alt="" class="w-full">
+                <img src={Img3} alt="" class="w-full">
+                <img src={Img6} alt="" class="w-full">
+                <img src={Img26} alt="" class="w-full">
+            </div>
+            <div class="flex justify-center w-full mb-20" style="grid-area: c">
+                    <a href="" class="w-9/12 md:w-4/12 mx-auto text-center bg-main-red text-white shadow-xl px-3 py-2 inline-block text-xl">@miranest_official</a>
+                </div>
+        </section>
+
+        <section class="mt-10 md:mt-32 py-12 px-3 md:px-32">
+            <h2 class="text-2-1/2xl text-center mb-10">インフォメーション</h2>
+
+            <div class="md:flex text-center md:text-left justify-center gap-8 items-start md:py-5 py-3">
+                <div class="md:w-4/12 md:mx-5 flex flex-col justify-between my-12 md:m-5">
+                    <img src={Img30} alt="" class="h-full max-h-[165px] max-w-[300px] mx-auto">
+                    <h5 class="text-golden my-3 text-[19px]">ミラネスト商品の定期購入について</h5>
+                    <p class="leading-8">継続回数の決まりはございません。１回でのご利用でも承ります。「商品がなくなったので、来月分をいますぐ欲しい」というご要望もお申しつけ下さい。</p>
+                </div>
+                <div class="md:w-4/12 md:mx-5 flex flex-col justify-between my-12 md:m-5">
+                    <img src={Img45} alt="" class="h-full max-h-[165px] max-w-[300px] mx-auto" >
+                    <h5 class="text-golden my-3 text-[19px]">まずはお試しから。7本入りのお試しセット</h5>
+                    <p class="leading-8">今回、お客様にもっと美巣を実感して頂きたいと思い、弊社製品の特別セットを進呈致します。この機会にどうぞお試しください。</p>
+                </div>
+            </div>
+
+
+        </section>
+        <section>
+            <div class="bg-main-gray mt-10 md:mt-32 pt-8 md:p-12 w-full md:w-10/12 mx-auto shadow-xl">
+                <h2 class="text-h2 md:text-2-1/2xl text-center md:text-left border-b-4 border-b-[#FF7924] pb-4 mx-3 ">お取引希望のお客様（B to B)のお問い合わせ</h2>
+                <div class="md:flex mt-5 px-3 ">
+                    <img src={Img29} alt="">
+                    <div class="">
+                        <h3 class="text-golden my-4 text-h3 md:text-2-1/2xl">ペットサロン様、動物病院様、通販会社様など、さまざまな 業種の皆さま</h3>
+                        <div class="flex items-end flex-col md:flex-row py-5">
+                            <p class="text-base mt-2 leading-8">「ミラネスト」商品のお取引（商品仕入れ）のお申し込みは、こちらからお願いいたします。折り返し担当よりご連絡させていただきます。※お取引に関しましては、弊社の基準に従いご遠慮いただく場合もございます。あらかじめご了承下さい。</p> <a href="#">
+                                <span class="right shadow"></span>
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="mt-20 py-12 md:px-32">
+            <h2 class="text-center py-10 md:py-12 text-2-1/2xl">ミラネストのサポート</h2>
+            <div class="hidden grid-07 text-center justify-items-center justify-center items-center md:grid ">
+                    <img src={Img18} alt="" class="">
+
+                    <img src={Img17} alt="" class="">
+
+                    <img src={Img16} alt="" class="">
+
+                    <h5 class="">最新の情報をいち早く</h5>
+
+
+                    <h5 class="">全額返金サービス</h5>
+
+
+                    <h5 class="">美巣お客さまセンター</h5>
+
+                    <p class="">メールマガジン会員限定のお得な情報などを配信しています</p>
+
+                    <p class="">商品にご満足いただけない場合、 全額返金を承っています</p>
+
+                    <p class="">安心してご利用いただけるよう、 ご質問にお答えするカスタマーセン ターをご用意しております</p>
+
+            </div>
+
+            <div class="flex justify-items-center items-center md:hidden px-5">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active ">
+                          <div class="flex flex-col justify-evenly items-center w-auto text-center my-8">
+                            <img src={Img18} class="block w-auto" alt="...">
+                            <h5 class="my-5">最新の情報をいち早く</h5>
+                            <p class="">メールマガジン会員限定のお得な情報などを配信しています</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item ">
+                        <div class="flex flex-col justify-evenly items-center w-auto text-center my-8">
+                        <img src={Img17} class="block w-auto" alt="...">
+                        <h5 class="my-5">全額返金サービス</h5>
+                        <p class="">商品にご満足いただけない場合、 全額返金を承っています</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item ">
+                        <div class="flex flex-col justify-evenly items-center w-auto text-center my-8">
+                        <img src={Img16} class="block w-auto" alt="...">
+                        <h5 class="my-5">美巣お客さまセンター</h5>
+                        <p class="">安心してご利用いただけるよう、 ご質問にお答えするカスタマーセン ターをご用意しております</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+
+                      &#8249;
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+
+                      &#8250;
+                    </button>
+                  </div>
+            </div>
+        </section>
+
+
+
 </BaseLayout>

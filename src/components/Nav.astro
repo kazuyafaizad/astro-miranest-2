@@ -4,21 +4,97 @@ import CartImg from '../images/cart-ico.svg';
 import FbImg from '../images/fb-ico.svg';
 import IgImg from '../images/ig-ico.svg';
 ---
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-<nav class="flex h-24 bg-greenTheme items-center justify-center flex-col">
-        <img src={LogoText} class=" h-1/2"/>
+<nav class="hidden md:block relative" x-data="{ menu1: false, menu2:false, menu3:false, menu4:false, menu5:false }">
+ <div class="pb-2 bg-main-green flex items-center justify-center flex-col shadow" >
+        <img src={LogoText} class="h-12 mb-5"/>
         <div class="w-full flex-row flex">
-        <ul class="flex justify-evenly py-2 w-10/12">
-            <li class="block"><a href="#" class="text-white px-5">ミラネストの効果</a></li>
-            <li class="block"><a href="#" class="text-white px-5">ミラネストについて</a></li>
-            <li class="block"><a href="#" class="text-white px-5">ツバメの巣について</a></li>
-            <li class="block"><a href="#" class="text-white px-5">商品購入</a></li>
-            <li class="block"><a href="#" class="text-white px-5">ご案内</a></li>
-        </ul>
-        <ul class="flex  w-1/12">
-            <li class="block"><embed src={CartImg} class="h-10 mx-5"/></li>
-            <li class="block"><embed src={FbImg} class="h-10 mx-2"/></li>
-            <li class="block"><embed src={IgImg} class="h-10"/></li>
+        <div class="flex justify-evenly py-2 w-10/12">
+            <li class="block" x-on:mouseenter="menu1 = !menu1" x-on:mouseleave="menu1 = !menu1"><a href="#" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">ミラネストの効果</a></li>
+            <li class="block" x-on:mouseenter="menu2 = !menu2" x-on:mouseleave="menu2 = !menu2"><a href="#" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">ミラネストについて</a></li>
+            <li class="block" x-on:mouseenter="menu3 = !menu3" x-on:mouseleave="menu3 = !menu3"><a href="#" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">ツバメの巣について</a></li>
+            <li class="block" x-on:mouseenter="menu4 = !menu4" x-on:mouseleave="menu4 = !menu4"><a href="#" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">商品購入</a></li>
+            <li class="block" x-on:mouseenter="menu5 = !menu5" x-on:mouseleave="menu5 = !menu5"><a href="#" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">ご案内</a></li>
+        </div>
+        <ul class="flex w-1/12">
+            <li class="block"><embed src="/cart-ico.svg" class="h-7 mx-5"/></li>
+            <li class="block"><embed src="/fb-ico.svg" class="h-7 mx-2"/></li>
+            <li class="block"><embed src="/ig-ico.svg" class="h-7"/></li>
         </ul>
         </div>
+    </div>
+    <div class="relative"  >
+        <div class="w-full flex-row flex bg-white py-8 justify-center z-10 absolute" x-show = "menu1"  x-on:mouseleave="menu1 = !menu1" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1">
+        <a href="#" class="block px-4 py-2 text-base text-black" > ミラネスト誕生秘話 </a>
+        <a href="#" class="block px-4 py-2 text-base text-black" > ミラネストの上手な与えかた </a>
+        <a href="#" class="block px-4 py-2 text-base text-black" > ミラクルフード</a>
+        </div>
+
+        <div class="w-full flex-row flex bg-white py-8 justify-center z-10 absolute" x-show = "menu2"  x-on:mouseleave="menu2 = !menu2" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1">
+            <a href="#" class="block px-4 py-2 text-base text-black" > ミラネストとは </a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > 栄養補助食品 </a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > ミラネストに含まれる栄養素</a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > 斎藤さんが追加</a>
+        </div>
+
+        <div class="w-full flex-row flex bg-white py-8 justify-center z-10 absolute" x-show = "menu3"  x-on:mouseleave="menu3 = !menu3" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1">
+            <a href="#" class="block px-4 py-2 text-base text-black" > ツバメの巣の成分 </a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > ツバメの巣研究所 </a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > ツバメの巣ブランド美巣について</a>
+        </div>
+
+        <div class="w-full flex-row flex bg-white py-8 justify-center z-10 absolute" x-show = "menu4"  x-on:mouseleave="menu4 = !menu4" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1">
+            <a href="#" class="block px-4 py-2 text-base text-black" > « 商品 » ミラネストゼリースティック ミラネストお試しセット </a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > 全ての商品を見る </a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > ツバメの巣ブランド美巣について</a>
+        </div>
+
+        <div class="w-full flex-row flex bg-white py-8 justify-center z-10 absolute" x-show = "menu5"  x-on:mouseleave="menu5 = !menu5" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1">
+            <a href="#" class="block px-4 py-2 text-base text-black" > « ガイド » ご利用ガイド 定期購入ガイド よくあるご質問 </a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > 全ての商品を見る </a>
+            <a href="#" class="block px-4 py-2 text-base text-black" > ツバメの巣ブランド美巣について</a>
+        </div>
+
+    </div>
 </nav>
+
+
+
+<div class="md:hidden w-full text-gray-700 bg-main-green">
+  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="px-4 flex flex-row items-center justify-between">
+     <a href="" class="flex items-center justify-center px-2 w-full">
+          <img class="block h-9 lg:h-12 w-auto mr-2" src={LogoText} alt="Logo bi-su" />
+        </a>
+
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="#fff" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M 3 5 a 1 1 0 0 1 1 -1 h 12 a 1 1 0 1 1 0 2 H 4 a 1 1 0 0 1 -1 -1 z M 3 10 a 1 1 0 0 1 1 -1 h 12 a 1 1 0 1 1 0 2 H 4 a 1 1 0 0 1 -1 -1 z M 3 15 a 1 1 0 0 1 1 -1 h 12 a 1 1 0 1 1 0 2 h -12 a 1 1 0 0 1 -1 -1 z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 px-3 md:pb-0 hidden md:flex md:justify-end md:flex-row bg-white md:bg-transparent md:text-white h-screen md:h-12">
+     <div @click.away="open = false" class="relative" x-data="{ open: false }">
+        <button @click="open = !open" class="flex border-b border-dotted border-black flex-row justify-between items-center w-full px-4 py-4 mt-2 text-sm font-semibold text-left bg-transparent md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline">
+          <span>ミラネストの効果</span>
+          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class=" right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+          <div class="px-2 py-4 bg-white shadow">
+            <a class="block px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Link #1</a>
+            <a class="block px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Link #2</a>
+            <a class="block px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Link #3</a>
+          </div>
+        </div>
+      </div>
+      <a class="flex justify-between border-b border-dotted border-black px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">ミラネストについて<svg fill="currentColor" viewBox="0 0 20 20"  class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path d="M 4 2 C 4 1 5 1 5 1 C 6.6667 2 8.3333 3 10 4 C 11 5 10 6 10 6 L 5 9 C 5 9 4 9 4 8 L 9 5" ></path></svg></a>
+      <a class="border-b border-dotted border-black px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">ツバメの巣について</a>
+      <a class="border-b border-dotted border-black px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">商品購入</a>
+      <a class="border-b border-dotted border-black px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">ご案内</a>
+    </nav>
+  </div>
+</div>
+

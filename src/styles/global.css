@@ -15,3 +15,33 @@ p {
   font-size: 18px;
   line-height: 32px;
 }
+
+.chevron::before {
+	border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  border-color:#FF7924;
+	content: '';
+	display: inline-block;
+	height: 100%;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 100%;
+}
+
+.chevron.right:before {
+	left: -.5em;
+	transform: rotate(45deg);
+}
+
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}

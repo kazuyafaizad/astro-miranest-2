@@ -10,6 +10,8 @@ module.exports = {
         golden: "#BCA674",
         goldeni: "#A07500",
         "main-gray": "#F9F9F9",
+        "main-orange":"#FF7924",
+        "main-light-yellow":"#FBF7EC"
       },
       fontSize: {
         base: ["16px", "32px"],

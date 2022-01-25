@@ -9,9 +9,11 @@ module.exports = {
         black: "#333333",
         golden: "#BCA674",
         goldeni: "#A07500",
+        "main-gold-2" : "#9D7A00",
         "main-gray": "#F9F9F9",
         "main-orange":"#FF7924",
-        "main-light-yellow":"#FBF7EC"
+        "main-light-yellow":"#FBF7EC",
+        "main-pink":"#F4ECEA"
       },
       fontSize: {
         base: ["16px", "32px"],

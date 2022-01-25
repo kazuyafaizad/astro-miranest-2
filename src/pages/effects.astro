@@ -14,6 +14,7 @@ import Img4 from "../images/effects-of-miranest/pc/effect_img_(4).png";
 import Img13 from "../images/effects-of-miranest/pc/effect_img_(13).png";
 import Img17 from "../images/effects-of-miranest/pc/effect_img_(17).png";
 import Img9sp from '../images/effects-of-miranest/sp/effects-sp9.png';
+import Img8sp from '../images/effects-of-miranest/sp/effects-sp8.png'
 ---
 <style lang="scss">
         .second-header {
@@ -34,23 +35,24 @@ import Img9sp from '../images/effects-of-miranest/sp/effects-sp9.png';
 </style>
 <BaseLayout>
     <section class="relative md:h-[800px]">
-    <h1 class="absolute text-md md:text-3xl left-1/2 md:left-[30%] w-9/12 md:w-[27%] top-[25%] md:top-[20%] transform -translate-x-1/2 translate-y-1/2 leading-[70px] text-left">トップブリーダーも絶賛！ 天然アナツバメの巣がもたらす驚きの効果</h1>
+    <h1 class="absolute text-md md:text-3xl left-1/2 md:left-[30%] w-9/12 md:w-[27%] top-[25%] md:top-[20%] transform -translate-x-1/2 translate-y-1/2 md:leading-[70px] text-left">トップブリーダーも絶賛！ 天然アナツバメの巣がもたらす驚きの効果</h1>
              <picture>
                 <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
                 <img src={HeroImgPC} class="w-full"/>
             </picture>
     </section>
 
-    <section class="mt-10 md:mt-32 py-12 px-3 md:px-32">
+    <section class="mt-10 md:mt-32 py-12 md:px-52">
         <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7">トップブリーダーも絶賛！<br>天然アナツバメの巣「ミラネスト」の驚きの効果</h2>
 
-         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-20 px-3 md:px-32 bg-main-gray shadow-xl">
+         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-20 px-3 md:px-5 bg-main-gray shadow-xl">
                 <div class="md:w-3/6 w-full">
                 <h2 class="mb-5 md:text-3xl">世界初！天然アナツバメの巣がペットのアトピーなどを治療します</h2>
                 <p class="text-base">ツバメの巣は多くのニセモノや養殖品が市場に出回っています。ミラネストは天然にこだわり、世界最高峰の品質と評されるマレーシア産天然アナツバメの巣だけを使用。代表自らが『日本人唯一のツバメの巣ハンター』として秘境まで足を運び、採取しています。</p>
                 </div>
                 <img src={Img37} alt="" class="md:w-3/6  w-full">
          </div>
+
     </section>
     <div class="my-5 grid-01 mx-auto">
                 <img src={Img1} alt="" class="w-full">
@@ -136,18 +138,28 @@ import Img9sp from '../images/effects-of-miranest/sp/effects-sp9.png';
         </div>
     </section >
 
-    <section class="mt-10 md:mt-32 py-12 md:px-3 md:px-32">
-    <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7">多くの悩めるペット達を救いたい！ミラネストの誕生秘話</h2>
-         <div class="md:mt-10 flex flex-col-reverse md:flex-row md:py-12 gap-20 px-3 md:px-32 ">
+    <section class="mt-10 md:mt-32 py-12 md:px-3 md:px-52">
+    <span id="secret-story"></span>
+        <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7">多くの悩めるペット達を救いたい！ミラネストの誕生秘話</h2>
+         <div class="md:mt-10 flex flex-col-reverse md:flex-row md:py-12 gap-20 px-3 md:px-5 ">
                 <div class="w-full md:w-3/6">
                 <h2 class="mb-5 md:text-3xl">世界初！天然アナツバメの巣がペットのアトピーなどを治療します</h2>
                 <p class="text-base">ツバメの巣は多くのニセモノや養殖品が市場に出回っています。ミラネストは天然にこだわり、世界最高峰の品質と評されるマレーシア産天然アナツバメの巣だけを使用。代表自らが『日本人唯一のツバメの巣ハンター』として秘境まで足を運び、採取しています。</p>
                 </div>
                 <img src={Img13} alt="" class="w-full md:w-3/6">
          </div>
+           <div class="md:hidden px-12 my-12">
+            <img src={Img8sp} alt="" class="w-full">
+            <div class="flex justify-center mt-12">
+            <a href="../whatis" class="w-full mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">購入する</a>
+            </div>
+          </div>
+      </section>
 
-         <div class="bg-main-light-yellow py-12 px-3 md:px-32 shadow-xl">
-            <h2 class="text-3xl text-main-light-green mb-12">アナツバメの巣には【糖鎖】を正常な状態に戻し、免疫力を回復。アナツバメの巣には【糖鎖】を正常な状態に戻し、免疫力を回復。</h2>
+      <section class="md:px-32">
+
+         <div class="bg-main-light-yellow py-12 px-3 md:px-24 shadow-xl">
+            <h2 class="text-h2 md:text-3xl text-main-light-green mb-5 md:mb-12">アナツバメの巣には【糖鎖】を正常な状態に戻し、免疫力を回復。アナツバメの巣には【糖鎖】を正常な状態に戻し、免疫力を回復。</h2>
             <p>コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。</p>
 
              <div class="flex justify-center mt-12">
@@ -156,7 +168,7 @@ import Img9sp from '../images/effects-of-miranest/sp/effects-sp9.png';
          </div>
     </section>
     <section>
-        <div class="mt-10 relative">
+        <div class="mt-32 relative">
             <picture >
               <source srcset={Img9sp} type="image/png" media="(max-width:480px)" />
               <img src={Img17} class="w-full">
@@ -165,7 +177,7 @@ import Img9sp from '../images/effects-of-miranest/sp/effects-sp9.png';
               <h2 class="text-h2 md:text-3xl mb-5">天然のツバメの巣についてを詳しくへのリンクです。ペット用栄養補助食品に使用している唯一のブランドです。</h2>
               <p class="text-base">最も希少価値の高いマレーシア山間部で採れた、天然アナツバメの巣を使用 国内外のセレブリティに愛される「美巣」は、本物だけをお届けすることをお約束します。</p>
                 <div class="flex justify-center mt-12">
-                    <a href="../whatis" class="w-10/12 md:w-5/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">詳しく</a>
+                    <a href="../whatis" class="w-10/12 md:w-8/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">詳しく</a>
                     </div>
             </div>
           </div>

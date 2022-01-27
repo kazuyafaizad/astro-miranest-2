@@ -1,0 +1,348 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import '../../styles/guide.css';
+---
+<style>
+span.gift_color {
+    color: red;
+}
+div#gift_guide-wrapper dt {
+    line-height: 2em;
+    font-size: medium;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 26px;
+    margin-bottom: 8px;
+}
+table {
+    margin: 15px 0px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: left;
+}
+table th {
+    background-color: #f0f0f0;
+    padding-left: 20px;
+}
+</style>
+
+<BaseLayout>
+  <section class="mt-32 md:px-52">
+        <h1 class="text-4xl text-main-light-green text-center">ご利用ガイド</h1>
+
+        <p class="text-base mt-10 text-center">美巣の商品をお届けするために、安心のサポート体制を整えております。</p>
+    </section>
+  <section class="mt-10 md:mt-32 px-3 md:px-52">
+
+<div id="gift_guide-wrapper">
+  <div class="gift_guide-mainbox">
+      <h3>お支払い方法について</h3>
+      <p>下記のお支払い方法をご利用いただけます</p>
+      <h4 style="margin-top: 2.4em;">クレジットカード</h4>
+      <dl class="gift_guide-sabbox">
+        <dt>取り扱いカードは下記の通りです。</dt>
+      </dl>
+      <picture> <img src="https://cart.bi-su.jp/user_data/packages/raku2pc/img/guide/usage_guideimg2-raku.png" alt=""> </picture>
+      <dl class="gift_guide-sabbox">
+        <dt>【利用条件】分割利用不可</dt>
+      </dl>
+      <dl class="gift_guide-howtobox">
+        <dt>【備考】</dt>
+        <dd>弊社でのカード決済ではSSLというシステムを利用しております。</dd>
+        <dd>カード番号は暗号化されて送信されますのでご安心ください。</dd>
+        <dd>当カード決済システム上、クレジットカード利用控は発行しておりません。</dd>
+        <dd>カード会社から送付されますご利用明細をご確認ください。</dd>
+        <dd>※お客様のご利用状態等によっては、他の決済手段に変更いただく場合がございます。</dd>
+        <dd>※ご注文の際にお客様の本人確認（電話確認等）をお願いする場合がございます。</dd>
+        <dd>※ご注文者様と異なる名義のクレジットカードはご利用できません。</dd>
+      </dl>
+    <h4 style="margin-top: 4em;">Amazon Pay（アマゾンペイ）</h4>
+    <picture> <img src="https://cart.bi-su.jp/user_data/packages/raku2pc/img/guide/usage_guideimg4-raku.png" alt=""> </picture>
+    <dl class="gift_guide-sabbox">
+      <dt>Amazonアカウントに登録されているクレジットカードでお支払いいただけます。</dt>
+      <dd>「Amazon pay」を利用することで、お客様の住所やクレジットカード情報を入力する手間が省け、簡単にご注文することができます。【カート内で下のボタンを押してご利用ください】</dd>
+      <dd>
+        <picture><img src="https://cart.bi-su.jp/user_data/packages/raku2pc/img/guide/usage_guideimg5-raku.png" alt=""></picture>
+      </dd>
+    </dl>
+    <h4 style="margin-top: 4em;">代引き（代金引換）</h4>
+    <dl class="gift_guide-sabbox">
+      <dt>商品お届けの際に、商品と引き換えにお支払いください。</dt>
+      <dd>配送業者は【日本郵便】です。※別の業者指定はお受けできません。ご了承ください。</dd>
+      <dd>お支払い金額は、弊社からお送りするメールに記載の金額をご用意ください。ご注文から2〜5営業日以内に発送いたします。</dd>
+      <dd><span class="gift_color">代引き手数料330円〜(税込)が別途必要です。</span>※手数料は下記のようにご購入金額により変動いたします。※表示は全て税込</dd>
+    </dl>
+    <table class="md:w-1/2 w-full">
+      <tbody>
+        <tr>
+          <th>30,000円まで</th>
+          <td>330円</td>
+        </tr>
+        <tr>
+          <th>100,000円まで</th>
+          <td>550円</td>
+        </tr>
+        <tr>
+          <th>200,000円まで</th>
+          <td>880円</td>
+        </tr>
+        <tr>
+          <th>300,000円まで</th>
+          <td>990円</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><span class="gift_color">※【ご注意】ご注文時の代引き手数料は確定ではございません。発送前に金額を上記該当金額に訂正させていただきます。</span></p>
+    <p>※お荷物番号をお知らせする際に、確定した請求金額を記載したメールをお送りいたします。システムの都合上大変ご不便をおかけいたしますがご理解・ご了承の上お買い求めください。</p>
+    <h4 style="margin-top: 4em;">銀行振込（前払い）</h4>
+    <dl class="gift_guide-sabbox">
+      <dt>ご注文後、14日以内に下記の口座までお振込ください。※お振込のタイミングによっては、指定日時のご希望に添えない場合がございます。</dt>
+      <dd>【お振込先】</dd>
+    </dl>
+    <table class="md:w-1/2 w-full">
+      <tbody>
+        <tr>
+          <th>銀行名</th>
+          <td>三菱UFJ銀行</td>
+        </tr>
+        <tr>
+          <th>支店名</th>
+          <td>福岡支店</td>
+        </tr>
+        <tr>
+          <th>口座番号</th>
+          <td>普通1176269</td>
+        </tr>
+        <tr>
+          <th>名義</th>
+          <td>エムスタイルジャパン(株)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>お振込確認後2～5日営業日以内に発送致します。</p>
+    <p><span class="gift_color">※銀行振込手数料は有料（お客様負担）です。</span></p>
+    <h4 style="margin-top: 4em;" id="atodine">コンビニ後払い(アトディーネ)</h4>
+    <dl class="gift_guide-sabbox">
+      <dt>ジャックス・ペイメント・ソリューションズ株式会社が提供する後払い決済サービスです。</dt>
+      <dd>購入商品の到着を確認してから、コンビニエンスストア・金融機関で後払いできる安心・簡単な決済方法です。</dd>
+      <dd>商品に同封してお送りする請求書にて、期限日までにお支払ください。（配送先がお客様住所と異なる場合、請求書は郵送されます）</dd>
+      <dd><span class="gift_color">後払い決済手数料：330円（税込）</span></dd>
+      <dd><span class="gift_color">ご利用限度額：累計残高で100,000円（税込）迄（他店舗含む）</span></dd>
+      <dd>
+        <picture><a href="https://c.atodene.jp/" target="_blank"><img src="https://cart.bi-su.jp/user_data/packages/raku2pc/img/guide/5711_8.gif" alt="" style="width: 500px;
+        margin: 15px auto; display: block;"></a></picture>
+      </dd>
+      <dd>お客様は上記バナーをクリックし「注意事項」及び「個人情報の取扱いについて」に記載の内容をご確認・ご承認の上、本サービスのお申し込みを行うものとします。</dd>
+      <dd>※ご承認いただけない場合は本サービスのお申し込みをいただけませんので、ご了承ください。</dd>
+      <dd>※以下の場合サービスをご利用いただけません。予めご了承ください。</dd>
+      <dd>・郵便局留め</dd>
+      <dd>・運送会社営業所留め（営業所での引き取り）</dd>
+      <dd>・商品の転送</dd>
+      <dd>・コンビニ店頭での受け渡し</dd>
+      <dd>※ご本人様確認のため、ご連絡させて頂くことがございます。予めご了承ください。</dd>
+      <dd>後払い決済サービスをご利用いただくにあたり、当社は、ジャックス・ペイメント・ソリューションズ株式会社に対して、お客様の属性情報・取引情報・会員情報の一部を後払い決済サービスの与信審査のために保護措置を講じたうえで提供します。</dd>
+      <dd>※ギフト(贈答)用でのご注文の場合請求書は商品に同封されず、購入者様へお送りいたします。</dd>
+    </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+    <dd>
+      <h3>定期について</h3>
+      <p>美巣では、便利な定期便をご用意しております。</p>
+      <p><a href="https://cart.bi-su.jp/repeat_guide.html" target="_blank" style="color: #aa823a; text-decoration: underline;">詳しくは定期購入ガイドをご覧ください。</a></p>
+    </dd>
+  </div>
+  <div id="q3" class="gift_guide-mainbox">
+      <h3>送料について</h3>
+      <dl class="gift_guide-sabbox">
+        <dt>送料は全国一律660円(税込)です。</dt>
+        <dd>※定期便はどの商品でも全国送料無料にてご利用いただけます。</dd>
+        <dd>※その他送料無料商品と購入の場合は送料が無料になります。</dd>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+      <h3>配送日時について</h3>
+      <h4 style="margin-top: 2.4em;">配送希望時間帯をご指定出来ます</h4>
+      <dl class="gift_guide-sabbox">
+        <ul>
+          <dt>【時間帯】</dt>
+          <li>・午前中</li>
+          <li>・12時頃～14時頃</li>
+          <li>・14時頃～16時頃</li>
+          <li>・16時頃～18時頃</li>
+          <li>・18時頃～20時頃</li>
+          <li>・19時頃～21時頃</li>
+          <li>・20時頃～21時頃</li>
+        </ul>
+        <p>※宅配便（郵政）の場合に限り、配達日時指定を承っております。</p>
+      </dl>
+      <h4 style="margin-top: 2.4em;">当日発送について</h4>
+      <dl class="gift_guide-sabbox">
+        <dt>当日配送のタイミングについては、お支払い方法により異なります。</dt>
+        <dd>クレジットカード・代引き（代金引換）・振込用紙 ＝営業日午前9時までのご注文で当日出荷いたします。</dd>
+        <dd>銀行振込（前払い）＝営業日の午前9時までにご入金が確認できた場合のみ当日出荷いたします。（※お支払手続きからご入金の確認までお時間がかかる場合がございます。）</dd>
+        <dd>※午前9:00以降のご注文につきましては、決済・入金確認の翌日から5営業日の発送となります。</dd>
+      </dl>
+      <h4 style="margin-top: 2.4em;">商品発送のタイミング</h4>
+      <dl class="gift_guide-sabbox">
+        <p>特にご指定がない場合、銀行振込（前払い）⇒ご入金確認後、2~5営業日以内に商品を発送いたします。</p>
+        <p>クレジットカード・代引き（代金引換）⇒ご注文確認後、2~5営業日以内に商品を発送いたします。</p>
+        <p>ご注文時に送付先の郵便番号と送付先住所を間違って入力された場合、配送業者による確認のため通常よりお時間がかかり、スムーズなお届けができない場合がございます。あらかじめご了承願います。</p>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+      <h3>配送方法について</h3>
+      <p>以下の配送方法で対応させていただきます。</p>
+      <h4 style="margin-top: 2.4em;">配送方法</h4>
+      <dl class="gift_guide-sabbox">
+        <dt>宅配便（郵政）でお届けいたします。追跡サービス付きです。</dt>
+        <dd>※配送日はご注文日の6~8営業日以降選択可能です。（地域により異なります）最短でのお届けをご希望のお客様は「最短お届け」をご選択ください。</dd>
+      </dl>
+      <dl class="gift_guide-howtobox">
+        <dt>宅配便配送業者変更のお知らせ</dt>
+        <dd>当店からお届けする宅配便の配送業者を2017年12月1日よりヤマト運輸株式会社から日本郵便株式会社へ変更いたしました。</dd>
+        <dd>※配送業者の指定はできません。</dd>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+      <h3>交換について</h3>
+      <dl class="gift_guide-sabbox">
+        <ol>
+          <dt>商品の交換について</dt>
+          <li>1.ご注文と異なる商品をお届けした場合や到着時に商品が破損していた場合に限り、交換・返品を承ります。交換の際はお手数ですが、1週間以内に弊社に通知の上、ご返送をお願い致します。送料は弊社が負担しますので「着払い」でお送り下さい。</li>
+          <li>2.お客様都合による交換は一切お受け出来ません。</li>
+        </ol>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+      <h3>返品について</h3>
+      <p>商品到着後45日間に限り全額返金サービスを行なっております。</p>
+      <p>「体質に合わなかった」等といった場合に、安心してご利用ください。</p>
+      <h4 style="margin-top: 2.4em;">全額返金サービス</h4>
+      <dl class="gift_guide-sabbox">
+        <p>・美巣の全商品が対象です。※一部PR商品は除きます</p>
+        <p><span class="gift_color">・各商品ごとの初回の購入時に限り適用いたします。</p>
+        <p><span class="gift_color">・商品到着後45日以内とさせていただきます。</span></p>
+        <p>・ご返品の際は必ず事前にお電話にてご連絡ください。</p>
+      </dl>
+      <dl class="gift_guide-howtobox">
+        <dt>ご注意</dt>
+        <dd>※返品をご希望されるお客様は、商品と同梱している会報誌等に記載のお客様専用フリーダイヤル0120-005-213にお電話ください。</dd>
+        <dd><span class="gift_color">※お問い合わせフォームからの申込は受け付けておりません。</span></dd>
+        <dd><span class="gift_color">※ご連絡がない場合は返品をお受けできない場合がございます。予めご了承ください。</span></dd>
+        <p><a href="https://cart.bi-su.jp/repayment.html" target="_blank" style="color: #aa823a; text-decoration: underline;">詳しくは全額返金サービスをご覧ください。</a></p>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+      <h3>領収書について</h3>
+      <h4 style="margin-top: 2.4em;">クレジットカード</h4>
+      <p>クレジットカード会社発行の利用明細が領収書となります。税務署等においても正式な領収書として取り扱われます。法令により、弊社から個別の領収書を発行できませんのでご了承下さい。</p>
+      <h4 style="margin-top: 2.4em;">代引き（代金引換）</h4>
+      <p>代引き（代金引換）サービスは、代金引換時の受領書が領収書となります。税務署等においても正式な領収書として取り扱われます。法令により、弊社から個別の領収書を発行できませんのでご了承下さい。</p>
+      <h4 style="margin-top: 2.4em;">コンビニ支払い</h4>
+      <p>コンビニ支払時の受領書がそのまま領収書となります。税務署等においても正式な領収書として取り扱われます。法令により、弊社から個別の領収書を発行できませんのでご了承下さい。</p>
+      <h4 style="margin-top: 2.4em;">弊社発行の領収書について（銀行振り込み支払い）</h4>
+      <p>銀行振込支払いの領収書は発行いたします。弊社発行の領収書をご希望の場合はご注文時に『その他備考欄』に領収書希望の旨をご記入ください。その際に「宛名・但書」を必ずお知らせください。記載がない場合は「ご注文者様の氏名(会社名)/お品代」で発行いたします。</p>
+      <p>※宛名なし、無記入、または空欄での発行は不可となります。ご注意ください。商品お届け後、ご注文者様のお名前と異なる宛名（法人名等）での発行をご希望の場合のみ、宛名より下部に（○○様ご注文分）と、ご注文者様のお名前を記載の上発行いたします。</p>
+      <dl class="gift_guide-howtobox">
+        <dt>商品を返品された場合</dt>
+        <dd>領収書は返品商品とご一緒にご返送ください。</dd>
+        <dd>※一部返品による請求金額変更があった場合、領収書は返品商品と一緒にご返送ください。金額を訂正し、再発行致します。</dd>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+    <dd>
+      <h3>ギフトについて</h3>
+      <p>美巣オフィシャルサイトでは、全ての商品に無料でラッピング対応を行っております。</p>
+      <p><a href="https://cart.bi-su.jp/gift_guide.html" target="_blank" style="color: #aa823a; text-decoration: underline;">詳しくはギフト詳細ページをご覧ください。</a></p>
+    </dd>
+  </div>
+  <div class="gift_guide-mainbox">
+      <h3>メールマガジンについて</h3>
+      <dl class="gift_guide-sabbox">
+        <dt>会員様に新商品の発売など美巣の最新情報を配信しております。</dt>
+        <dd>新商品の販売などいち早くお知らせしております。</dd>
+        <dd>メールマガジンは会員登録時に「購読する」に設定されているお客様を対象にお送りしております。メールマガジンの「配信」「配信停止」は、マイアカウントの「会員情報の確認・変更」で設定できます。</dd>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox" id="support">
+      <h3>お気軽に「美巣コンシェルジュ」にご相談ください</h3>
+      <dl class="gift_guide-sabbox">
+        <p>美巣コールセンターには、天然アナツバメの巣の効能について専門知識を備えた「美巣コンシェルジュ」が在籍しております。お客様からの商品に関するご質問はもちろん、美容や健康のお悩みにも心を込めて丁寧にお応えしてまいります。どうぞお気軽にお電話くださいませ。</p>
+      </dl>
+      <dl class="gift_guide-sabbox">
+        <picture><img src="https://cart.bi-su.jp/user_data/packages/raku2pc/img/guide/usage_guideconcierge-pc_raku.jpg" alt="" style="margin: 20px auto;"></picture>
+      </dl>
+      <h4 style="margin-top: 2.4em;">美巣をすでにご利用いただいているお客様</h4>
+      <dl class="gift_guide-sabbox">
+        <dt>商品のご注文や定期便の変更などをお電話で承ります。お気軽にお問い合わせください。</dt>
+        <table sclass="md:w-1/2 w-full">
+          <tbody>
+            <tr>
+              <th>顧客様専用フリーダイヤル</th>
+              <td><a href="tel:0120-005-213">0120-005-213</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>受付時間 午前9時～午後8時まで（お盆、年末年始は除く）</p>
+      </dl>
+      <h4 style="margin-top: 2.4em;">初めてのご注文はこちら</h4>
+      <dl class="gift_guide-sabbox">
+        <dt>初めてのご注文をお電話で承ります。使い方や選び方など、些細な疑問でもお気軽にお問い合わせください。</dt>
+        <table class="md:w-1/2 w-full">
+          <tbody>
+            <tr>
+              <th>美巣お客様センター</th>
+              <td><a href="tel:0120-128-213">0120-128-213</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>受付時間 午前9時～午後8時まで（お盆、年末年始は除く）</p>
+      </dl>
+      <dl class="gift_guide-howtobox">
+        <dd>※すでにご注文いただいている場合は商品の出荷番号、お客様IDをご準備いただくと、お客様の情報などをすぐに確認できるため、スムーズなご対応が可能です</dd>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+      <h3>LINEでもお問合せ受付させて頂いております</h3>
+      			<p>
+				<a href="https://line.me/R/ti/p/%40196tnwns">
+					<picture>
+						<source srcset="https://www.bi-su.jp/img/other/LINE-b_sp.png" media="(max-width: 480px)" />
+						<img src="https://www.bi-su.jp/img/other/LINE-b_pc.png" width="100%" alt="" />
+					</picture>
+				</a>
+			</p>
+
+      <dl class="gift_guide-sabbox">
+        <dt>LINEでの受付は平日9：00～18：00</dt>
+        <dd>お友達登録後、お問合せ内容をお送り下さい。返信の際、お客様情報の確認をさせて頂く場合がございます。</dd>
+        <dd>※お友達登録された方には最新のお得なキャンペーンや、美容情報をお届けします。</dd>
+        <dd>※お問合せ内容によって、ご返信にお時間を頂く場合があります。</dd>
+        <dd>※定期便の解約は受け付けておりません。美巣お客様センターまでお電話でご連絡ください。</dd>
+      </dl>
+      <dl class="gift_guide-sabbox">
+        <picture><img src="https://cart.bi-su.jp/user_data/packages/raku2pc/img/guide/usage_guideline-pc_raku.png" alt="" style="margin: 20px auto;"></picture>
+      </dl>
+      <dl class="gift_guide-sabbox">
+        <p>パソコンから閲覧の方はQRコードをスキャン。</p>
+        <p>スマートフォンから閲覧の方はバーコードをタップして友達追加してください。</p>
+        <dd><picture><img src="https://cart.bi-su.jp/user_data/packages/raku2pc/img/guide/usage_guideline1-pc_raku.png" alt="" style="margin: 20px auto;"></picture>
+        </dd>
+      </dl>
+  </div>
+  <div class="gift_guide-mainbox">
+      <h3>海外からの問い合わせ</h3>
+      <dl class="gift_guide-sabbox">
+        <table class="md:w-1/2 w-full">
+          <tbody>
+            <tr>
+              <th>Inquiries from overseas</th>
+              <td><a href="tel:+81-92-406-4564">+81-92-406-4564</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </dl>
+  </div>
+</div>
+</section>
+</BaseLayout>

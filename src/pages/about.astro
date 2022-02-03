@@ -13,6 +13,7 @@ import Img8 from "../images/about-miranest/pc/img_(8).png";
 import Img9 from "../images/about-miranest/pc/img_(9).png";
 import Img10 from "../images/about-miranest/pc/img_(10).png";
 import Img15 from "../images/about-miranest/pc/img_(15).png";
+import Img1 from "../images/about-miranest/pc/img_(1).png";
 import Img6sp from '../images/about-miranest/sp/about_img_sp(6).png';
 import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
 ---
@@ -34,7 +35,7 @@ import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
 
 </style>
 <BaseLayout>
-    <section class="relative md:h-[800px]">
+    <section class="relative ">
     <h1 class="absolute text-md md:text-4xl left-1/2 md:left-[30%] w-9/12 md:w-[30%] top-[25%] md:top-[20%] transform -translate-x-1/2 translate-y-1/2 md:leading-[70px] text-left">世界初の補助食品「ミラネスト」だけのアナツバメの巣の効能を愛する家族へ</h1>
              <picture>
                 <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
@@ -42,15 +43,15 @@ import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
             </picture>
     </section>
 
-    <section class="mt-10 md:mt-32 md:px-52">
+    <section class="mt-10 md:mt-32 md:px-32">
         <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7 px-3 md:px-auto">天然アナツバメの巣が ペットのアトピーなどに効果を発揮</h2>
 
-         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-5 md:gap-20 px-3 md:px-5 bg-main-gray shadow-xl">
+         <div class="mt-10 md:mt-12 flex flex-col-reverse md:flex-row py-20 gap-5 md:gap-20 px-3 md:px-20 bg-main-gray shadow-xl">
                 <div class="md:w-3/6 w-full px-2 md:px-auto">
                 <h2 class="mb-5 text-h2 md:text-3xl">唯一天然を証明された「美巣」を使用したペット用栄養補助食</h2>
                 <p class="text-base">「ミラネスト」は天然を証明できる唯一のツバメの巣ブランド「美巣」の姉妹ブランドです。『ミラネストゼリースティック』は、天然アナツバメの巣を配合した世界初のペット用栄養補助食品で、使用しているツバメの巣は「美巣」と同じマレーシア産の最高級天然アナツバメの巣です。</p>
                 </div>
-                <img src={Img6} alt="" class="md:w-3/6  w-full">
+                <img src={Img6} alt="" class="md:w-3/6 w-full">
          </div>
     </section>
 
@@ -59,7 +60,7 @@ import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
     <span id="secret-story"></span>
         <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7">医療界も注目！「ミラネスト」に配合の天然アナツバメの巣の希少成分</h2>
 
-         <div class="mt-10 flex flex-col-reverse md:flex-row md:py-12 gap-5 md:gap-20 px-3 md:px-5">
+         <div class="mt-10 md:mt-12 flex flex-col-reverse md:flex-row md:py-12 gap-5 md:gap-20 px-3 md:px-5">
                 <div class="w-full md:w-3/6">
                 <h2 class="mb-5 text-h2 md:text-3xl">生命維持に不可欠な糖鎖の栄養素を配合するミラクルフード</h2>
                 <p class="text-base">天然アナツバメの巣は、生命維持の根幹をなす＜糖鎖＞を構成する＜糖鎖栄養素＞を、あらゆる食材よりも多く配合しているミラクルフードです。＜糖鎖＞は体内に侵入した細菌やウィルスなどの情報を別の細胞に伝える生命活動や免疫機能に不可欠なアンテナの役目を担っています。</p>
@@ -72,7 +73,7 @@ import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
                 <h2 class="mb-5 text-h2 md:text-3xl ">免疫力に深くかかわるシアル酸はローヤルゼリーの200倍！</h2>
                 <p class="text-base">＜糖鎖栄養素＞のひとつ＜シアル酸＞は摂取が難しい成分ですが、アナツバメの巣は健康食品として知られるローヤルゼリーの200倍を含有しています。＜シアル酸＞は、肌のハリやうるおいを向上させ、免疫システムに深く関わる成分として近年注目を集めています。</p>
                 </div>
-                <div alt="" class="w-full md:w-[60%] p-5 bg-[#F4EFE9] flex flex-col justify-center items-center">
+                <div alt="" class="w-full  md:w-3/6 p-5 bg-[#F4EFE9] flex flex-col justify-center items-center">
                     <img src={Img5} alt="" class="w-3/6">
                     <small>世界最高峰の品質と評されるマレーシア産天然アナツバメの巣</small>
                      <img src={Img13} alt="" class="w-full">
@@ -90,60 +91,60 @@ import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
         <div class="md:hidden px-12 my-12">
             <img src={Img6sp} alt="" class="w-full">
             <div class="flex justify-center mt-12">
-            <a href="../whatis" class="w-full mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">購入する</a>
+            <a href="../whatis" class="w-full mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-3 inline-block text-xl">購入する</a>
             </div>
           </div>
 
     </section>
 
-     <section class="mt-10 md:mt-32 md:px-52">
-        <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7">「ミラネスト」に配合している成分は安心・安全にこだわった、国産のプレミアムフードです。</h2>
+     <section class="mt-10 md:mt-32 md:px-32">
+             <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7">「ミラネスト」に配合している成分は安心・安全にこだわった、国産のプレミアムフードです。</h2>
+                <div class="mt-10 md:mt-12 bg-main-gray shadow-xl py-12 md:px-20">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-20 px-3 md:px-5">
+                        <div class="flex flex-col justify-around">
+                            <img src={Img7} class="w-full ">
+                            <p class="text-base-xl text-center mb-3 h-42">ビタミン類 （ビタミンC）</p>
+                            <p class="text-base">体内で合成する量が少なく不足しがちなビタミンＣは蓄積もされにくいため、毎日一定量を摂取する必要があります。</p>
+                        </div>
 
-         <div class="mt-10 bg-main-gray shadow-xl py-12 ">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-20 px-3 md:px-5">
-                <div class="flex flex-col justify-around">
-                    <img src={Img7} class="w-full ">
-                    <p class="text-base-xl text-center mb-3 h-42">ビタミン類 （ビタミンC）</p>
-                    <p class="text-base">体内で合成する量が少なく不足しがちなビタミンＣは蓄積もされにくいため、毎日一定量を摂取する必要があります。</p>
+                        <div class="flex flex-col justify-around">
+                            <img src={Img8} class="w-full ">
+                            <p class="text-base-xl text-center mb-3 h-42">フィッシュコ ラーゲンペプチド</p>
+                            <p class="text-base">哺乳類の体を構成するたんぱく質の役30％を占めるコラーゲンは、皮膚をツヤを与えて丈夫にする効果があります。</p>
+                        </div>
+
+                        <div class="flex flex-col justify-around">
+                            <img src={Img9} class="w-full ">
+                            <p class="text-base-xl text-center mb-3 h-42">野菜発酵エキス</p>
+                            <p class="text-base">発酵によってのみ生成される微量な希少成分が腸内環境を整えます。特に高齢のペットには欠かせない成分です。</p>
+                        </div>
+
+                        <div class="flex flex-col justify-around">
+                            <img src={Img10} class="w-full ">
+                            <p class="text-base-xl text-center mb-3" h-42>シロキクラゲ抽出物</p>
+                            <p class="text-base">高い保湿力や活性酸素除去機能の向上効果で美しい肌をつくり、整腸作用や胃内粘膜修復、ダイエット効果もあります。</p>
+                        </div>
+                    </div>
+                        <div class="flex justify-center mt-12 w-10/12 md:w-1/2 mx-auto">
+                            <a href="../whatis" class="w-full text-center bg-main-light-green text-white shadow-xl px-3 py-3 inline-block text-xl">ツバメの巣に含まれる栄養素</a>
+                        </div>
                 </div>
 
-                <div class="flex flex-col justify-around">
-                    <img src={Img8} class="w-full ">
-                    <p class="text-base-xl text-center mb-3 h-42">フィッシュコ ラーゲンペプチド</p>
-                    <p class="text-base">哺乳類の体を構成するたんぱく質の役30％を占めるコラーゲンは、皮膚をツヤを与えて丈夫にする効果があります。</p>
-                </div>
-
-                 <div class="flex flex-col justify-around">
-                    <img src={Img9} class="w-full ">
-                    <p class="text-base-xl text-center mb-3 h-42">野菜発酵エキス</p>
-                    <p class="text-base">発酵によってのみ生成される微量な希少成分が腸内環境を整えます。特に高齢のペットには欠かせない成分です。</p>
-                </div>
-
-                 <div class="flex flex-col justify-around">
-                    <img src={Img10} class="w-full ">
-                    <p class="text-base-xl text-center mb-3" h-42>シロキクラゲ抽出物</p>
-                    <p class="text-base">高い保湿力や活性酸素除去機能の向上効果で美しい肌をつくり、整腸作用や胃内粘膜修復、ダイエット効果もあります。</p>
-                </div>
-            </div>
-                <div class="flex justify-center mt-12 w-10/12 md:w-1/2 mx-auto">
-                    <a href="../whatis" class="w-full text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">ツバメの巣に含まれる栄養素</a>
-                </div>
-         </div>
     </section>
 
-    <section class="mt-16 md:mt-32 md:px-52">
+    <section class="mt-16 md:mt-32 md:px-32">
     <h2 class="text-h2 md:text-4xl text-main-light-green text-center mb-7">マレーシアのジャングルが生んだ奇跡！最高級天然アナツバメの巣にこだわる理由</h2>
 
-        <div class="px-3 md:px-5 bg-main-light-yellow shadow-xl py-12">
-         <div class="mt-10 flex flex-col-reverse md:flex-row  gap-20 ">
+        <div class="mt-10 md:mt-12 px-3 md:px-20 bg-main-light-yellow shadow-xl py-12 md:py-20">
+         <div class="flex flex-col-reverse md:flex-row gap-20 ">
                 <div class="md:w-3/6 w-full">
                 <h2 class="mb-5 md:text-3xl">白い宝石と呼ばれる自然の恵みは政府管理の洞窟で採取しています</h2>
                 <p class="text-base">「ミラネスト」は姉妹ブランド『美巣』と同じ天然アナツバメの巣を使用しています。「美巣」代表の稲冨社長は自ら現地へ赴き、＜ツバメの巣ハンター＞として採取しています。「美巣」は世界最高峰の品質を誇るマレーシア産の100％天然アナツバメの巣だけをお届けしています。</p>
                 </div>
-                <img src={Img6} alt="" class="md:w-3/6  w-full">
+                <img src={Img1} alt="" class="md:w-3/6  w-full">
          </div>
             <div class="flex justify-center mt-12 w-10/12 md:w-1/2 mx-auto">
-                    <a href="../whatis" class="w-full text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">ツバメの巣について詳しく</a>
+                    <a href="../whatis" class="w-full text-center bg-main-light-green text-white shadow-xl px-3 py-3 inline-block text-xl">ツバメの巣について詳しく</a>
             </div>
          </div>
 
@@ -156,12 +157,14 @@ import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
               <source srcset={Img7sp} type="image/png" media="(max-width:480px)" />
               <img src={Img15} class="w-full">
           </picture>
-            <div class="left-1/2 md:left-[32%] px-3 py-5 w-full md:w-[30%] top-[15%] md:-top-[15%] text-left leading-[0.1rem] transform -translate-x-1/2 translate-y-1/2 absolute ">
-              <h2 class="text-h2 md:text-3xl mb-5 text-main-light-green">日本国内にツバメの巣研究所を設立秘伝のエキスで革新的な価値を作る</h2>
-              <p class="text-base">「美巣」は日本国内にツバメの巣研究所を設立。最高技術を導入し、希少成分を壊すことなくエキスとして抽出することに成功しました。この秘伝のツバメの巣エキスを「美巣」と姉妹ブランドである「ミラネスト」の商品に使用しています。</p>
-                <div class="flex justify-center mt-12">
-                    <a href="../whatis" class="w-10/12 md:w-8/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-2 inline-block text-xl">詳しく</a>
-                    </div>
+            <div class="px-52 top-0 h-full flex items-center w-full absolute ">
+                <div class="w-1/2 leading-[0.1rem] text-left ">
+                <h2 class="text-h2 md:text-3xl mb-5 text-main-light-green">日本国内にツバメの巣研究所を設立秘伝のエキスで革新的な価値を作る</h2>
+                <p class="text-base">「美巣」は日本国内にツバメの巣研究所を設立。最高技術を導入し、希少成分を壊すことなくエキスとして抽出することに成功しました。この秘伝のツバメの巣エキスを「美巣」と姉妹ブランドである「ミラネスト」の商品に使用しています。</p>
+                    <div class="flex justify-center mt-12">
+                        <a href="../whatis" class="w-10/12 md:w-8/12 mx-auto text-center bg-main-light-green text-white shadow-xl px-3 py-3 inline-block text-xl">詳しく</a>
+                        </div>
+                </div>
             </div>
           </div>
     </section>

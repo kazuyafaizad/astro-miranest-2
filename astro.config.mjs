@@ -1,6 +1,7 @@
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
-
+import { imagetools } from 'vite-imagetools';
+import path from 'node:path';
 // @type-check enabled!
 // VSCode and other TypeScript-enabled text editors will provide auto-completion,
 // helpful tooltips, and warnings if your exported object is invalid.
@@ -9,6 +10,22 @@
 export default /** @type {import('astro').AstroUserConfig} */ ({
   // Enable the Preact renderer to support Preact JSX components.
   renderers: ["@astrojs/renderer-preact"],
+  buildOptions: {
+    sitemap: true,
+    site: 'https://astro.build/',
+  },
+  vite: {
+    plugins: [imagetools()],
+    resolve: {
+      alias: {
+        $src: path.resolve('./src'),
+        $components: path.resolve('./src/components'),
+        $layouts: path.resolve('./src/layouts'),
+        $pages: path.resolve('./src/pages'),
+        $images: path.resolve('./src/images'),
+      },
+    },
+  },
   buildOptions: {
     sitemap: true,
   },

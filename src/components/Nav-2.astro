@@ -1,16 +1,24 @@
 ---
-import LogoText from '$images//logo.png';
-import CartImg from '$images//cart-ico.svg';
-import FbImg from '$images//fb-ico.svg';
-import IgImg from '$images//ig-ico.svg';
+import LogoText from '$images/logo.png';
+import { Icon } from 'astro-icon';
 
 ---
+
+  <style>
+    .ig{
+      background: #f09433;
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }
+  </style>
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 <nav class="hidden md:block relative">
  <div class="bg-main-brown flex items-center justify-center shadow py-2 px-32" >
  <a href="/top"><img src={LogoText} class="h-14"/></a>
-        <div class="flex justify-left w-10/12 ml-32">
+        <div class="flex justify-left w-10/12 pl-12">
             <li class="block"><a href="/effects" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">ミラネストの効果</a></li>
             <li class="block"><a href="/about" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">ミラネストについて</a></li>
             <li class="block"><a href="/bird-nest" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">ツバメの巣について</a></li>
@@ -18,9 +26,9 @@ import IgImg from '$images//ig-ico.svg';
             <li class="block"><a href="/guide/user" class="text-white px-5 text-base hover:border-b hover:border-golden hover:text-golden">ご案内</a></li>
         </div>
         <ul class="flex w-1/12">
-            <li class="block"><embed src="/cart-ico.svg" class="h-7 mx-5"/></li>
-            <li class="block"><embed src="/fb-ico.svg" class="h-7 mx-2"/></li>
-            <li class="block"><embed src="/ig-ico.svg" class="h-7"/></li>
+            <li class="block"><a href="#"><Icon name="cart-ico" class="h-7 mx-5"/></a></li>
+            <li class="block"><a href="#"><Icon name="fb-ico"  class="h-7 mx-2"/></a></li>
+            <li class="block"><a href="https://www.instagram.com/miranest_official/"><Icon name="ig-ico" class="h-7"/></a></li>
         </ul>
         </div>
 </nav>
@@ -30,7 +38,7 @@ import IgImg from '$images//ig-ico.svg';
 <div class="md:hidden w-full text-gray-700 bg-main-brown">
   <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
     <div class="px-4 flex flex-row items-center justify-between">
-     <a href="" class="flex items-center justify-center px-2 w-full">
+     <a href="/top" class="flex items-center justify-center px-2 w-full">
           <img class="block h-9 lg:h-12 w-auto mr-2" src={LogoText} alt="Logo bi-su" />
         </a>
 
@@ -49,7 +57,12 @@ import IgImg from '$images//ig-ico.svg';
       <a class="border-b border-dotted border-black px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="/bird-nest">ツバメの巣について</a>
       <a class="border-b border-dotted border-black px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="/products/powder">商品購入</a>
       <a class="border-b border-dotted border-black px-4 py-4 mt-2 text-sm font-semibold bg-transparent md:mt-0 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="/guide/user">ご案内</a>
+       <div class="flex mt-12 justify-evenly">
+            <a href="#"><Icon name="fb-ico"  class="h-12"/></a>
+            <a href="https://www.instagram.com/miranest_official/" class=""><Icon name="ig-ico" class="ig h-12 rounded-full"/></a>
+        </div>
     </nav>
+
   </div>
 </div>
 

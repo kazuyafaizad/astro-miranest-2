@@ -15,6 +15,9 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     site: 'https://astro.build/',
   },
   vite: {
+    ssr: {
+      external: ["svgo"],
+    },
     plugins: [imagetools()],
     resolve: {
       alias: {

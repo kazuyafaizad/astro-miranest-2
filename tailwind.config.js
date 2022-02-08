@@ -15,7 +15,8 @@ module.exports = {
         "main-orange":"#FF7924",
         "main-light-yellow":"#FBF7EC",
         "main-pink":"#F4ECEA",
-        "main-brown":"#363332"
+        "main-brown":"#363332",
+        "main-dark-brown":"#2e2a29"
       },
       fontSize: {
         base: ["16px", "32px"],

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '$layouts/BaseLayout.astro';
 import HeroImgPC from '$images/about-swallow-nest/pc/swallows_pc_(18).png';
-import HeroImgSP from '$images/about-swallow-nest/sp/about_img_sp(8).png';
+import HeroImgSP from '$images/miranest-powder-5-sp.jpg';
 
 import Img7 from "$images/about-swallow-nest/pc/swallows_pc_(7).png";
 import Img17 from "$images/about-swallow-nest/pc/swallows_pc_(17).png";
@@ -46,14 +46,19 @@ import Img7sp from '$images/about-swallow-nest/sp/about_img_sp(1).png';
             </div>
              <picture>
                 <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
-                <img src={HeroImgPC} class="w-full"/>
+                <img
+                 alt="大切な家族だからこそ本当に体にいいものを食べさせたい"
+                decoding="async"
+                width="1451"
+                height="967"
+                src={HeroImgPC} class="w-full"/>
             </picture>
     </section>
 
     <section class="mt-10 md:mt-32 md:px-52">
         <h2 class="text-h2 md:text-4xl  text-center mb-7 px-3 md:px-auto">生命維持に不可欠な細胞のアンテナとして医学界で注目の【糖鎖】</h2>
 
-         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-5 md:gap-20 px-3 md:px-5 bg-main-gray shadow-xl">
+         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-5 md:gap-20 px-3 md:px-5 bg-main-gray shadow-xl" data-aos="fade-up" data-aos-easing="linear">
                 <div class="md:w-3/6 w-full px-2 md:px-auto">
                 <h2 class="mb-5 text-h2 md:text-3xl">糖鎖とは〜ツバメの巣がなぜ美容に良いと言われているか</h2>
                 <p class="text-base">ツバメの巣は多くのニセモノや養殖品が市場に出回っています。ミラネストは天然にこだわり、世界最高峰の品質と評されるマレーシア産天然アナツバメの巣だけを使用。代表自らが『日本人唯一のツバメの巣ハンター』として秘境まで足を運び、採取しています。</p>
@@ -67,7 +72,7 @@ import Img7sp from '$images/about-swallow-nest/sp/about_img_sp(1).png';
     <span id="secret-story"></span>
         <h2 class="text-h2 md:text-4xl  text-center mb-7">ミラネスト パワーシアル酸量ローヤルゼリーの200倍！</h2>
 
-         <div class="mt-10 flex flex-col-reverse md:flex-row md:py-12 gap-5 md:gap-20 px-3 md:px-5">
+         <div class="mt-10 flex flex-col-reverse md:flex-row md:py-12 gap-5 md:gap-20 px-3 md:px-5" data-aos="fade-up" data-aos-easing="linear">
                  <img src={Img17} alt="" class="w-full md:w-3/6"/>
                 <div  class="w-full md:w-3/6 flex flex-col justify-evenly gap-10">
                     <div class="point-box border-2 border-main-gold-2 rounded-xl p-3">
@@ -86,7 +91,7 @@ import Img7sp from '$images/about-swallow-nest/sp/about_img_sp(1).png';
 
     <section class="mt-10 md:mt-32 py-12 md:px-52">
         <h2 class="text-h2 md:text-4xl  text-center px-3  mb-7">ミラネスト パワー EGF、FGFが上皮細胞成長因子が新陳代謝を正常に！○○○</h2>
-         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-20 px-3 md:px-5 bg-main-pink shadow-xl">
+         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-20 px-3 md:px-5 bg-main-pink shadow-xl" data-aos="fade-up" data-aos-easing="linear">
                 <div class="md:w-3/6 w-full">
                 <h2 class="mb-5 md:text-3xl">EGFがツバメの巣がなぜ美容に良いと言われているか</h2>
                 <p class="text-base">肌細胞の再生を促進するタンパク質です。新陳代謝（ターンオーバー）を正常化し、若さと美しさを保つ働きをします。発見者がノーベル医学生理学賞を受賞した成分でもあります。</p>
@@ -99,11 +104,11 @@ import Img7sp from '$images/about-swallow-nest/sp/about_img_sp(1).png';
         <h2 class="text-h2 md:text-3xl  text-center mb-7">アナツバメの巣は至宝の食材と言われてます。しかしその希少さ故に〇〇○○〇〇○○〇で〇〇○○なので、〇〇○○なのです。</h2>
          <p class="text-base  mb-7">コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。</p>
          <div class="flex gap-5 flex-col md:flex-row">
-                 <img src={Img4} alt="" class="md:w-1/2  w-full">
-                  <img src={Img1} alt="" class="md:w-1/2  w-full">
+                 <img src={Img4} alt="" class="md:w-1/2  w-full" data-aos="fade-up" data-aos-easing="linear" >
+                  <img src={Img1} alt="" class="md:w-1/2  w-full" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
          </div>
 
-         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-20 px-3 md:px-5 bg-main-pink shadow-xl">
+         <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-20 px-3 md:px-5 bg-main-pink shadow-xl" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
                 <div class="md:w-3/6 w-full">
                 <h2 class="mb-5 md:text-3xl">FGFがツバメの巣がなぜ美容に良いと言われているか</h2>
                 <p class="text-base">コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。</p>
@@ -115,7 +120,7 @@ import Img7sp from '$images/about-swallow-nest/sp/about_img_sp(1).png';
     <section class="mt-10 md:mt-32 py-12 px-3 px-3 md:px-52">
         <h2 class="text-h2 md:text-3xl  text-center mb-7">アナツバメの巣は至宝の食材と言われてます。しかしその希少さ故に〇〇○○〇〇○○〇で〇〇○○なので、〇〇○○なのです。</h2>
          <p class="text-base mb-7">コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。</p>
-         <div class="flex gap-5 flex-col md:flex-row">
+         <div class="flex gap-5 flex-col md:flex-row" data-aos="fade-up" data-aos-easing="linear">
                  <img src={Img5} alt="" class="md:w-1/2  w-full">
                   <img src={Img3} alt="" class="md:w-1/2  w-full">
          </div>
@@ -124,7 +129,7 @@ import Img7sp from '$images/about-swallow-nest/sp/about_img_sp(1).png';
     <section class="mt-16 md:mt-32 md:px-52">
     <h2 class="text-h2 md:text-4xl  text-center px-3 mb-7">TV番組​『たけしの家庭の医学』で糖鎖、シアル酸が特集されました。</h2>
 
-        <div class="px-3 md:px-5 bg-main-light-yellow shadow-xl py-12">
+        <div class="px-3 md:px-5 bg-main-light-yellow shadow-xl py-12" data-aos="fade-up" data-aos-easing="linear">
          <div class="mt-10 flex flex-col-reverse md:flex-row  gap-20 ">
                 <div class="md:w-3/6 w-full">
                 <h2 class="mb-5 md:text-3xl">アナツバメの巣には【糖鎖】を正常な状態に戻し、免疫力を回復。</h2>
@@ -144,7 +149,7 @@ import Img7sp from '$images/about-swallow-nest/sp/about_img_sp(1).png';
      <section class="mt-16 md:mt-32 px-3 md:px-52">
     <h2 class="text-h2 md:text-4xl  text-center mb-7">現在、多くの食用ツバメの巣には養殖物のツバメの巣が使用されています。</h2>
 
-    <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-20 md:px-5 ">
+    <div class="mt-10 flex flex-col-reverse md:flex-row py-12 gap-20 md:px-5 " data-aos="fade-up" data-aos-easing="linear">
                 <div class="md:w-3/6 w-full">
                 <h2 class="mb-5 md:text-3xl">食用のツバメの巣に養殖物と天然物があるのをご存知ですか？</h2>
                 <p class="text-base">コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。だから、「ミラネスト」はペットの体調を改善できるのです。</p>
@@ -152,7 +157,7 @@ import Img7sp from '$images/about-swallow-nest/sp/about_img_sp(1).png';
                 <img src={Img6} alt="" class="md:w-3/6  w-full">
          </div>
     </section>
-    <section class="mt-10 md:mt-32 py-12 px-3 md:px-52">
+    <section class="mt-10 md:mt-32 py-12 px-3 md:px-52" data-aos="fade-up" data-aos-easing="linear" >
         <h2 class="text-h2 md:text-3xl  text-center mb-7">アナツバメの巣は至宝の食材と言われてます。しかしその希少さ故に〇〇○○〇〇○○〇で〇〇○○なので、〇〇○○なのです。</h2>
          <p class="text-base mb-7">コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。コラーゲンやエラスチン、ヒアルロン酸などを作る線維芽細胞に働きかけて細胞の成長と増殖を促進。弾力と透明感のある潤い肌を作ります。</p>
          <div class="flex gap-5 flex-col md:flex-row">

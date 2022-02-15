@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "$layouts/BaseLayout.astro";
-import HeroImgPC from "$images/products/pc/product-pc5.png";
+import HeroImgPC from "$images/miranest-powder-7.jpg";
 import HeroImgSP from "$images/products/sp/img-2.png";
 
 
@@ -68,7 +68,12 @@ import Img1sp from "$images/products/sp/img-1.png";
             </div>
              <picture>
                 <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
-                <img src={HeroImgPC} class="w-full"/>
+                <img
+                 alt="ミラネストはマレーシアのジャングルが生んだ奇跡のペット用栄養補助食品です"
+                decoding="async"
+                width="1451"
+                height="967"
+                src={HeroImgPC} class="w-full"/>
             </picture>
     </section>
 

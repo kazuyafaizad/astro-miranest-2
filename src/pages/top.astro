@@ -1,12 +1,11 @@
 ---
 import BaseLayout from '$layouts/BaseLayout.astro';
-import HeroImgPC from '$images/top/pc/img (53).png';
-import HeroImgSP from '$images/top/sp/img-01.png';
+import HeroImgPC from '$images/TOP.jpg';
+import HeroImgSP from '$images/TOP-sp.jpg';
 
 import NewsSection from '../pages/news.astro';
 import PrdPowder from '$images/top/pc/image_45.png';
 import Img21 from '$images/top/pc/img (21).png';
-import Img40 from '$images/top/pc/img (40).svg';
 import Img51 from '$images/top/pc/img (51).png';
 import Img45sp from '$images/top/sp/img_(45).png';
 import Img32 from '$images/top/pc/img (32).png';
@@ -27,17 +26,14 @@ import Img3 from '$images/top/pc/img (3).png';
 import Img6 from '$images/top/pc/img (6).png';
 import Img26 from '$images/top/pc/img (26).png';
 import Img42sp from '$images/top/sp/img_(42).png';
-import Img24 from '$images/top/pc/img (24).png';
+import Img24 from '$images/miranest-powder-6.jpg';
 import Img34 from '$images/top/pc/img (34).png';
-import Img20 from '$images/top/pc/img (20).png';
 import Img30 from '$images/top/pc/img (30).png';
-import Img45 from '$images/top/pc/img (45).png';
 import Img29 from '$images/top/pc/img (29).png';
 import Img16 from '$images/top/pc/img (16).png';
 import Img17 from '$images/top/pc/img (17).png';
 import Img18 from '$images/top/pc/img (18).png';
 import ThreePoints from '$components/ThreePoints.astro';
-
 
 ---
 <link
@@ -237,12 +233,17 @@ a {
             </div>
              <picture>
                 <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
-                <img src={HeroImgPC} class="w-full"/>
+                <img
+                alt="”奇跡の巣”で愛するペットを守りたい"
+                decoding="async"
+                width="1451"
+                height="967"
+                src={HeroImgPC} class="w-full" />
             </picture>
     </section>
 
     <NewsSection/>
-    <section class="mt-10 flex flex-col-reverse md:flex-row justify-center py-12 gap-20 px-3 md:px-32 bg-main-gray shadow-xl">
+    <section class="mt-10 flex flex-col-reverse md:flex-row justify-center py-12 gap-20 px-3 md:px-32 bg-main-gray shadow-xl"  data-aos="fade-up" data-aos-easing="linear">
         <div class="flex flex-col justify-evenly">
             <h2 class="text-h2 md:text-3xl  mb-5">世界初！天然アナツバメの巣を使用したペット用栄養補助食品。<br>かゆみや肌毛悩みの救世主。それが「ミラネスト」です。</h2>
             <p class="text-base mb-5">「健康的な輝きと美しさを取り戻してあげたい」強い想いが「ミラネスト」誕生の原動力でした。あらゆる食品の中で最高級アナツバメの巣だけが持つ奇跡のような効果・効能が大切な家族を健やかな姿へと導きます。</p>
@@ -256,11 +257,11 @@ a {
             <h3 class="text-h3 md:text-3xl text-goldeni text-center">世界初のツバメの巣ブランド<br>「BI-SU」が作った「ミラネスト」だから安心できる。</h3>
 
             <div class="grid-06 grid justify-evenly items-end mb-20 justify-items-center">
-                <img src={Img21} alt="" class="hidden md:block">
+                <img src={Img21} alt="" class="hidden md:block" data-aos="fade-up" data-aos-easing="linear">
                 <div class="flex justify-center">
                 <ThreePoints />
                  </div>
-                <img src={Img51} alt="" class="hidden md:block">
+                <img src={Img51} alt="" class="hidden md:block" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
             </div>
             <div class="flex justify-center">
             <a href="../whatis" class="w-10/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl">BI-SUについて詳しく</a>
@@ -295,8 +296,8 @@ a {
     </section>
     <section class="bg-main-gray my-12 md:my-28 py-12 shadow-xl px-3 md:px-auto">
              <div class="grid-01 grid mx-auto">
-                <img src={Img37} alt="" class="w-100">
-                <img src={Img9} alt="" class="w-100">
+                <img src={Img37} alt="" class="w-100"  data-aos="fade-up" data-aos-easing="linear"  data-aos-delay="500">
+                <img src={Img9} alt="" class="w-100"  data-aos="fade-up" data-aos-easing="linear">
             </div>
             <div class="grid-02 grid my-5">
                 <img src={Img50} alt="" style="grid-area: a">
@@ -312,8 +313,8 @@ a {
 
     <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
             <div class="grid-03 grid mx-auto">
-                <img src={Img52} alt="" class="w-100">
-                <img src={Img38} alt="" class="w-100">
+                <img src={Img52} alt="" class="w-100" data-aos="fade-up" data-aos-easing="linear">
+                <img src={Img38} alt="" class="w-100" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
             </div>
 
             <div class="grid-04 grid">
@@ -325,14 +326,14 @@ a {
                 <div class="flex justify-center w-full mt-12" style="grid-area: c">
                   <a href="" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl">詳しく</a>
               </div>
-                <img src={Img45} alt="" style="grid-area: a">
+                <img src={PrdPowder} alt="" style="grid-area: a">
             </div>
     </section>
 
         <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
              <div class="grid-01 grid mx-auto">
-                <img src={Img39} alt="" class="w-100">
-                <img src={Img14} alt="" class="w-100">
+                <img src={Img39} alt="" class="w-100"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                <img src={Img14} alt="" class="w-100"  data-aos="fade-up" data-aos-easing="linear">
             </div>
             <div class="grid-02 grid my-5">
                 <img src={Img36} alt="" style="grid-area: a">
@@ -346,7 +347,7 @@ a {
             </div>
     </section>
 
-    <section class="mt-32 py-12 bg-main-gray shadow" >
+    <section class="mt-32 pb-12 bg-main-gray shadow" >
             <div class="relative">
                 <div class="px-3 text-center md:text-left md:w-4/12 absolute md:left-[25%] top-20 md:top-1/2 mad:transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-left" >
                     <h3 class="text-h2 md:text-3xl mb-4">VISION</h3>
@@ -355,7 +356,7 @@ a {
                 </div>
                 <picture>
                     <source srcset={Img42sp} type="image/png" media="(max-width:480px)" />
-                    <img src={Img24} alt="" class="w-full">
+                    <img src={Img24} alt="" class="w-full object-cover">
                 </picture>
 
             </div>
@@ -363,7 +364,7 @@ a {
             <div class="mt-20 mb-12 md:px-32 text-center flex flex-col items-center justify-center" >
                 <img src={Img34} alt="" class="h-8">
                 <!-- <img src={Img20} alt="" class="mt-3 h-8"> -->
-                <h3 class="text-3xl">#ミラネスト</h3>
+                <a href="https://www.instagram.com/explore/tags/%E3%83%9F%E3%83%A9%E3%83%8D%E3%82%B9%E3%83%88/"><h3 class="text-3xl">#ミラネスト</h3></a>
             </div>
             <div class="grid grid-cols-4 gap-5 mb-32 mx-auto w-full px-3 md:px-32 ">
                 <img src={Img28} alt="" class="w-full">
@@ -392,7 +393,7 @@ a {
                     <p class="leading-8">継続回数の決まりはございません。「商品がなくなったので、来月分をいますぐ欲しい」というご要望もお申しつけ下さい。</p>
                 </div>
                 <div class="md:w-4/12 md:mx-5 flex flex-col justify-between my-12 md:m-5">
-                    <img src={Img45} alt="" class="h-full max-h-[165px] max-w-[300px] mx-auto" >
+                    <img src={PrdPowder} alt="" class="h-full max-h-[165px] max-w-[300px] mx-auto" >
                     <h5 class="text-main-gold-2 my-3 text-[19px]">まずはお試しください。ミラネストパウダー ミニサイズ（25g）</h5>
                     <p class="leading-8">本物のアナツバメの巣が持つ素晴らしい力を、まずはお試しサイズで体験ください。</p>
                 </div>
@@ -498,7 +499,10 @@ a {
                     el: '.swiper-scrollbar',
                 },
                 });
+
+
         </script>
+
 
 
 

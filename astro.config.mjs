@@ -1,6 +1,7 @@
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
 import { imagetools } from 'vite-imagetools';
+
 import path from 'node:path';
 // @type-check enabled!
 // VSCode and other TypeScript-enabled text editors will provide auto-completion,
@@ -18,7 +19,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     ssr: {
       external: ["svgo"],
     },
-    plugins: [imagetools()],
+    plugins: [imagetools({ force: true })],
     resolve: {
       alias: {
         $src: path.resolve('./src'),

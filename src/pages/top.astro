@@ -50,7 +50,7 @@ import ThreePoints from '$components/ThreePoints.astro';
     width:80%;
 	padding: 5%;
 	align-items: center;
-	img {
+	img,video {
 		&:nth-child(1) {
 			grid-column: 1/4;
 			grid-row: 1;
@@ -71,7 +71,7 @@ import ThreePoints from '$components/ThreePoints.astro';
 	justify-items: center;
 }
 .grid-03 {
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns:repeat(5, 1fr);
     width:80%;
 	padding: 5%;
 	align-items: center;
@@ -169,7 +169,7 @@ a {
 		grid-template-columns: repeat(10, 1fr);
 		grid-template-rows: repeat(9, 1fr);
          width:100%;
-		img {
+		img,video {
 			&:nth-child(1) {
 				grid-area: 5 / 1 / 10 / 10;
 				z-index: 0;
@@ -229,7 +229,7 @@ a {
 <BaseLayout>
     <section class="relative">
             <div class="absolute top-0 px-3 md:px-32 pt-5 flex w-full h-full flex md:items-center">
-            <h1 class="text-md md:text-4xl w-1/2 md:w-[27%] md:leading-[70px] text-left">”奇跡の巣”で愛するペットを守りたい</h1>
+            <h1 class="text-md md:text-4xl w-1/2 md:w-[27%] md:leading-[70px] text-left"></h1>
             </div>
              <picture>
                 <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
@@ -249,7 +249,7 @@ a {
             <p class="text-base mb-5">「健康的な輝きと美しさを取り戻してあげたい」強い想いが「ミラネスト」誕生の原動力でした。あらゆる食品の中で最高級アナツバメの巣だけが持つ奇跡のような効果・効能が大切な家族を健やかな姿へと導きます。</p>
             <a href="/products/powder" class="mt-8 w-10/12 md:w-8/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl" >詳しく <i class="v v-right ms-2"></i></a>
         </div>
-        <img src={PrdPowder} class="md:w-1/2"/>
+        <img src={PrdPowder} alt="商品" class="md:w-1/2"/>
     </section>
 
     <section class="mt-10 md:mt-32 py-12 px-3 md:px-32">
@@ -257,14 +257,14 @@ a {
             <h3 class="text-h3 md:text-3xl text-goldeni text-center">世界初のツバメの巣ブランド<br>「BI-SU」が作った「ミラネスト」だから安心できる。</h3>
 
             <div class="grid-06 grid justify-evenly items-end mb-20 justify-items-center">
-                <img src={Img21} alt="" class="hidden md:block" data-aos="fade-up" data-aos-easing="linear">
+                <img src={Img21} alt="小型犬" class="hidden md:block" data-aos="fade-up" data-aos-easing="linear">
                 <div class="flex justify-center">
                 <ThreePoints />
                  </div>
-                <img src={Img51} alt="" class="hidden md:block" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
+                <img src={Img51} alt="大きい犬" class="hidden md:block" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
             </div>
             <div class="flex justify-center">
-            <a href="" class="w-10/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 text-xl hidden">BI-SUについて詳しく</a>
+            <a href="#" class="w-10/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 text-xl hidden">BI-SUについて詳しく</a>
             </div>
     </section>
 
@@ -275,8 +275,8 @@ a {
                 <h2 class="text-h2 md:text-3xl mb-8">「ミラネスト」で使用しているのは地球上でもっとも美しいツバメの巣です</h2>
                 <p class="text-base mb-8">「ミラネスト」と「BI-SU」が使用している最高級天然アナツバメの巣は、マレーシア山間部で採取した＜本物＞です。ニセモノや養殖とは安全性や成分、効果・効能がまったく違います。</p>
                 </div>
-                 <div class="flex justify-center ">
-                <a href="" class="mb-12 md:mb-auto w-full md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
+                 <div class="flex justify-center">
+                <a href="#" class="mb-12 md:mb-auto w-full md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
                 </div>
                 </div>
 
@@ -284,20 +284,24 @@ a {
 
             <picture>
                 <source srcset={Img45sp} type="image/png" class="h-full" media="(max-width:480px)" />
-                <img src={Img32} class="w-full">
+                <img src={Img32} alt="鳥の巣" class="w-full">
             </picture>
 
 
     </section>
 
     <section class="mt-10 md:mt-32 md:py-12 px-3 md:px-32">
-            <h2 class="text-h2 md:text-4xl  text-center mb-3 md:mb-7">ミラネストは安心・安全・自然環境にもこだわった、国産のミラクルフードです。</h2>
+            <h2 class="text-h2 md:text-4xl  text-center mb-3 md:mb-7">ミラネストは安心・安全・自然環境にもこだわった、<br>国産のミラクルフードです。</h2>
             <h3 class="text-h3 md:text-3xl text-goldeni text-center">世界最高峰マレーシア産　100%天然アナツバメの巣を使用しています</h3>
     </section>
     <section class="bg-main-gray my-12 md:my-28 py-12 shadow-xl px-3 md:px-auto">
              <div class="grid-01 grid mx-auto">
-                <img src={Img37} alt="" class="w-100"  data-aos="fade-up" data-aos-easing="linear"  data-aos-delay="500">
-                <img src={Img9} alt="" class="w-100"  data-aos="fade-up" data-aos-easing="linear">
+             <video autoplay muted loop playsinline data-aos="fade-up" data-aos-easing="linear">
+                <source src="../assets/movie/miranest-movie.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+            </video>
+
+                <img src={Img9} alt="鳥の巣を持って" class="w-100"  data-aos="fade-up" data-aos-easing="linear">
             </div>
             <div class="grid-02 grid my-5">
                 <img src={Img50} alt="" style="grid-area: a">
@@ -306,29 +310,12 @@ a {
                     <p class="text-base my-5">ツバメの巣は多くのニセモノや養殖品が市場に出回っています。ミラネストは天然にこだわり、世界最高峰の品質と評されるマレーシア産天然アナツバメの巣だけを使用。代表自らが『日本人唯一のツバメの巣ハンター』として秘境まで足を運び、採取しています。</p>
                 </div>
                 <div class="flex justify-center w-full mt-12" style="grid-area: c">
-                    <a href="" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
+                    <a href="#" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
                 </div>
             </div>
     </section>
 
-    <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
-            <div class="grid-03 grid mx-auto">
-                <img src={Img52} alt="" class="w-100" data-aos="fade-up" data-aos-easing="linear">
-                <img src={Img38} alt="" class="w-100" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
-            </div>
 
-            <div class="grid-04 grid">
-                <div class="text-center" style="grid-area: b">
-                    <h3 class="text-h2 md:text-3xl">トップブリーダーも絶賛！</h3>
-                    <p class="text-base my-5">「『ミラネスト』のパワーには驚かされました。かゆみに苦しんでいた犬もきれいな毛並みを取り戻しています。」 日本警察犬協会理事 内閣総理大臣賞受賞 優良犬作出ブリーダー（Outstanding Breede）浪江成泰様
-</p>
-                </div>
-                <div class="flex justify-center w-full mt-12" style="grid-area: c">
-                  <a href="" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
-              </div>
-                <img src={PrdPowder} alt="" style="grid-area: a">
-            </div>
-    </section>
 
         <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
              <div class="grid-01 grid mx-auto">
@@ -342,7 +329,7 @@ a {
                     <p class="text-base my-5">マレーシアで採取したツバメの巣はISO認証の工場で徹底管理しています。その後、日本国内に設立した『ツバメの巣研究所』で独自技術により、ツバメの巣を採取した品質そのままにパウダー化へ。世界最高峰の品質でお届けしています。</p>
                 </div>
                 <div class="flex justify-center w-full mt-12" style="grid-area: c">
-                    <a href="" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
+                    <a href="#" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
                 </div>
             </div>
     </section>
@@ -425,13 +412,13 @@ a {
 
                     <img src={Img16} alt="" class="">
 
-                    <h5 class="">最新の情報をいち早く</h5>
+                    <p class="">最新の情報をいち早く</p>
 
 
-                    <h5 class="">全額返金サービス</h5>
+                    <p class="">全額返金サービス</p>
 
 
-                    <h5 class="">美巣お客さまセンター</h5>
+                    <p class="">美巣お客さまセンター</p>
 
                     <p class="">メールマガジン会員限定のお得な情報などを配信しています</p>
 
@@ -449,21 +436,21 @@ a {
                 <div class="swiper-slide">
                             <div class="flex flex-col justify-evenly items-center w-auto text-center my-8 px-3">
                             <img src={Img18} class="block w-auto" alt="...">
-                            <h5 class="my-5">最新の情報をいち早く</h5>
+                            <h4 class="my-5">最新の情報をいち早く</h4>
                             <p class="">メールマガジン会員限定のお得な情報などを配信しています</p>
                           </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-evenly items-center w-auto text-center my-8 px-3">
                         <img src={Img17} class="block w-auto" alt="...">
-                        <h5 class="my-5">全額返金サービス</h5>
+                        <h4 class="my-5">全額返金サービス</h4>
                         <p class="">商品にご満足いただけない場合、 全額返金を承っています</p>
                         </div>
                 </div>
                 <div class="swiper-slide">
                         <div class="flex flex-col justify-evenly items-center w-auto text-center my-8 px-3 ">
                         <img src={Img16} class="block w-auto" alt="...">
-                        <h5 class="my-5">美巣お客さまセンター</h5>
+                        <h4 class="my-5">美巣お客さまセンター</h4>
                         <p class="">安心してご利用いただけるよう、 ご質問にお答えするカスタマーセン ターをご用意しております</p>
                         </div>
                 </div>

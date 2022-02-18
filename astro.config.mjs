@@ -31,6 +31,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     },
   },
   buildOptions: {
+    site: "http://test.miranest.jp",
     sitemap: true,
   },
   devOptions: {

@@ -49,3 +49,68 @@ p {
 main{
 	max-width: 1920px;
 }
+
+.scrolldown {
+	position: absolute;
+	left: 50%;
+	z-index: 99;
+	width: 50px;
+	height: 90px;
+	color: white;
+	bottom: 2rem;
+	font-size: 0.8rem;
+	transform: translateX(-50%);
+	opacity: 0.8;
+}
+.scrolldown::before {
+	content: "";
+	width: 0.15rem;
+	height: 2rem;
+	position: absolute;
+	top: 3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+	opacity: 1;
+	-webkit-animation: drop 2s linear infinite;
+	animation: drop 2s linear infinite;
+}
+@media screen and (max-width: 768px) {
+	.scrolldown::before {
+		height: 2rem;
+		top: 5rem;
+   }
+}
+@media screen and (max-width: 768px) {
+	.scrolldown {
+		bottom: 1rem;
+   }
+}
+@keyframes drop {
+	0% {
+		transform: translateY(-100%);
+   }
+	45% {
+		transform: translateY(0);
+   }
+	60% {
+		transform: translateY(40%);
+   }
+	to {
+		transform: translateY(100%);
+   }
+}
+@-webkit-keyframes drop {
+	0% {
+		transform: translateY(-100%);
+   }
+	45% {
+		transform: translateY(0);
+   }
+	60% {
+		transform: translateY(40%);
+   }
+	to {
+		transform: translateY(100%);
+   }
+}

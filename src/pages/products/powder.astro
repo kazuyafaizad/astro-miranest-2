@@ -1,21 +1,19 @@
 ---
 import BaseLayout from "$layouts/BaseLayout.astro";
-import HeroImgPC from "$images/miranest-powder-7.jpg";
-import HeroImgSP from "$images/products/sp/img-2.png";
+import HeroImgPC from "$images/products.jpg";
+import HeroImgSP from "$images/products-sp.jpg";
 
 
 import Prd1 from "$images/Miranest-powder-1.png";
-import Prd2 from "$images/Miranest-powder-2.png";
-import Prd3 from "$images/Miranest-powder-3.png";
+import Prd2 from "$images/image_45.png";
+import Prd3 from "$images/miranest-sub03.jpg";
 
-import Img4 from "$images/products/pc/product-pc4.png";
-import Img2 from "$images/products/pc/product-pc2.png";
-import Img8 from "$images/products/pc/product-pc8.png";
-import Img1 from "$images/products/pc/product-pc1.png";
-import Img3 from "$images/products/pc/product-pc3.png";
-import Img12 from "$images/products/pc/product-pc12.png";
 import Img9 from "$images/products/pc/product-pc9.png";
 import Img1sp from "$images/products/sp/img-1.png";
+
+import figure from "$images/miranest-sub01.jpg";
+import figureSp from "$images/miranest-sub01-sp.jpg";
+
 
 
 
@@ -59,6 +57,7 @@ import Img1sp from "$images/products/sp/img-1.png";
             padding-right: 1rem;
         }
 
+
 </style>
 <BaseLayout>
 
@@ -82,10 +81,10 @@ import Img1sp from "$images/products/sp/img-1.png";
         <h2 class="text-h2 md:text-4xl  text-center mb-7 px-3 md:px-auto">商品詳細</h2>
         <div class="grid md:grid-cols-1 gap-20">
         <div class="flex items-center flex-col md:flex-row gap-20">
-            <div class="grid-1 justify-items-center w-full md:w-1/2">
-                        <img src={Prd2} >
-                        <img src={Prd2} >
-                        <img src={Prd3} >
+            <div class="grid-1 justify-items-center w-full md:w-1/2"  x-data="{prd : 1}" >
+                        <img src={Prd2} class="prd-highlight" :src="prd == 1 ? '../assets/prd/image_45.png' : '../assets/prd/miranest-sub03.jpg'" >
+                        <img src={Prd2} x-on:mouseover="{prd = 1}">
+                        <img src={Prd3} x-on:mouseover="{prd = 2}">
             </div>
 
             <div class="md:p-5  w-full md:w-1/2">
@@ -180,6 +179,15 @@ import Img1sp from "$images/products/sp/img-1.png";
             <p>1日に与える量を1回または複数回に分けて与えてください。普段の食事にふりかけたり、水に溶かしたりして与えてください</p>
             <p>・付属の小型スプーンをご利用ください</p>
             <p>小型犬（5kg未満）  ：スプーン1杯（約2g）<br>中型犬（5～15kg）  ：スプーン2杯（約4g）<br>大型犬（15kg以上）：スプーン3杯（約6g）</p>
+             <picture>
+                <source srcset={figureSp} type="image/png" media="(max-width:480px)" />
+                <img
+                 alt="ミラネストはマレーシアのジャングルが生んだ奇跡のペット用栄養補助食品です"
+                decoding="async"
+                width="800"
+                height="781"
+                src={figure} class="text-center mt-5"/>
+            </picture>
             </div>
 
                <div>
@@ -312,13 +320,7 @@ import Img1sp from "$images/products/sp/img-1.png";
 				</div>
 			</div>
 		</li>
-
-
-
 		</ul>
-
-
-
      </section>
 
 

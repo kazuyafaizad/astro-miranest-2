@@ -1,22 +1,18 @@
 ---
 import BaseLayout from '$layouts/BaseLayout.astro';
-import HeroImgPC from '$images/TOP.jpg';
-import HeroImgSP from '$images/TOP-sp.jpg';
+import HeroImgPC from '$images/main.jpg';
+import HeroImgSP from '$images/main-sp.jpg';
 
 import NewsSection from '../pages/news.astro';
-import PrdPowder from '$images/top/pc/image_45.png';
+import PrdPowder from '$images/image_45.png';
 import Img21 from '$images/top/pc/img (21).png';
 import Img51 from '$images/top/pc/img (51).png';
 import Img45sp from '$images/top/sp/img_(45).png';
 import Img32 from '$images/top/pc/img (32).png';
-import Img37 from '$images/top/pc/img (37).png';
-import Img9 from '$images/top/pc/img (9).jpg';
+import Img9 from '$images/about-swallow-nest/pc/swallows_pc_(9).png';
 import Img50 from '$images/top/pc/img (50).png';
-import Img52 from '$images/top/pc/img (52).png';
-import Img38 from '$images/top/pc/img (38).png';
-import Img39 from '$images/top/pc/img (39).png';
 import Img14 from '$images/top/pc/img (14).png';
-import Img36 from '$images/top/pc/img (36).png';
+import Img36 from '$images/miranest-sub03.jpg';
 import Img28 from '$images/top/pc/img (28).png';
 import Img27 from '$images/top/pc/img (27).png';
 import Img19 from '$images/top/pc/img (19).png';
@@ -25,8 +21,8 @@ import Img8 from '$images/top/pc/img (8).png';
 import Img3 from '$images/top/pc/img (3).png';
 import Img6 from '$images/top/pc/img (6).png';
 import Img26 from '$images/top/pc/img (26).png';
-import Img42sp from '$images/top/sp/img_(42).png';
-import Img24 from '$images/miranest-powder-6.jpg';
+import Vision from '$images/miranest-sub02.jpg';
+import VisionSp from '$images/miranest-sub02-2.jpg';
 import Img34 from '$images/top/pc/img (34).png';
 import Img30 from '$images/top/pc/img (30).png';
 import Img29 from '$images/top/pc/img (29).png';
@@ -301,7 +297,7 @@ a {
                 Your browser does not support the video tag.
             </video>
 
-                <img src={Img9} alt="鳥の巣を持って" class="w-100"  data-aos="fade-up" data-aos-easing="linear">
+                <img src={Img9} alt="鳥の巣を持って" class="w-full"  data-aos="fade-up" data-aos-easing="linear">
             </div>
             <div class="grid-02 grid my-5">
                 <img src={Img50} alt="" style="grid-area: a">
@@ -319,8 +315,11 @@ a {
 
         <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
              <div class="grid-01 grid mx-auto">
-                <img src={Img39} alt="" class="w-100"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
-                <img src={Img14} alt="" class="w-100"  data-aos="fade-up" data-aos-easing="linear">
+                 <video autoplay muted loop playsinline data-aos="fade-up" data-aos-easing="linear">
+                    <source src="../assets/movie/mixkit-wet-flowers-with-close-up-view-165.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+                <img src={Img14} alt="" class="w-full"  data-aos="fade-up" data-aos-easing="linear">
             </div>
             <div class="grid-02 grid my-5">
                 <img src={Img36} alt="" style="grid-area: a">
@@ -342,8 +341,8 @@ a {
                     <p class="text-base">自然環境もツバメたちの生態系も一切壊さない、完全なる自然の恵みをそのままお届けします。</p>
                 </div>
                 <picture>
-                    <source srcset={Img42sp} type="image/png" media="(max-width:480px)" />
-                    <img src={Img24} alt="" class="w-full object-cover">
+                    <source srcset={VisionSp} type="image/png" media="(max-width:480px)" />
+                    <img src={Vision} alt="" class="w-full">
                 </picture>
 
             </div>

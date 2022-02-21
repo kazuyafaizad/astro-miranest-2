@@ -8,22 +8,22 @@ const { title = "世界高水準ペット用ツバメの巣栄養補助食品", 
 ---
 <html lang="ja">
   <head>
-    <meta charset="UTF-8">
-    <title>{title} | ミラネスト</title>
-    <link rel="icon" href="/favicon.png" />
-    <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/global.css')} />
     <meta name="title" content={title} >
-    <meta name="description" content="「ミラネスト」では、最も希少価値の高いマレーシア山間部で採れた 高品質の天然アナツバメの巣を贅沢に使用した、 元気と健康を保つ世界高水準ペット用ツバメの巣栄養補助食品パウダー" >
-    <meta name="keywords" content="ペット,栄養,補助,食品,ツバメの巣,パウダー,ゼリー,ミラネスト,犬,猫,ツバメ,世界高水準" >
+    <meta name="description" content="「ミラネスト」では、最も希少価値の高いマレーシア山間部で採れた 高品質の天然アナツバメの巣を贅沢に使用した、 元気と健康を保つ世界高水準ペット用ツバメの巣栄養補助食品パウダー">
+    <meta name="keywords" content="ペット,栄養,補助,食品,ツバメの巣,パウダー,ゼリー,ミラネスト,犬,猫,ツバメ,世界高水準">
     <meta name="copyright" content="M-Style Japan" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{title} | ミラネスト</title>
+    <link rel="icon" href="/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/global.css')}/>
   </head>
 
   <body>
     <Nav/>
-    <main class="mx-auto">
+    <main class="mx-auto max-w-[1400px]">
     <slot />
     </main>
     <Footer/>

@@ -1,6 +1,6 @@
 import AOS from 'aos';
 
-AOS.init();
+AOS.init({ mirror: true});
 
 let scrolldiv = document.createElement("div");
 scrolldiv.classList.add("scrolldown");

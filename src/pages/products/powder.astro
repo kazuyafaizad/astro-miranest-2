@@ -1,18 +1,18 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HeroImgPC from "../../images/products.jpg";
-import HeroImgSP from "../../images/products-sp.jpg";
+import HeroImgPC from "../../images/products.jpg?webp";
+import HeroImgSP from "../../images/products-sp.jpg?webp";
 
 
 import Prd1 from "../../images/Miranest-powder-1.png";
 import Prd2 from "../../images/image_45.png";
-import Prd3 from "../../images/miranest-sub03.jpg";
+import Prd3 from "../../images/miranest-sub03.jpg?webp";
 
 import Img9 from "../../images/products/pc/product-pc9.png";
 import Img1sp from "../../images/products/sp/img-1.png";
 
-import figure from "../../images/miranest-sub01.jpg";
-import figureSp from "../../images/miranest-sub01-sp.jpg";
+import figure from "../../images/miranest-sub01.jpg?webp";
+import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 
 
 
@@ -82,7 +82,7 @@ import figureSp from "../../images/miranest-sub01-sp.jpg";
         <div class="grid md:grid-cols-1 gap-20">
         <div class="flex items-center flex-col md:flex-row gap-20">
             <div class="grid-1 justify-items-center w-full md:w-1/2"  x-data="{prd : 1}" >
-                        <img src={Prd2} class="prd-highlight" :src="prd == 1 ? '../../assets/prd/image_45.png' : '../../assets/prd/miranest-sub03.jpg'" >
+                        <img src={Prd2} class="prd-highlight" :src="prd == 1 ? '../../assets/prd/image_45.png' : '../../assets/prd/miranest-sub03.jpg?webp'" >
                         <img src={Prd2} x-on:mouseover="{prd = 1}">
                         <img src={Prd3} x-on:mouseover="{prd = 2}">
             </div>

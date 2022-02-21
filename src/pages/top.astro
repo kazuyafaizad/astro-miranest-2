@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import HeroImgPC from '../images/main.jpg';
-import HeroImgSP from '../images/main-sp.jpg';
+import HeroImgPC from '../images/main.jpg?webp';
+import HeroImgSP from '../images/main-sp.jpg?webp';
 
-import NewsSection from '../pages/news.astro';
+import NewsSection from '../components/NewsCompact.astro';
 import PrdPowder from '../images/image_45.png';
 import Img21 from '../images/top/pc/img (21).png';
 import Img51 from '../images/top/pc/img (51).png';
@@ -12,7 +12,7 @@ import Img32 from '../images/top/pc/img (32).png';
 import Img9 from '../images/about-swallow-nest/pc/swallows_pc_(9).png';
 import Img50 from '../images/top/pc/img (50).png';
 import Img14 from '../images/top/pc/img (14).png';
-import Img36 from '../images/miranest-sub03.jpg';
+import Img36 from '../images/miranest-sub03.jpg?webp';
 import Img28 from '../images/top/pc/img (28).png';
 import Img27 from '../images/top/pc/img (27).png';
 import Img19 from '../images/top/pc/img (19).png';
@@ -21,8 +21,8 @@ import Img8 from '../images/top/pc/img (8).png';
 import Img3 from '../images/top/pc/img (3).png';
 import Img6 from '../images/top/pc/img (6).png';
 import Img26 from '../images/top/pc/img (26).png';
-import Vision from '../images/miranest-sub02.jpg';
-import VisionSp from '../images/miranest-sub02-2.jpg';
+import Vision from '../images/miranest-sub02.jpg?webp';
+import VisionSp from '../images/miranest-sub02-2.jpg?webp';
 import Img34 from '../images/top/pc/img (34).png';
 import Img30 from '../images/top/pc/img (30).png';
 import Img29 from '../images/top/pc/img (29).png';
@@ -32,13 +32,7 @@ import Img18 from '../images/top/pc/img (18).png';
 import ThreePoints from '../components/ThreePoints.astro';
 
 ---
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
-
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+<BaseLayout>
 <style lang="scss">
 
 .grid-01 {
@@ -222,22 +216,22 @@ a {
 	}
 }
 </style>
-<BaseLayout>
-    <section class="relative">
-            <div class="absolute top-0 px-3 md:px-32 pt-5 flex w-full h-full flex md:items-center">
-            <h1 class="text-md md:text-4xl w-1/2 md:w-[27%] md:leading-[70px] text-left"></h1>
-            </div>
-             <picture>
-                <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
-                <img
-                alt="”奇跡の巣”で愛するペットを守りたい"
-                decoding="async"
-                width="1451"
-                height="967"
-                src={HeroImgPC} class="w-full" />
-            </picture>
-    </section>
 
+        <main class="mx-auto max-w-[1400px]">
+            <section class="relative">
+                    <div class="absolute top-0 px-3 md:px-32 pt-5 flex w-full h-full flex md:items-center">
+                    <h1 class="text-md md:text-4xl w-1/2 md:w-[27%] md:leading-[70px] text-left"></h1>
+                    </div>
+                    <picture>
+                        <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
+                        <img
+                        alt="”奇跡の巣”で愛するペットを守りたい"
+                        decoding="async"
+                        width="1451"
+                        height="967"
+                        src={HeroImgPC} class="w-full" />
+                    </picture>
+            </section>
     <NewsSection/>
     <section class="mt-10 flex flex-col-reverse md:flex-row justify-center py-12 gap-20 px-3 md:px-32 bg-main-gray shadow-xl"  data-aos="fade-up" data-aos-easing="linear">
         <div class="flex flex-col justify-evenly">
@@ -292,7 +286,7 @@ a {
     </section>
     <section class="bg-main-gray my-12 md:my-28 py-12 shadow-xl px-3 md:px-auto">
              <div class="grid-01 grid mx-auto">
-             <video autoplay muted loop playsinline data-aos="fade-up" data-aos-easing="linear">
+             <video autoplay muted loop playsinline data-aos="fade-right" data-aos-easing="linear">
                 <source src="../assets/movie/miranest-movie.mp4" type="video/mp4" >
                 Your browser does not support the video tag.
             </video>
@@ -315,7 +309,7 @@ a {
 
         <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
              <div class="grid-01 grid mx-auto">
-                 <video autoplay muted loop playsinline data-aos="fade-up" data-aos-easing="linear">
+                 <video autoplay muted loop playsinline data-aos="fade-right" data-aos-easing="linear">
                     <source src="../assets/movie/mixkit-wet-flowers-with-close-up-view-165.mp4" type="video/mp4" >
                     Your browser does not support the video tag.
                 </video>
@@ -469,6 +463,8 @@ a {
 
         </section>
 
+ </main>
+
         <script defer>
             const swiper = new Swiper('.swiper', {
                 // Navigation arrows
@@ -485,8 +481,4 @@ a {
 
 
         </script>
-
-
-
-
 </BaseLayout>

@@ -19,7 +19,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     ssr: {
       external: ["svgo"],
     },
-    plugins: [imagetools({format:'webp',force:true})],
+    plugins: [imagetools()],
     resolve: {
       alias: {
         $src: path.resolve('./src'),

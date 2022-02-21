@@ -2,7 +2,6 @@ import AOS from 'aos';
 
 AOS.init();
 
-
 let scrolldiv = document.createElement("div");
 scrolldiv.classList.add("scrolldown");
 scrolldiv.innerHTML = "SCROLL";

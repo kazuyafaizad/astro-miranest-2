@@ -1,35 +1,35 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import HeroImgPC from '../images/main.jpg?webp';
-import HeroImgSP from '../images/main-sp.jpg?webp';
+import BaseLayout from '../layouts/BaseLayout.astro'
+import HeroImgPC from '../images/main.jpg?webp'
+import HeroImgSP from '../images/main-sp.jpg?webp'
 
-import NewsSection from '../components/NewsCompact.astro';
-import PrdPowder from '../images/image_45.png';
-import Img21 from '../images/top/pc/img (21).png';
-import Img51 from '../images/top/pc/img (51).png';
-import Img45sp from '../images/top/sp/img_(45).png';
-import Img32 from '../images/top/pc/img (32).png';
-import Img9 from '../images/about-swallow-nest/pc/swallows_pc_(9).png';
-import Img50 from '../images/top/pc/img (50).png';
-import Img14 from '../images/top/pc/img (14).png';
-import Img36 from '../images/miranest-sub03.jpg?webp';
-import Img28 from '../images/top/pc/img (28).png';
-import Img27 from '../images/top/pc/img (27).png';
-import Img19 from '../images/top/pc/img (19).png';
-import Img4 from '../images/top/pc/img (4).png';
-import Img8 from '../images/top/pc/img (8).png';
-import Img3 from '../images/top/pc/img (3).png';
-import Img6 from '../images/top/pc/img (6).png';
-import Img26 from '../images/top/pc/img (26).png';
-import Vision from '../images/miranest-sub02.jpg?webp';
-import VisionSp from '../images/miranest-sub02-2.jpg?webp';
-import Img34 from '../images/top/pc/img (34).png';
-import Img30 from '../images/top/pc/img (30).png';
-import Img29 from '../images/top/pc/img (29).png';
-import Img16 from '../images/top/pc/img (16).png';
-import Img17 from '../images/top/pc/img (17).png';
-import Img18 from '../images/top/pc/img (18).png';
-import ThreePoints from '../components/ThreePoints.astro';
+import NewsSection from '../components/NewsCompact.astro'
+import PrdPowder from '../images/image_45.png'
+import Img21 from '../images/top/pc/img (21).png'
+import Img51 from '../images/top/pc/img (51).png'
+import Img45sp from '../images/miranest-sub04-sp.jpg?webp'
+import Img32 from '../images/miranest-sub04.jpg?webp'
+import Img9 from '../images/about-swallow-nest/pc/swallows_pc_(9).png'
+import Img50 from '../images/top/pc/img (50).png'
+import Img14 from '../images/top/pc/img (14).png'
+import Img36 from '../images/miranest-sub03.jpg?webp'
+import Img28 from '../images/top/pc/img (28).png'
+import Img27 from '../images/top/pc/img (27).png'
+import Img19 from '../images/top/pc/img (19).png'
+import Img4 from '../images/top/pc/img (4).png'
+import Img8 from '../images/top/pc/img (8).png'
+import Img3 from '../images/top/pc/img (3).png'
+import Img6 from '../images/top/pc/img (6).png'
+import Img26 from '../images/top/pc/img (26).png'
+import Vision from '../images/miranest-sub02.jpg?webp'
+import VisionSp from '../images/miranest-sub02-2.jpg?webp'
+import Img34 from '../images/top/pc/img (34).png'
+import Img30 from '../images/top/pc/img (30).png'
+import Img29 from '../images/top/pc/img (29).png'
+import Img16 from '../images/top/pc/img (16).png'
+import Img17 from '../images/top/pc/img (17).png'
+import Img18 from '../images/top/pc/img (18).png'
+import ThreePoints from '../components/ThreePoints.astro'
 
 ---
 <BaseLayout>
@@ -160,12 +160,13 @@ a {
 		grid-template-rows: repeat(9, 1fr);
          width:100%;
 		img,video {
+
 			&:nth-child(1) {
+				grid-area: 1 / 2 / 6 / 11;
+			}
+            &:nth-child(2) {
 				grid-area: 5 / 1 / 10 / 10;
 				z-index: 0;
-			}
-			&:nth-child(2) {
-				grid-area: 1 / 2 / 6 / 11;
 			}
 		}
 	}
@@ -216,11 +217,9 @@ a {
 	}
 }
 </style>
-
-        <main class="mx-auto max-w-[1400px]">
             <section class="relative">
-                    <div class="absolute top-0 px-3 md:px-32 pt-5 flex w-full h-full flex md:items-center">
-                    <h1 class="text-md md:text-4xl w-1/2 md:w-[27%] md:leading-[70px] text-left"></h1>
+                    <div class="absolute top-0 px-3 lg:px-32 pt-5 flex w-full h-full flex lg:items-center">
+                    <h1 class="text-md lg:text-4xl w-1/2 lg:w-[27%] lg:leading-[70px] text-left"></h1>
                     </div>
                     <picture>
                         <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
@@ -233,40 +232,40 @@ a {
                     </picture>
             </section>
     <NewsSection/>
-    <section class="mt-10 flex flex-col-reverse md:flex-row justify-center py-12 gap-20 px-3 md:px-32 bg-main-gray shadow-xl"  data-aos="fade-up" data-aos-easing="linear">
+    <section class="mt-10 flex flex-col-reverse lg:flex-row justify-center py-12 gap-20 px-3 lg:px-32 bg-main-gray shadow-xl"  data-aos="fade-up" data-aos-easing="linear">
         <div class="flex flex-col justify-evenly">
-            <h2 class="text-h2 md:text-3xl  mb-5">世界初！天然アナツバメの巣を使用したペット用栄養補助食品。<br>かゆみや肌毛悩みの救世主。それが「ミラネスト」です。</h2>
+            <h2 class="text-h2 lg:text-3xl  mb-5">世界初！天然アナツバメの巣を使用したペット用栄養補助食品。<br>かゆみや肌毛悩みの救世主。それが「ミラネスト」です。</h2>
             <p class="text-base mb-5">「健康的な輝きと美しさを取り戻してあげたい」強い想いが「ミラネスト」誕生の原動力でした。あらゆる食品の中で最高級アナツバメの巣だけが持つ奇跡のような効果・効能が大切な家族を健やかな姿へと導きます。</p>
-            <a href="/products/powder" class="mt-8 w-10/12 md:w-8/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl" >詳しく <i class="v v-right ms-2"></i></a>
+            <a href="/products/powder" class="mt-8 w-10/12 lg:w-8/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl" >詳しく <i class="v v-right ms-2"></i></a>
         </div>
-        <img src={PrdPowder} alt="商品" class="md:w-1/2"/>
+        <img src={PrdPowder} alt="商品" class="lg:w-1/2"/>
     </section>
 
-    <section class="mt-10 md:mt-32 py-12 px-3 md:px-32">
-            <h2 class="text-h2 md:text-4xl  text-center mb-7">「ミラネスト」が大切なペットの素敵な未来をサポートします。</h2>
-            <h3 class="text-h3 md:text-3xl text-goldeni text-center">世界初のツバメの巣ブランド<br>「BI-SU」が作った「ミラネスト」だから安心できる。</h3>
+    <section class="mt-10 lg:mt-32 py-12 px-3 lg:px-32">
+            <h2 class="text-h2 lg:text-4xl  text-center mb-7">「ミラネスト」が大切なペットの素敵な未来をサポートします。</h2>
+            <h3 class="text-h3 lg:text-3xl text-goldeni text-center">世界初のツバメの巣ブランド<br>「BI-SU」が作った「ミラネスト」だから安心できる。</h3>
 
             <div class="grid-06 grid justify-evenly items-end mb-20 justify-items-center">
-                <img src={Img21} alt="小型犬" class="hidden md:block" data-aos="fade-up" data-aos-easing="linear">
+                <img src={Img21} alt="小型犬" class="hidden lg:block" data-aos="fade-up" data-aos-easing="linear">
                 <div class="flex justify-center">
                 <ThreePoints />
                  </div>
-                <img src={Img51} alt="大きい犬" class="hidden md:block" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
+                <img src={Img51} alt="大きい犬" class="hidden lg:block" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
             </div>
             <div class="flex justify-center">
-            <a href="#" class="w-10/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 text-xl hidden">BI-SUについて詳しく</a>
+            <a href="#" class="w-10/12 lg:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 text-xl hidden">BI-SUについて詳しく</a>
             </div>
     </section>
 
-    <section class="mt-10 md:mt-32 relative">
-            <div class="h-full w-full pt-5 pb-12 md:py-12 px-3 md:px-32 absolute top-0 flex md:items-center" >
-                <div class="md:w-5/12 flex justify-between flex-col ">
+    <section class="mt-10 lg:mt-32 relative">
+            <div class="h-full w-full pt-5 pb-12 lg:py-12 px-3 lg:px-32 absolute top-0 flex lg:items-center" >
+                <div class="lg:w-5/12 flex justify-between flex-col ">
                 <div>
-                <h2 class="text-h2 md:text-3xl mb-8">「ミラネスト」で使用しているのは地球上でもっとも美しいツバメの巣です</h2>
+                <h2 class="text-h2 lg:text-3xl mb-8">「ミラネスト」で使用しているのは地球上でもっとも美しいツバメの巣です</h2>
                 <p class="text-base mb-8">「ミラネスト」と「BI-SU」が使用している最高級天然アナツバメの巣は、マレーシア山間部で採取した＜本物＞です。ニセモノや養殖とは安全性や成分、効果・効能がまったく違います。</p>
                 </div>
                  <div class="flex justify-center">
-                <a href="#" class="mb-12 md:mb-auto w-full md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
+                <a href="#" class="mb-12 lg:mb-auto w-full lg:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
                 </div>
                 </div>
 
@@ -280,11 +279,11 @@ a {
 
     </section>
 
-    <section class="mt-10 md:mt-32 md:py-12 px-3 md:px-32">
-            <h2 class="text-h2 md:text-4xl  text-center mb-3 md:mb-7">ミラネストは安心・安全・自然環境にもこだわった、<br>国産のミラクルフードです。</h2>
-            <h3 class="text-h3 md:text-3xl text-goldeni text-center">世界最高峰マレーシア産　100%天然アナツバメの巣を使用しています</h3>
+    <section class="mt-10 lg:mt-32 lg:py-12 px-3 lg:px-32">
+            <h2 class="text-h2 lg:text-4xl  text-center mb-3 lg:mb-7">ミラネストは安心・安全・自然環境にもこだわった、<br>国産のミラクルフードです。</h2>
+            <h3 class="text-h3 lg:text-3xl text-goldeni text-center">世界最高峰マレーシア産　100%天然アナツバメの巣を使用しています</h3>
     </section>
-    <section class="bg-main-gray my-12 md:my-28 py-12 shadow-xl px-3 md:px-auto">
+    <section class="bg-main-gray my-12 lg:my-28 py-12 shadow-xl px-3 lg:px-auto">
              <div class="grid-01 grid mx-auto">
              <video autoplay muted loop playsinline data-aos="fade-right" data-aos-easing="linear">
                 <source src="../assets/movie/miranest-movie.mp4" type="video/mp4" >
@@ -296,18 +295,18 @@ a {
             <div class="grid-02 grid my-5">
                 <img src={Img50} alt="" style="grid-area: a">
                 <div class="text-center" style="grid-area: b">
-                    <h3 class="text-h2 md:text-3xl">日本人唯一のツバメの巣ハンターが秘境で採取</h3>
+                    <h3 class="text-h2 lg:text-3xl">日本人唯一のツバメの巣ハンターが秘境で採取</h3>
                     <p class="text-base my-5">ツバメの巣は多くのニセモノや養殖品が市場に出回っています。ミラネストは天然にこだわり、世界最高峰の品質と評されるマレーシア産天然アナツバメの巣だけを使用。代表自らが『日本人唯一のツバメの巣ハンター』として秘境まで足を運び、採取しています。</p>
                 </div>
                 <div class="flex justify-center w-full mt-12" style="grid-area: c">
-                    <a href="#" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
+                    <a href="#" class="w-9/12 lg:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
                 </div>
             </div>
     </section>
 
 
 
-        <section class="bg-main-gray md:my-28 py-12 shadow-xl px-3 md:px-auto">
+        <section class="bg-main-gray lg:my-28 py-12 shadow-xl px-3 lg:px-auto">
              <div class="grid-01 grid mx-auto">
                  <video autoplay muted loop playsinline data-aos="fade-right" data-aos-easing="linear">
                     <source src="../assets/movie/mixkit-wet-flowers-with-close-up-view-165.mp4" type="video/mp4" >
@@ -318,21 +317,21 @@ a {
             <div class="grid-02 grid my-5">
                 <img src={Img36} alt="" style="grid-area: a">
                 <div class="text-center" style="grid-area: b">
-                    <h3 class="text-h2 md:text-3xl">ツバメの巣研究所で作る国産ペットサプリメント</h3>
+                    <h3 class="text-h2 lg:text-3xl">ツバメの巣研究所で作る国産ペットサプリメント</h3>
                     <p class="text-base my-5">マレーシアで採取したツバメの巣はISO認証の工場で徹底管理しています。その後、日本国内に設立した『ツバメの巣研究所』で独自技術により、ツバメの巣を採取した品質そのままにパウダー化へ。世界最高峰の品質でお届けしています。</p>
                 </div>
                 <div class="flex justify-center w-full mt-12" style="grid-area: c">
-                    <a href="#" class="w-9/12 md:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
+                    <a href="#" class="w-9/12 lg:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
                 </div>
             </div>
     </section>
 
     <section class="mt-32 pb-12 bg-main-gray shadow" >
             <div class="relative">
-                <div class="px-3 text-center md:text-left md:w-4/12 absolute md:left-[25%] top-20 md:top-1/2 mad:transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-left" >
-                    <h3 class="text-h2 md:text-3xl mb-4">VISION</h3>
-                    <p class="text-base">人も地球も動物も傷つかない、豊かな未来をつくる””循環型社会”へ。</p>
-                    <p class="text-base">自然環境もツバメたちの生態系も一切壊さない、完全なる自然の恵みをそのままお届けします。</p>
+                <div class="px-3 text-center lg:text-left lg:w-4/12 absolute lg:left-[25%] top-20 lg:top-1/2 mad:transform lg:-translate-x-1/2 lg:-translate-y-1/2 text-white text-left" >
+                    <h3 class="text-h2 lg:text-3xl mb-4 drop-shadow-lite">VISION</h3>
+                    <p class="text-base drop-shadow-lite">人も地球も動物も傷つかない、豊かな未来をつくる””循環型社会”へ。</p>
+                    <p class="text-base drop-shadow-lite">自然環境もツバメたちの生態系も一切壊さない、完全なる自然の恵みをそのままお届けします。</p>
                 </div>
                 <picture>
                     <source srcset={VisionSp} type="image/png" media="(max-width:480px)" />
@@ -341,12 +340,12 @@ a {
 
             </div>
 
-            <div class="mt-20 mb-12 md:px-32 text-center flex flex-col items-center justify-center" >
+            <div class="mt-20 mb-12 lg:px-32 text-center flex flex-col items-center justify-center" >
                 <img src={Img34} alt="" class="h-8">
                 <!-- <img src={Img20} alt="" class="mt-3 h-8"> -->
                 <a href="https://www.instagram.com/explore/tags/%E3%83%9F%E3%83%A9%E3%83%8D%E3%82%B9%E3%83%88/"><h3 class="text-3xl">#ミラネスト</h3></a>
             </div>
-            <div class="grid grid-cols-4 gap-5 mb-32 mx-auto w-full px-3 md:px-32 ">
+            <div class="grid grid-cols-4 gap-5 mb-32 mx-auto w-full px-3 lg:px-32 ">
                 <img src={Img28} alt="" class="w-full">
                 <img src={Img27} alt="" class="w-full">
                 <img src={Img19} alt="" class="w-full">
@@ -359,20 +358,20 @@ a {
                 <img src={Img26} alt="" class="w-full">
             </div>
             <div class="flex justify-center w-full mb-20" style="grid-area: c">
-                    <a href="https://www.instagram.com/miranest_official/" class="w-9/12 md:w-4/12 mx-auto text-center bg-main-red text-white shadow-xl px-3 py-3 inline-block text-xl">@miranest_official</a>
+                    <a href="https://www.instagram.com/miranest_official/" class="w-9/12 lg:w-4/12 mx-auto text-center bg-main-red text-white shadow-xl px-3 py-3 inline-block text-xl">@miranest_official</a>
                 </div>
         </section>
 
-        <section class="mt-10 md:mt-32 py-12 px-3 md:px-32 hidden">
+        <section class="mt-10 lg:mt-32 py-12 px-3 lg:px-32 hidden">
             <h2 class="text-2-1/2xl text-center mb-10">インフォメーション</h2>
 
-            <div class="md:flex text-center md:text-left justify-center gap-8 items-start md:py-5 py-3">
-                <div class="md:w-4/12 md:mx-5 flex flex-col justify-between my-12 md:m-5">
+            <div class="lg:flex text-center lg:text-left justify-center gap-8 items-start lg:py-5 py-3">
+                <div class="lg:w-4/12 lg:mx-5 flex flex-col justify-between my-12 lg:m-5">
                     <img src={Img30} alt="" class="h-full max-h-[165px] max-w-[300px] mx-auto">
                     <h5 class="text-main-gold-2 my-3 text-[19px]">ミラネスト商品の定期購入について</h5>
                     <p class="leading-8">継続回数の決まりはございません。「商品がなくなったので、来月分をいますぐ欲しい」というご要望もお申しつけ下さい。</p>
                 </div>
-                <div class="md:w-4/12 md:mx-5 flex flex-col justify-between my-12 md:m-5">
+                <div class="lg:w-4/12 lg:mx-5 flex flex-col justify-between my-12 lg:m-5">
                     <img src={PrdPowder} alt="" class="h-full max-h-[165px] max-w-[300px] mx-auto" >
                     <h5 class="text-main-gold-2 my-3 text-[19px]">まずはお試しください。ミラネストパウダー ミニサイズ（25g）</h5>
                     <p class="leading-8">本物のアナツバメの巣が持つ素晴らしい力を、まずはお試しサイズで体験ください。</p>
@@ -381,13 +380,13 @@ a {
 
 
         </section>
-        <section class="bg-main-gray mt-10 md:mt-32 w-full mx-auto shadow-xl py-20 px-3 md:px-52 hidden">
-                <h2 class="text-h2 md:text-2-1/2xl text-center md:text-left border-b-4 border-b-[#FF7924] pb-4 mx-3 ">お取引希望のお客様（B to B)のお問い合わせ</h2>
-                <div class="md:flex mt-5 px-3 gap-10">
+        <section class="bg-main-gray mt-10 lg:mt-32 w-full mx-auto shadow-xl py-20 px-3 lg:px-52 hidden">
+                <h2 class="text-h2 lg:text-2-1/2xl text-center lg:text-left border-b-4 border-b-[#FF7924] pb-4 mx-3 ">お取引希望のお客様（B to B)のお問い合わせ</h2>
+                <div class="lg:flex mt-5 px-3 gap-10">
                     <img src={Img29} alt="">
                     <div class="">
-                        <h3 class="text-main-gold-2 my-4 text-h3 md:text-2-1/2xl">ペットサロン様、動物病院様、通販会社様など、さまざまな 業種の皆さま</h3>
-                        <div class="flex items-end flex-col md:flex-row py-5">
+                        <h3 class="text-main-gold-2 my-4 text-h3 lg:text-2-1/2xl">ペットサロン様、動物病院様、通販会社様など、さまざまな 業種の皆さま</h3>
+                        <div class="flex items-end flex-col lg:flex-row py-5">
                             <p class="text-base mt-2 leading-8">「ミラネスト」商品のお取引（商品仕入れ）のお申し込みは、こちらよりお問い合わせください。折り返し担当よりご連絡いたします。<br>※お取引に関しましては、弊社の基準に従いご遠慮いただく場合もございます。あらかじめご了承下さい。</p>
                             <a href="#" title="お問い合わせ"><span class="right shadow"></span></a>
                         </div>
@@ -396,9 +395,9 @@ a {
         </section>
 
 
-        <section class="mt-20 py-12 md:px-32">
-            <h2 class="text-center py-10 md:py-12 text-2-1/2xl">ミラネストのサポート</h2>
-            <div class="hidden grid-07 text-center justify-items-center justify-center items-center md:grid ">
+        <section class="mt-20 py-12 lg:px-32">
+            <h2 class="text-center py-10 lg:py-12 text-2-1/2xl">ミラネストのサポート</h2>
+            <div class="hidden grid-07 text-center justify-items-center justify-center items-center lg:grid ">
                     <img src={Img18} alt="" class="">
 
                     <img src={Img17} alt="" class="">
@@ -422,7 +421,7 @@ a {
             </div>
 
             <!-- Slider main container -->
-            <div class="swiper md:hidden px-3">
+            <div class="swiper lg:hidden px-3">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -462,8 +461,6 @@ a {
 
 
         </section>
-
- </main>
 
         <script defer>
             const swiper = new Swiper('.swiper', {

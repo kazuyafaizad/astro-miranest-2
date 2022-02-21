@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      dropShadow: {
+        'lite': '0 1px 2px rgba(0, 0, 0, 1)',
+      },
       colors: {
         "main-green": "#1F3939",
         "main-light-green": "#005656",

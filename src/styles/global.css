@@ -48,11 +48,12 @@ p {
 .scrolldown {
 	position: absolute;
 	left: 50%;
-	z-index: 99;
+	z-index: 9;
 	width: 50px;
 	height: 90px;
-	color: white;
-	bottom: 2rem;
+	color: #bbbbbb;
+	text-shadow: 2px 2px #333333;
+	bottom: 5rem;
 	font-size: 0.8rem;
 	transform: translateX(-50%);
 	opacity: 0.8;
@@ -65,7 +66,7 @@ p {
 	top: 3rem;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: white;
+	background-color: #bbbbbb;
 	opacity: 1;
 	-webkit-animation: drop 2s linear infinite;
 	animation: drop 2s linear infinite;

@@ -1,21 +1,12 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import HeroImgPC from '../images/about.jpg?webp';
-import HeroImgSP from '../images/about-sp.jpg?webp';
+import BaseLayout from '../layouts/BaseLayout.astro'
+import HeroImgPC from '../images/about.jpg?webp'
+import HeroImgSP from '../images/about-sp.jpg?webp'
 
-import Img6 from "../images/about-miranest/pc/img_(6).png";
-import Img18 from "../images/about-miranest/pc/img_(18).png";
-import Img5 from "../images/about-miranest/pc/img_(5).png";
-import Img13 from "../images/about-miranest/pc/img_(13).png";
-import Img3 from "../images/about-miranest/pc/img_(3).png";
-import Img7 from "../images/about-miranest/pc/img_(7).png";
-import Img8 from "../images/about-miranest/pc/img_(8).png";
-import Img9 from "../images/about-miranest/pc/img_(9).png";
-import Img10 from "../images/about-miranest/pc/img_(10).png";
-import Img15 from "../images/about-miranest/pc/img_(15).png";
-import Img1 from "../images/about-miranest/pc/img_(1).png";
-import Img6sp from '../images/about-miranest/sp/about_img_sp(6).png';
-import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
+import Prez from '../images/about-miranest/pc/S__5759196.png'
+import PrezSign from '../images/inatomisign.png'
+import MissionHeader from '../images/TO.jpg?webp'
+import ValueHeader from '../images/miranest-sub02.jpg?webp'
 ---
 <style lang="scss">
         .second-header {
@@ -37,7 +28,6 @@ import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
 <BaseLayout>
     <section class="relative">
             <div class="absolute top-0 px-5 lg:px-32 flex w-full h-full flex items-center">
-            <h1 class="text-md lg:text-4xl w-full lg:w-[27%] lg:leading-[70px] text-left">アナツバメの巣だけが持つ”奇跡”を愛する家族へ</h1>
             </div>
              <picture>
                 <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
@@ -51,129 +41,91 @@ import Img7sp from '../images/about-miranest/sp/about_img_sp(7).png';
     </section>
 
     <section class="mt-10 lg:mt-32 lg:px-32">
-        <h2 class="text-h2 lg:text-4xl  text-center mb-7 px-3 lg:px-auto">天然アナツバメの巣が ペットの皮膚悩みなどにアプローチ</h2>
+        <div class="px-3 lg:px-auto">
+        <h2 class="text-h2 lg:text-4xl  text-center mb-7  tracking-widest">BRAND STORY</h2>
+        <p class="text-3xl lg:mx-40 my-6 lg:my-12">
+            ミラネストは、100％天然アナツバメの巣BRANDである「BI-SU」のご愛用者たちの実体験から生まれました。
+        </p>
 
-         <div class="mt-10 lg:mt-12 flex flex-col-reverse lg:flex-row py-5 lg:py-20 gap-5 lg:gap-20 px-3 lg:px-20 bg-main-gray shadow-xl" data-aos="fade-up" data-aos-easing="linear">
-                <div class="lg:w-3/6 w-full px-2 lg:px-auto">
-                <h2 class="mb-5 text-h2 lg:text-3xl">唯一天然を証明された「BI-SU」を使用したペット用栄養補助食</h2>
-                <p class="text-base">「ミラネスト」は天然を証明できる唯一のツバメの巣ブランド「BI-SU美巣」の姉妹ブランドです。『ミラネストパウダー』は、天然アナツバメの巣を配合した世界初のペット用栄養補助食品で、使用しているツバメの巣は「BI-SU」と同じマレーシア産の最高級天然アナツバメの巣です。</p>
+         <p class="text-base lg:mx-32 my-6 lg:my-12">
+            愛犬が肌や毛並みに苦しむ姿に心を痛めた飼い主が自身のが健康のために食べていた”BI-SU”商品を与えたところ、健康的な輝き、肌や毛並みの美しさに感動されたお客様がたくさんいらっしゃいました。
+        </p>
+
+        <p class="text-base lg:mx-32">
+            この軌跡のような体験と感動をもっと多くの人に届けたい思いから「ミラネスト」が誕生しました。 その名の由来はBI-SU代表、日本人唯一のツバメの巣ハンターの稲冨がアナツバメの巣が肌や毛に与える効果から「奇跡（ミラクル）の巣（ネスト）」としたことから名付けられました。
+        </p>
+
+        <p class="text-base lg:mx-32 my-6 lg:my-12">最高級アナツバメの巣だけが持つ”奇跡”を愛する家族へ。</p>
+        </div>
+
+         <div class="mt-10 lg:mt-12 flex flex-col-reverse lg:flex-row py-5 lg:py-20 gap-5 lg:gap-20 px-3 lg:pl-20 lg:pr-0 bg-main-gray shadow-xl" data-aos="fade-up" data-aos-easing="linear">
+                <div class="lg:w-3/6 w-full lg:px-auto">
+                <h2 class="mb-5 text-h2 lg:text-3xl">絶対に信用できる物だけをお届けしています</h2>
+                <p class="text-base">ツバメの巣市場ではニセモノが出回っています。「本物」をお届けするのは私たちの使命でもあります。 <br>自分でジャングルの奥地まで飛び、命がけで断崖絶壁を登り「この目で見て」「この手で触れて」絶対に信用できる物だけをお届けしています。 </p>
+                <p class="text-base lg:my-12">生態系と自然保護を使命とし、役目を終えた巣のみを採取することで、ツバメたちも幸せにしていきたいのです。</p>
                 </div>
-                <img src={Img6} alt="" class="lg:w-3/6 w-full" >
-         </div>
-    </section>
-
-
-
-    <section class="mt-10 lg:mt-32 px-3 lg:px-32">
-    <span id="secret-story"></span>
-        <h2 class="text-h2 lg:text-4xl  text-center mb-7">医療界も注目！天然アナツバメの巣の希少成分</h2>
-         <div class="mt-10 lg:mt-12 flex flex-col-reverse lg:flex-row lg:py-12 gap-5 lg:gap-20 px-3 lg:px-20" data-aos="fade-up" data-aos-easing="linear">
-                <div class="w-full lg:w-1/2">
-                <h2 class="my-5 lg:my-0 lg:mb-5 text-h2 lg:text-3xl">生命維持に不可欠な糖鎖の栄養素を配合するペットサプリメント</h2>
-                <p class="text-base">天然アナツバメの巣は、生命維持の根幹をなす＜糖鎖＞を構成する＜糖鎖栄養素＞を、あらゆる食材よりも多く配合しているミラクルフードです。＜糖鎖＞は体内に侵入した細菌やウィルスなどの情報を別の細胞に伝える、生命活動や免疫機能に不可欠なアンテナの役目を担っています。</p>
-                </div>
-                <img src={Img18} alt="" class="w-full lg:w-1/2" >
-         </div>
-
-         <div class="mt-10 flex flex-col-reverse lg:flex-row lg:py-12 gap-5 lg:gap-20 px-3 lg:px-20" data-aos="fade-up" data-aos-easing="linear">
-                <div class="w-full lg:w-1/2">
-                <h2 class="my-5 lg:my-0 lg:mb-5 text-h2 lg:text-3xl ">免疫力に深くかかわるシアル酸はローヤルゼリーの200倍！</h2>
-                <p class="text-base">＜糖鎖栄養素＞のひとつ＜シアル酸＞は摂取が難しい成分ですが、アナツバメの巣は健康食品として知られるローヤルゼリーの200倍を含有しています。＜シアル酸＞は、肌のハリやうるおいを向上させ、免疫システムに深く関わる成分として近年注目を集めています。</p>
-                </div>
-                <div alt="" class="w-full  lg:w-1/2 p-5 bg-[#F4EFE9] flex flex-col justify-center items-center" >
-                    <img src={Img5} alt="" class="w-1/2">
-                    <small>世界最高峰の品質と評されるマレーシア産天然アナツバメの巣</small>
-                     <img src={Img13} alt="" class="w-full">
-                </div>
-         </div>
-
-          <div class="mt-10 flex flex-col-reverse lg:flex-row lg:py-12 gap-5 lg:gap-20 px-3 lg:px-20" data-aos="fade-up" data-aos-easing="linear">
-                <div class="w-full lg:w-1/2">
-                <h2 class="my-5 lg:my-0 lg:mb-5 text-h2 lg:text-3xl">アトピーやかゆみ、脱毛などの悩みをサポートします</h2>
-                <p class="text-base">天然アナツバメの巣は＜糖鎖栄養素＞のほか、ターンオーバーや保湿を支える＜EGF（上皮細胞成長因子）>や整肌に関わる＜FGF（線維芽細胞増殖因子）＞といった希少な成分も配合。「ミラネスト」は健康維持はもちろん、アトピーや目やにヤケ、よだれヤケといった皮膚に関する悩みをケアし、美しい毛並みづくりをサポートしていきます。</p>
-                </div>
-                 <img src={Img3} alt="" class="w-full lg:w-1/2" >
-         </div>
-
-        <div class="lg:hidden px-12 my-12">
-            <img src={Img6sp} alt="" class="w-full">
-            <div class="flex justify-center mt-12">
-            <a href="../whatis" class="w-full mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">購入する</a>
-            </div>
-          </div>
-
-    </section>
-
-     <section class="mt-10 lg:mt-32 lg:px-32">
-             <h2 class="text-h2 lg:text-4xl  text-center mb-7  px-3">「ミラネスト」は安心・安全にこだわり、香料・着色料・保存料は使用しておりません。</h2>
-                <div class="mt-10 lg:mt-12 bg-main-gray shadow-xl py-12 lg:px-20">
-                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-20 px-3 lg:px-5">
-                        <div class="flex flex-col justify-around" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
-                            <img src={Img7} class="w-full ">
-                            <p class="text-base-xl text-center mb-3 h-42">ビタミン類 （ビタミンC）</p>
-                            <p class="text-base">体内で合成する量が少なく不足しがちなビタミンＣは蓄積もされにくいため、毎日一定量を摂取する必要があります。</p>
-                        </div>
-
-                        <div class="flex flex-col justify-around" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
-                            <img src={Img8} class="w-full ">
-                            <p class="text-base-xl text-center mb-3 h-42">フィッシュコ ラーゲンペプチド</p>
-                            <p class="text-base">哺乳類の体を構成するたんぱく質の役30％を占めるコラーゲンは、皮膚をツヤを与えて丈夫にする効果があります。</p>
-                        </div>
-
-                        <div class="flex flex-col justify-around" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700">
-                            <img src={Img9} class="w-full ">
-                            <p class="text-base-xl text-center mb-3 h-42">野菜発酵エキス</p>
-                            <p class="text-base">発酵によってのみ生成される微量な希少成分が腸内環境を整えます。特に高齢のペットには欠かせない成分です。</p>
-                        </div>
-
-                        <div class="flex flex-col justify-around" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="800">
-                            <img src={Img10} class="w-full ">
-                            <p class="text-base-xl text-center mb-3" h-42>シロキクラゲ抽出物</p>
-                            <p class="text-base">高い保湿力や活性酸素除去機能の向上効果で美しい肌をつくり、整腸作用や胃内粘膜修復、ダイエット効果もあります。</p>
-                        </div>
+                <div class="lg:w-3/6 w-full " >
+                    <img src={Prez} alt="Mr Inatomi" width="491" height="295">
+                    <div class="flex flex-col lg:flex-row mt-12">
+                    <p  class="lg:w-2/3">エムスタイルジャパン株式会社 代表取締役社長 ツバメの巣ハンター</p>
+                    <figure  class="lg:w-1/3">
+                        <img src={PrezSign} alt="inatomi sign" width="164" height="52">
+                    </figure>
                     </div>
-                        <div class="flex justify-center mt-12 w-10/12 lg:w-1/2 mx-auto">
-                            <a href="../whatis" class="w-full text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">ツバメの巣に含まれる栄養素</a>
-                        </div>
                 </div>
 
-    </section>
-
-    <section class="mt-16 lg:mt-32 lg:px-32">
-    <h2 class="text-h2 lg:text-4xl  text-center mb-7 px-3">マレーシアのジャングルが生んだ奇跡！最高級天然アナツバメの巣にこだわる理由</h2>
-
-        <div class="mt-10 lg:mt-12 px-3 lg:px-20 bg-main-light-yellow shadow-xl py-12 lg:py-20" data-aos="fade-up" data-aos-easing="linear">
-         <div class="flex flex-col-reverse lg:flex-row gap-20 ">
-                <div class="lg:w-3/6 w-full">
-                <h2 class="my-5 lg:text-3xl">白い宝石と呼ばれる自然の恵みは政府管理の洞窟で採取しています</h2>
-                <p class="text-base">「ミラネスト」は姉妹ブランド『BI-SU』と同じ天然アナツバメの巣を使用しています。「BI-SU」代表の稲冨社長は自ら現地へ赴き、＜日本人唯一のツバメの巣ハンター＞として本物だけを採取しています。「BI-SU」そして「ミラネスト」は世界最高峰の品質を誇るマレーシア産の100％天然アナツバメの巣だけをお届けしています。</p>
-                </div>
-                <img src={Img1} alt="" class="lg:w-3/6  w-full" >
          </div>
-            <div class="flex justify-center mt-12 w-10/12 lg:w-1/2 mx-auto">
-                    <a href="../whatis" class="w-full text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">ツバメの巣について詳しく</a>
-            </div>
-         </div>
+    </section>
+
+    <section class="mt-10 lg:mt-32 lg:px-32">
+        <picture>
+            <img src={MissionHeader} alt="Mission" width="1144" height="763">
+        </picture>
+        <div class="px-3 lg:px-auto ">
+        <h2 class="text-h2 lg:text-4xl  text-center mb-7 tracking-widest mt-12">MISSION</h2>
+        <p class="text-3xl lg:mx-40 my-6 lg:my-12">
+            最高級アナツバメの巣だけが持つ”奇跡”を世界中のペットへ
+        </p>
+
+         <p class="text-base lg:mx-32 my-6 lg:my-12">
+            大切なパートナーであり、ときには我が子のように甘え、わたしたちを癒やしてくれるペットたち。多くの愛犬家が来年もその先もずっと健康で幸せに生きてほしいと願っています。
+        </p>
+
+        <p class="text-base lg:mx-32">
+            しかし、生まれながらに不安や心配を抱えている子たち。外部環境やストレス、加齢による不調から輝きや健やかさを失っているわんちゃんが世界中に多く存在しています。
+        </p>
+
+        <p class="text-base lg:mx-32 my-6 lg:my-12">
+            私たちミラネストは、”本物”のアナツバメの巣だけが持つ、驚きの効果で世界中の苦しむペットと飼い主を救い、健やかで輝く未来をつくる、世界初ペットのためのツバメの巣ブランドです。
+        </p>
+        </div>
 
     </section>
 
+    <picture class="mt-10 lg:mt-32 ">
+        <img src={ValueHeader} alt="Value" width="1400" height="415">
+    </picture>
+        <div class="px-3 lg:px-32 mb-12">
+            <h2 class="text-h2 lg:text-4xl  text-center mb-7 px-3 lg:px-auto tracking-widest mt-12">Value</h2>
+            <p class="text-3xl lg:mx-40 my-6 lg:my-12">
+                本物を追求し、人とペット、地球の未来を豊かにする。
+            </p>
 
-    <section class="mt-32 relative">
-            <picture >
-              <source srcset={Img7sp} type="image/png" media="(max-width:480px)" />
-              <img src={Img15} class="w-full">
-          </picture>
-            <div class="px-3 lg:px-52 py-12 lg:p-0 top-0 h-full flex items-end lg:items-center w-full absolute ">
-                <div class="w-full lg:w-1/2 leading-[0.1rem] text-left ">
-                <h2 class="text-h2 lg:text-3xl mb-5 ">日本国内にツバメの巣研究所を設立秘伝のエキスで革新的な価値をつくる</h2>
-                <p class="text-base">「BI-SU」は日本国内にツバメの巣研究所を設立。採取したアナツバメの巣を最高技術を導入し、希少成分を壊すことなく粉末化することに成功しました。この秘伝のツバメの巣パウダーを「ミラネスト」の商品にも使用しています。</p>
-                    <div class="flex justify-center mt-12">
-                        <a href="../whatis" class="w-10/12 lg:w-8/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
-                        </div>
-                </div>
+            <p class="text-base lg:mx-32 my-6 lg:my-12">
+                ミラネストが使用しているアナツバメの巣は、代表自らがツバメの巣ハンターとして、マレーシア山間部で採取した最高峰の品質と評される100％天然の”本物”です。 市場に多く出回っているニセモノや養殖モノと安全性や成分、効果が全く違います。
+            </p>
+
+            <p class="text-base lg:mx-32">
+                アナツバメは、繁殖期の間に雄が約30日間かけて、唾液を固めて巣をつくります。
+            </p>
+
+            <p class="text-base lg:mx-32 my-6 lg:my-12">
+                また、アナツバメは一度子育てに使った巣は二度と使いません。ヒナが確実に巣立ったものだけを採取。自然環境もツバメたちの生態系も一切壊さない、完全なる自然の恵みをそのままお届けしています。
+            </p>
+            <div class="flex justify-center">
+            <a href="/products/powder" class="mt-8 w-10/12 lg:w-4/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl" >商品の購入はこちら</a>
             </div>
-    </section>
-
+        </div>
 
 
 

@@ -30,6 +30,40 @@ div#gift_guide-wrapper .gift_guide-mainbox {
 div#gift_guide-wrapper picture img{
   width: 100%;
 }
+table, caption, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    empty-cells: show;
+    text-align: left;
+    font-weight: normal;
+}
+table {
+    margin: 15px 0px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table th{
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    background-color: #f0f0f0;
+    font-weight: normal;
+}
+
+
+table td {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
 </style>
 
 <BaseLayout>
@@ -153,7 +187,7 @@ div#gift_guide-wrapper picture img{
   <div class="gift_guide-mainbox">
     <dd>
       <h3>定期について</h3>
-      <p>BI-SUでは、便利な定期便をご用意しております。</p>
+      <p>Miranestでは、便利な定期便をご用意しております。</p>
       <p><a href="https://cart.bi-su.jp/repeat_guide.html" target="_blank" style="color: #aa823a; text-decoration: underline;">詳しくは定期購入ガイドをご覧ください。</a></p>
     </dd>
   </div>
@@ -281,7 +315,7 @@ div#gift_guide-wrapper picture img{
       <h4 style="margin-top: 2.4em;">BI-SUをすでにご利用いただいているお客様</h4>
       <dl class="gift_guide-sabbox">
         <dt>商品のご注文や定期便の変更などをお電話で承ります。お気軽にお問い合わせください。</dt>
-        <table sclass="lg:w-1/2 w-full">
+        <table class="lg:w-1/2 w-full">
           <tbody>
             <tr>
               <th>顧客様専用フリーダイヤル</th>
@@ -336,7 +370,7 @@ div#gift_guide-wrapper picture img{
         </dd>
       </dl>
   </div>
-  <div class="gift_guide-mainbox">
+  <div class="gift_guide-mainbox hidden">
       <h3>海外からの問い合わせ</h3>
       <dl class="gift_guide-sabbox">
         <table class="lg:w-1/2 w-full">

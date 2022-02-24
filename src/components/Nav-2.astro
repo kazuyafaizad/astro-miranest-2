@@ -15,13 +15,13 @@ import { Icon } from 'astro-icon';
   </style>
 
 <nav class="hidden xl:flex relative h-[82px] sticky top-0 z-10">
- <div class="bg-main-brown flex items-center justify-start shadow py-2 px-10 w-full" >
- <a href="https://www.miranest.jp"><img src={LogoText} class="h-full max-h-14 w-[270px] block" alt="logo miranest"/ width="269" height="54"></a>
-        <ul class="flex justify-left w-10/12 pl-10 max-h-[1.3rem] h-full">
-          <li class="flex "><a href="/top" class="text-white px-5 text-[14px] hover:text-[#aaaaaa]">MIRANEST TOP</a></li>
-            <li class="flex "><a href="/products/powder" class="text-white px-5 text-[14px] hover:text-[#aaaaaa]">商品購入</a></li>
-            <li class="flex "><a href="https://cart.bi-su.jp/miranest_usage_guide.html" class="text-white px-5 text-[14px] hover:text-[#aaaaaa]">ご案内</a></li>
-            <li class="flex "><a href="https://cart.bi-su.jp/miranest_usage_guide.html#support" class="text-white px-5 text-[14px] hover:text-[#aaaaaa]">お問い合わせ</a></li>
+ <div class="bg-main-brown flex items-center justify-start shadow py-2 px-[32px] w-full" >
+ <a href="http://miranest.jp/"><img src={LogoText} class="h-full max-h-14 w-[270px] block" alt="logo miranest"/ width="269" height="54"></a>
+        <ul class="flex justify-left w-10/12 pl-[20px] max-h-[40px] h-full">
+          <li class="flex "><a href="/top" class="text-white px-[30px] pt-[11px] text-[14px] hover:text-[#aaaaaa]">MIRANEST TOP</a></li>
+            <li class="flex "><a href="/products/powder" class="text-white px-[30px] pt-[11px] text-[14px] hover:text-[#aaaaaa]">商品購入</a></li>
+            <li class="flex "><a href="https://cart.bi-su.jp/miranest_usage_guide.html" class="text-white px-[30px] pt-[11px] text-[14px] hover:text-[#aaaaaa]">ご案内</a></li>
+            <li class="flex "><a href="https://cart.bi-su.jp/miranest_usage_guide.html#support" class="text-white px-[30px] pt-[11px] text-[14px] hover:text-[#aaaaaa]">お問い合わせ</a></li>
         </ul>
         <ul class="flex w-1/12 hidden">
             <li class="flex"><a href="https://www.facebook.com/miranest.jp/?modal=admin_todo_tour"><Icon name="fb-ico"  class="h-7 mx-2" alt="facebook"/></a></li>
@@ -32,20 +32,20 @@ import { Icon } from 'astro-icon';
 
 
 <div x-data="{ open: false }" class="xl:hidden sticky top-0 z-10 flex flex-col w-full  max-w-screen-xl bg-[#222421] ">
-    <div class="px-3 flex flex-row items-center justify-between h-full min-h-[40px] h-[16vw] ">
-     <a href="https://www.miranest.jp" class="w-full">
-          <img class="block w-[200px]  mr-2" src={LogoText} alt="Logo bi-su" width="240" height="48" />
+    <div class="pl-3 pr-2 flex flex-row items-center justify-between h-full min-h-[40px] h-[16vw] ">
+     <a href="http://miranest.jp/" class="w-full self-start mt-[3.5vw]self-start mt-[3.5vw]">
+          <img class="block w-[200px] mr-2 " src={LogoText} alt="Logo bi-su" width="240" height="48" />
         </a>
 
       <div class="flex flex-col text-[3vw] p-[5px] w-[40px] " @click="open = !open">
-       <div class="flex items-center justify-center relative h-[34px]" >
-          <span x-bind:class="open ? 'translate-y-0 rotate-45 duration-300 ease-in-out ' : '-translate-y-2'"
+       <div class="flex items-center justify-center relative h-[26px]" >
+          <span x-bind:class="open ? 'translate-y-0 rotate-180 w-[25px] skew-y-[40deg] origin duration-300 ease-in-out ' : '-translate-y-2'"
                 class="transform transition w-full h-px bg-white absolute"></span>
 
           <span x-bind:class="open ? 'opacity-0 translate-x-3 duration-300 ease-in-out ' : 'opacity-100'"
                 class="transform transition w-full h-px bg-white absolute"></span>
 
-          <span x-bind:class="open ? 'translate-y-0 -rotate-45 duration-300 ease-in-out ' : 'translate-y-2'"
+          <span x-bind:class="open ? 'translate-y-0 -rotate-180 w-[25px] -skew-y-[40deg] origin duration-300 ease-in-out ' : 'translate-y-2'"
                 class="transform transition w-full h-px bg-white absolute"></span>
       </div>
       <span
@@ -53,16 +53,20 @@ import { Icon } from 'astro-icon';
       </div>
     </div>
 
-    <nav :class="{'opacity-0 ': !open,'opacity-95 ': open}" class="overflow-hidden flex  duration-300 flex-col flex-grow px-3 bg-[#2e2d2d] text-white absolute w-full top-[16vw] h-screen opacity-0 py-[10%] px-[15%]">
-    <a class="border-b border-dashed border-white px-4 py-4 mt-2 text-sm font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between" href="/top">Miranest Top <Icon name="akar-icons:chevron-right" class="w-5" /></a>
-      <a class="border-b border-dashed border-white px-4 py-4 mt-2 text-sm font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between" href="/products/powder">商品購入 <Icon name="akar-icons:chevron-right" class="w-5" /></a>
-      <a class="border-b border-dashed border-white px-4 py-4 mt-2 text-sm font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between" href="https://cart.bi-su.jp/miranest_usage_guide.html">ご案内 <Icon name="akar-icons:chevron-right" class="w-5" /></a>
-      <a class="border-b border-dashed border-white px-4 py-4 mt-2 text-sm font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between" href="https://cart.bi-su.jp/miranest_usage_guide.html#support">お問い合わせ<Icon name="akar-icons:chevron-right" class="w-5" /></a>
+    <nav :class="{'opacity-0 ': !open,'opacity-95 ': open}" class="overflow-hidden flex  duration-300 flex-col flex-grow px-3 bg-[#2e2d2d] text-white absolute w-full top-[16vw] h-screen opacity-0 py-[3%] px-[15%] text-[16px]">
+        <a class="border-b-[0.5px] border-dashed border-[#7d7d7d] py-4 mt-2 text-[smaller]  bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between pr-1" href="https://cart.bi-su.jp/mypage/">マイページ<Icon name="akar-icons:chevron-right" class="w-[0.8em]" /></a>
+        <a class="border-b-[0.5px] border-dashed border-[#7d7d7d] py-4 mt-2 text-[smaller]  bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between pr-1" href="http://test.miranest.jp/products/powder">商品購入<Icon name="akar-icons:chevron-right" class="w-[0.8em]" /></a>
+        <a class="border-b-[0.5px] border-dashed border-[#7d7d7d] py-4 mt-2 text-[smaller]  bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between pr-1" href="https://cart.bi-su.jp/miranest_usage_guide.html">ご案内<Icon name="akar-icons:chevron-right" class="w-[0.8em]" /></a>
+        <a class="border-b-[0.5px] border-dashed border-[#7d7d7d] py-4 mt-2 text-[smaller]  bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between pr-1" href="http://test.miranest.jp/about">ミラネストについて<Icon name="akar-icons:chevron-right" class="w-[0.8em]" /></a>
+        <a class="border-b-[0.5px] border-dashed border-[#7d7d7d] py-4 mt-2 text-[smaller]  bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between pr-1" href="https://cart.bi-su.jp/miranest_usage_guide.html#support">お問合せ<Icon name="akar-icons:chevron-right" class="w-[0.8em]" /></a>
+        <a class="border-b-[0.5px] border-dashed border-[#7d7d7d] py-4 mt-2 text-[smaller]  bg-transparent lg:mt-0 lg:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline flex justify-between pr-1" href="http://test.miranest.jp/top/">MIRANEST TOP<Icon name="akar-icons:chevron-right" class="w-[0.8em]" /></a>
      <div class="flex mt-12 justify-evenly hidden">
             <a href="https://www.facebook.com/miranest.jp/?modal=admin_todo_tour"><Icon name="fb-ico"  class="h-12" alt="facebook"/></a>
             <a href="https://www.instagram.com/miranest_official/" class=""><Icon name="ig-ico" class="ig h-12 rounded-full" alt="instagram"/></a>
         </div>
     </nav>
+
+
 
 </div>
 

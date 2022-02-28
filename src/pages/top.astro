@@ -32,6 +32,8 @@ import Img17 from '../images/top/pc/img (17).png'
 import Img18 from '../images/top/pc/img (18).png'
 import ThreePoints from '../components/ThreePoints.astro'
 
+import { Icon } from 'astro-icon'
+
 ---
 <BaseLayout>
 <style lang="scss">
@@ -232,9 +234,12 @@ a {
     <NewsSection/>
     <section class="mt-10 flex flex-col-reverse lg:flex-row justify-center lg:py-12 lg:gap-20 px-3 lg:px-32 bg-main-gray shadow-xl"  data-aos="fade-up" data-aos-easing="linear">
         <div class="flex flex-col justify-evenly">
-            <h2 class="text-h2 lg:text-3xl mb-5">世界初！天然アナツバメの巣を使用したペット用栄養補助食品。<br>かゆみや肌毛悩みの救世主。それが「ミラネスト」です。</h2>
+            <h2 class="text-h2 lg:text-3xl mb-5">世界初！※天然アナツバメの巣を使用したペット用栄養補助食品。<br>かゆみや肌毛悩みの救世主。それが「ミラネスト」です。</h2>
             <p class="text-base mb-5">「健康的な輝きと美しさを取り戻してあげたい」強い想いが「ミラネスト」誕生の原動力でした。あらゆる食品の中で最高級アナツバメの巣だけが持つ奇跡のような効果・効能が大切な家族を健やかな姿へと導きます。</p>
-            <a href="/products/powder" class="mt-8 w-10/12 lg:w-8/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl" >詳しく <i class="v v-right ms-2"></i></a>
+            <span class="w-10/12 lg:w-8/12 text-[12px]">※自社調べ</span>
+             <div class="flex justify-center mt-8 flex-col">
+            <a href="/products/powder" class="w-10/12 lg:w-8/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 flex items-center justify-center relative text-xl" >商品購入はこちら <Icon name="akar-icons:chevron-right" class="w-[0.8em] absolute right-3" /></a>
+            </div>
         </div>
         <img src={PrdPowder} alt="商品" class="lg:w-1/2" width="572" height="491"/>
     </section>
@@ -328,7 +333,8 @@ a {
             <div class="relative">
                 <div class="px-3 text-center lg:text-left lg:w-4/12 absolute lg:left-[25%] top-20 lg:top-1/2 mad:transform lg:-translate-x-1/2 lg:-translate-y-1/2 text-white text-left" >
                     <h3 class="text-h2 lg:text-3xl mb-4 drop-shadow-lite">VISION</h3>
-                    <p class="text-base drop-shadow-lite">人も地球も動物も傷つかない、豊かな未来をつくる””循環型社会”へ。</p>
+                    <p class="text-base drop-shadow-lite mb-4">人も地球も動物も傷つかない、豊かな未来をつくる”<br>”循環型社会”へ。</p>
+                    <h3 class="text-h2 lg:text-3xl mb-4 drop-shadow-lite">POLICY</h3>
                     <p class="text-base drop-shadow-lite">自然環境もツバメたちの生態系も一切壊さない、完全なる自然の恵みをそのままお届けします。</p>
                 </div>
                 <picture>

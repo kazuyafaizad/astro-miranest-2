@@ -52,12 +52,11 @@ p {
 	z-index: 9;
 	width: 50px;
 	height: 90px;
-	color: #bbbbbb;
-	text-shadow: 2px 2px #333333;
+	color: #fff;
+	text-shadow: 1px 1px #333333;
 	bottom: 5rem;
 	font-size: 0.8rem;
 	transform: translateX(-50%);
-	opacity: 0.8;
 }
 
 .scrolldown::before {
@@ -68,7 +67,8 @@ p {
 	top: 3rem;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: #bbbbbb;
+	box-shadow: 1px 1px #333333;
+	background-color: #fff;
 	opacity: 1;
 	-webkit-animation: drop 2s linear infinite;
 	animation: drop 2s linear infinite;

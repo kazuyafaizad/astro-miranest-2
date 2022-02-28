@@ -57,7 +57,7 @@ import ThreePoints from '../components/ThreePoints.astro'
 .grid-02 {
 	grid-auto-flow: row;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-areas: "a b ." "a c .";
+	grid-template-areas: "a b ." "a b .";
 	align-items: center;
 	justify-items: center;
 }
@@ -140,6 +140,7 @@ a {
   height: 300px;
 }
 .swiper-button-next, .swiper-button-prev{
+    top:18%;
     color:#333333;
 }
 @media only screen and (max-width: 992px) {
@@ -174,10 +175,7 @@ a {
 	.grid-02 {
 		grid-auto-flow: column;
 		grid-template-areas: "b b b" "a a a" "c c c";
-		img {
-			max-height: 190px;
-			width: auto;
-		}
+
 	}
 	.grid-03 {
 		grid-template-columns: repeat(10, 1fr);
@@ -232,7 +230,7 @@ a {
                     </picture>
             </section>
     <NewsSection/>
-    <section class="mt-10 flex flex-col-reverse lg:flex-row justify-center py-12 gap-20 px-3 lg:px-32 bg-main-gray shadow-xl"  data-aos="fade-up" data-aos-easing="linear">
+    <section class="mt-10 flex flex-col-reverse lg:flex-row justify-center lg:py-12 lg:gap-20 px-3 lg:px-32 bg-main-gray shadow-xl"  data-aos="fade-up" data-aos-easing="linear">
         <div class="flex flex-col justify-evenly">
             <h2 class="text-h2 lg:text-3xl mb-5">世界初！天然アナツバメの巣を使用したペット用栄養補助食品。<br>かゆみや肌毛悩みの救世主。それが「ミラネスト」です。</h2>
             <p class="text-base mb-5">「健康的な輝きと美しさを取り戻してあげたい」強い想いが「ミラネスト」誕生の原動力でした。あらゆる食品の中で最高級アナツバメの巣だけが持つ奇跡のような効果・効能が大切な家族を健やかな姿へと導きます。</p>
@@ -241,11 +239,11 @@ a {
         <img src={PrdPowder} alt="商品" class="lg:w-1/2" width="572" height="491"/>
     </section>
 
-    <section class="mt-10 lg:mt-32 py-12 px-3 lg:px-32">
-            <h2 class="text-h2 lg:text-4xl  text-center mb-7">「ミラネスト」が大切なペットの素敵な未来をサポートします。</h2>
+    <section class="mt-10 lg:mt-32 pt-12 px-3 lg:px-32">
+            <h2 class="text-h2 lg:text-4xl  text-center mb-7 ">「ミラネスト」が大切なペットの素敵な未来をサポートします。</h2>
             <h3 class="text-h3 lg:text-3xl text-goldeni text-center">世界初のツバメの巣ブランド<br>「BI-SU」が作った「ミラネスト」だから安心できる。</h3>
 
-            <div class="grid-06 grid justify-evenly items-end mb-20 justify-items-center">
+            <div class="grid-06 grid justify-evenly items-end lg:mb-20 justify-items-center">
                 <img src={Img21} alt="小型犬" class="hidden lg:block" data-aos="fade-up" data-aos-easing="linear">
                 <div class="flex justify-center">
                 <ThreePoints />
@@ -261,7 +259,7 @@ a {
             <div class="h-full w-full pt-5 pb-12 lg:py-12 px-3 lg:px-32 absolute top-0 flex lg:items-center" >
                 <div class="lg:w-5/12 flex justify-between flex-col ">
                 <div>
-                <h2 class="text-h2 lg:text-3xl mb-8">「ミラネスト」で使用しているのは地球上でもっとも美しいツバメの巣です</h2>
+                <h2 class="text-h2 lg:text-3xl mb-8 mt-8">「ミラネスト」で使用しているのは地球上でもっとも美しいツバメの巣です</h2>
                 <p class="text-base mb-8">「ミラネスト」と「BI-SU」が使用している最高級天然アナツバメの巣は、マレーシア山間部で採取した＜本物＞です。ニセモノや養殖とは安全性や成分、効果・効能がまったく違います。</p>
                 </div>
                  <div class="flex justify-center">
@@ -293,12 +291,12 @@ a {
                 <img src={Img9} alt="鳥の巣を持って" class="w-full"  data-aos="fade-up" data-aos-easing="linear"  width="642" height="451">
             </div>
             <div class="grid-02 grid my-5">
-                <img src={Img50} alt="swallow nest" style="grid-area: a" width="344" height="344">
+                <img src={Img50} alt="swallow nest" style="grid-area: a" width="344" height="344" class="w-auto">
                 <div class="text-center" style="grid-area: b">
                     <h3 class="text-h2 lg:text-3xl">日本人唯一のツバメの巣ハンターが秘境で採取</h3>
                     <p class="text-base my-5">ツバメの巣は多くのニセモノや養殖品が市場に出回っています。ミラネストは天然にこだわり、世界最高峰の品質と評されるマレーシア産天然アナツバメの巣だけを使用。代表自らが『日本人唯一のツバメの巣ハンター』として秘境まで足を運び、採取しています。</p>
                 </div>
-                <div class="flex justify-center w-full mt-12" style="grid-area: c">
+                <div class="flex justify-center w-full mt-12" style="">
                     <a href="#" class="w-9/12 lg:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
                 </div>
             </div>
@@ -315,12 +313,12 @@ a {
                 <img src={Img14} alt="research" class="w-full"  data-aos="fade-up" data-aos-easing="linear" width="642" height="448">
             </div>
             <div class="grid-02 grid my-5">
-                <img src={Img36} alt="" style="grid-area: a" width="190" height="190">
+                <img src={Img36} alt="" style="grid-area: a" width="190" height="190" class="w-80">
                 <div class="text-center" style="grid-area: b">
                     <h3 class="text-h2 lg:text-3xl">ツバメの巣研究所で作る国産ペットサプリメント</h3>
                     <p class="text-base my-5">マレーシアで採取したツバメの巣はISO認証の工場で徹底管理しています。その後、日本国内に設立した『ツバメの巣研究所』で独自技術により、ツバメの巣を採取した品質そのままにパウダー化へ。世界最高峰の品質でお届けしています。</p>
                 </div>
-                <div class="flex justify-center w-full mt-12" style="grid-area: c">
+                <div class="flex justify-center w-full mt-12" style="">
                     <a href="#" class="w-9/12 lg:w-5/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl hidden">詳しく</a>
                 </div>
             </div>
@@ -396,7 +394,7 @@ a {
 
 
         <section class="mt-20 py-12 lg:px-32">
-            <h2 class="text-center py-10 lg:py-12 text-2-1/2xl">ミラネストのサポート</h2>
+            <h2 class="text-center py-10 lg:py-12 text-[24px] lg:text-2-1/2xl">ミラネストのサポート</h2>
             <div class="hidden grid-07 text-center justify-items-center justify-center items-center lg:grid ">
                     <img src={Img18} alt="email" class="" width="61" height="42">
 
@@ -428,22 +426,22 @@ a {
                 <div class="swiper-slide">
                             <div class="flex flex-col justify-evenly items-center w-auto text-center my-8 px-3">
                             <img src={Img18} class="block w-auto" alt="...">
-                            <h4 class="my-5">最新の情報をいち早く</h4>
-                            <p class="">メールマガジン会員限定のお得な情報などを配信しています</p>
+                            <h4 class="my-5 text-[15px]">最新の情報をいち早く</h4>
+                            <p class="text-[15px]">メールマガジン会員限定のお得な情報などを配信しています</p>
                           </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-evenly items-center w-auto text-center my-8 px-3">
                         <img src={Img17} class="block w-auto" alt="...">
-                        <h4 class="my-5">全額返金サービス</h4>
-                        <p class="">商品にご満足いただけない場合、 全額返金を承っています</p>
+                        <h4 class="my-5 text-[15px]">全額返金サービス</h4>
+                        <p class="text-[15px]">商品にご満足いただけない場合、 全額返金を承っています</p>
                         </div>
                 </div>
                 <div class="swiper-slide">
                         <div class="flex flex-col justify-evenly items-center w-auto text-center my-8 px-3 ">
                         <img src={Img16} class="block w-auto" alt="...">
-                        <h4 class="my-5">美巣お客さまセンター</h4>
-                        <p class="">安心してご利用いただけるよう、 ご質問にお答えするカスタマーセン ターをご用意しております</p>
+                        <h4 class="my-5 text-[15px]">美巣お客さまセンター</h4>
+                        <p class="text-[15px]">安心してご利用いただけるよう、 ご質問にお答えするカスタマーセン ターをご用意しております</p>
                         </div>
                 </div>
                 ...

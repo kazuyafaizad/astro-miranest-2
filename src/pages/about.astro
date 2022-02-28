@@ -5,8 +5,12 @@ import HeroImgSP from '../images/about-sp.jpg?webp'
 
 import Prez from '../images/about-miranest/pc/S__5759196.png'
 import PrezSign from '../images/inatomisign.png'
-import MissionHeader from '../images/TO.jpg?webp'
+import MissionHeader from '../images/about-sub.jpg?webp'
+import MissionHeaderSP from '../images/about-sub-sp.jpg?webp'
 import ValueHeader from '../images/miranest-sub02.jpg?webp'
+
+import { Icon } from 'astro-icon';
+
 ---
 <style lang="scss">
         .second-header {
@@ -43,7 +47,7 @@ import ValueHeader from '../images/miranest-sub02.jpg?webp'
     <section class="mt-10 lg:mt-32 lg:px-32">
         <div class="px-3 lg:px-auto">
         <h2 class="text-h2 lg:text-4xl  text-center mb-7  tracking-widest">BRAND STORY</h2>
-        <p class="text-3xl lg:mx-40 my-6 lg:my-12">
+        <p class="text-[21px] leading-[43px] lg:text-3xl lg:mx-40 my-6 lg:my-12">
             ミラネストは、100％天然アナツバメの巣BRANDである「BI-SU」のご愛用者たちの実体験から生まれました。
         </p>
 
@@ -67,9 +71,9 @@ import ValueHeader from '../images/miranest-sub02.jpg?webp'
                 <div class="lg:w-3/6 w-full " >
                     <img src={Prez} alt="Mr Inatomi" width="491" height="295">
                     <div class="flex flex-col lg:flex-row mt-12">
-                    <p  class="lg:w-2/3">エムスタイルジャパン株式会社 代表取締役社長 ツバメの巣ハンター</p>
-                    <figure  class="lg:w-1/3">
-                        <img src={PrezSign} alt="inatomi sign" width="164" height="52">
+                    <p  class="text-[15px] lg:w-2/3">エムスタイルジャパン株式会社 代表取締役社長 <br>ツバメの巣ハンター</p>
+                    <figure  class="w-1/2 self-end lg:w-1/3 mb-10">
+                      <Icon name="signature2021" class="w-full"/>
                     </figure>
                     </div>
                 </div>
@@ -78,12 +82,14 @@ import ValueHeader from '../images/miranest-sub02.jpg?webp'
     </section>
 
     <section class="mt-10 lg:mt-32 lg:px-32">
-        <picture>
-            <img src={MissionHeader} alt="Mission" width="1144" height="763">
-        </picture>
+            <picture>
+                <source srcset={MissionHeaderSP} type="image/png" media="(max-width:480px)" />
+                <img src={MissionHeader} alt="Mission" width="1144" height="763">
+
+            </picture>
         <div class="px-3 lg:px-auto ">
         <h2 class="text-h2 lg:text-4xl  text-center mb-7 tracking-widest mt-12">MISSION</h2>
-        <p class="text-3xl lg:mx-40 my-6 lg:my-12">
+        <p class="text-[21px] leading-[43px] lg:text-3xl lg:mx-40 my-6 lg:my-12">
             最高級アナツバメの巣だけが持つ”奇跡”を世界中のペットへ
         </p>
 
@@ -107,7 +113,7 @@ import ValueHeader from '../images/miranest-sub02.jpg?webp'
     </picture>
         <div class="px-3 lg:px-32 mb-12">
             <h2 class="text-h2 lg:text-4xl  text-center mb-7 px-3 lg:px-auto tracking-widest mt-12">Value</h2>
-            <p class="text-3xl lg:mx-40 my-6 lg:my-12">
+            <p class="text-[21px] leading-[43px] lg:text-3xl lg:mx-40 my-6 lg:my-12">
                 本物を追求し、人とペット、地球の未来を豊かにする。
             </p>
 

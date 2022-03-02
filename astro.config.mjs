@@ -11,8 +11,8 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
   // Enable the Preact renderer to support Preact JSX components.
   renderers: ["@astrojs/renderer-preact"],
   buildOptions: {
+     site: "http://test.miranest.jp",
     sitemap: true,
-    site: 'https://astro.build/',
   },
   vite: {
     ssr: {
@@ -20,10 +20,13 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     },
     plugins: [imagetools()],
     resolve: {},
-  },
-  buildOptions: {
-    site: "http://test.miranest.jp",
-    sitemap: true,
+    build: {
+      rollupOptions: {
+        output: {
+          assetFileNames: `[name].[ext]`,
+        },
+      },
+    },
   },
   devOptions: {
     hostname: "0.0.0.0",

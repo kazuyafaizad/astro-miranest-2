@@ -1,15 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import HeroImgPC from '../images/about.jpg?webp'
-import HeroImgSP from '../images/about-sp.jpg?webp'
+import HeroImgPC from '../images/about.jpg'
+import HeroImgSP from '../images/about-sp.jpg'
 
 import Prez from '../images/about-miranest/pc/S__5759196.png'
 import PrezSign from '../images/inatomisign.png'
-import MissionHeader from '../images/about-sub.jpg?webp'
-import MissionHeaderSP from '../images/about-sub-sp.jpg?webp'
-import SustainableHeader from '../images/miranest-sub02.jpg?webp'
-import SisterBrand from '../images/about-sub-foot.jpg?webp'
-import SisterBrandSp from '../images/about-sub-foot_sp.jpg?webp'
+import MissionHeader from '../images/about-sub.jpg'
+import MissionHeaderSP from '../images/about-sub-sp.jpg'
+import SustainableHeader from '../images/miranest-sub06.jpg'
+import SustainableHeaderSp from '../images/miranest-sub06-sp.jpg'
+import SisterBrand from '../images/about-sub-foot.jpg'
+import SisterBrandSp from '../images/about-sub-foot_sp.jpg'
 
 import { Icon } from 'astro-icon';
 
@@ -36,7 +37,7 @@ import { Icon } from 'astro-icon';
             <div class="absolute top-0 px-5 lg:px-32 flex w-full h-full flex items-center">
             </div>
              <picture>
-                <source srcset={HeroImgSP} type="image/png" media="(max-width:480px)" />
+                <source srcset={HeroImgSP} media="(max-width:480px)" />
                 <img
                  alt="アナツバメの巣だけが持つ”奇跡”を愛する家族へ"
                 decoding="async"
@@ -85,9 +86,8 @@ import { Icon } from 'astro-icon';
 
     <section class="mt-10 lg:mt-32 lg:px-32">
             <picture>
-                <source srcset={MissionHeaderSP} type="image/png" media="(max-width:480px)" />
+                <source srcset={MissionHeaderSP}  media="(max-width:480px)" />
                 <img src={MissionHeader} alt="Mission" width="1144" height="763">
-
             </picture>
         <div class="px-3 lg:px-auto ">
         <h2 class="text-h2 lg:text-4xl  text-center mb-7 tracking-widest mt-12">MISSION</h2>
@@ -111,6 +111,7 @@ import { Icon } from 'astro-icon';
     </section>
 
     <picture class="mt-10 lg:mt-32 ">
+        <source srcset={SustainableHeaderSp} media="(max-width:480px)" />
         <img src={SustainableHeader} alt="Sustainable" width="1400" height="415">
     </picture>
         <div class="px-3 lg:px-32 mb-12">
@@ -136,14 +137,14 @@ import { Icon } from 'astro-icon';
         </div>
 
          <div class="mb-12 mt-10 lg:mt-40 ">
-            <h2 class="text-h2 lg:text-5xl  text-center mb-12 px-3 lg:px-auto tracking-widest mt-12">Sister Brand</h2>
+            <h2 class="text-h2 lg:text-4xl  text-center mb-12 px-3 lg:px-auto tracking-widest mt-12">Sister Brand</h2>
 
             <div class="relative">
-             <div class="flex justify-center">
-            <a href="https://www.bi-su.jp/" class="border-2 border-white　 w-10/12 lg:w-4/12 mx-auto text-center transform translate-y-1/2 -translate-x-1/2 top-[75%] left-1/2 text-white absolute text-white shadow-xl px-3 py-3 text-xl" >BI-SU公式サイトはこちら</a>
+             <div class="flex justify-center ">
+            <a href="https://www.bi-su.jp/" class="border border-white　 w-9/12 lg:w-3/12 mx-auto text-center transform translate-y-1/2 -translate-x-1/2 top-[65%] lg:top-[75%] left-1/2 text-white absolute text-white shadow-xl px-3 py-3 text-xl hover:bg-white hover:text-black" >BI-SU公式サイトはこちら</a>
             </div>
             <picture >
-                 <source srcset={SisterBrandSp} type="image/jpg" media="(max-width:480px)" />
+                 <source srcset={SisterBrandSp} media="(max-width:480px)" />
                  <img src={SisterBrand} alt="sister brand" width="1400" height="458" class="w-full">
             </picture>
             </div>

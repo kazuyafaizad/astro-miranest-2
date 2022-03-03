@@ -1,18 +1,22 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HeroImgPC from "../../images/products.jpg?webp";
-import HeroImgSP from "../../images/products-sp.jpg?webp";
+import HeroImgPC from "../../images/products.jpg";
+import HeroImgSP from "../../images/products-sp.jpg";
 
 
-import Prd1 from "../../images/products-sub.jpg?webp";
-import Prd2 from "../../images/products-sub-main.jpg?webp";
-import Prd3 from "../../images/miranest-sub03.jpg?webp";
+import Prd1 from "../../images/products-sub.jpg";
+import Prd2 from "../../images/products-sub-main.jpg";
+import Prd3 from "../../images/miranest-sub03.jpg";
 
 import Img9 from "../../images/products/pc/product-pc9.png";
 import Img1sp from "../../images/products/sp/img-1.png";
 
-import figure from "../../images/miranest-sub01.jpg?webp";
-import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
+import figure from "../../images/miranest-sub01.jpg";
+import figureSp from "../../images/miranest-sub01-sp.jpg";
+
+
+import BirdNest from "../../images/miranest-powder-sub01.jpg";
+import BirdNestSp from "../../images/miranest-powder-sub01sp.jpg";
 
 
 
@@ -156,6 +160,10 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 
             <p class="text-[16px]">さらに、内側から美しさを支える＜EGF＞はその発見がノーベル生理学・医学賞の受賞をもたらした成分です。</p>
             <p class="text-[16px]">このアナツバメの巣が数々のペットたちの奇跡のような体験を生んできました。その力を損なうことなく、そのままパウダー化しています。</p>
+                <picture >
+                 <source srcset={BirdNestSp} media="(max-width:480px)" />
+                 <img src={BirdNest} alt="sister brand" width="1400" height="458" class="w-full mt-12">
+            </picture>
 
             <p class="text-[20px] block mt-[40px] mx-[10px] mb-3">大切な愛犬にも安心して与えられる本物の栄養補助食品へ</p>
             <p class="text-[16px]">人間と同じようにより良い食事から毎日の健康を支えられるよう配合にもこだわりました。</p>
@@ -210,9 +218,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 
 		<li class="relative border-b border-gray-200">
 
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 1 ? selected = 1 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 1 ? selected = 1 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">保存料・着色料などは入っていますか？</p>
+				  <p class="Q text-[15px] lg:text-[16px]">保存料・着色料などは入っていますか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 1 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
@@ -227,9 +235,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 
         <li class="relative border-b border-gray-200">
 
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 2 ? selected = 2 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 2 ? selected = 2 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">サプリメントの形状や味はどのようなものですか？</p>
+				  <p class="Q text-[15px] lg:text-[16px]">サプリメントの形状や味はどのようなものですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 2 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
@@ -244,9 +252,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 
         <li class="relative border-b border-gray-200">
 
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 8 ? selected = 8 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 8 ? selected = 8 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">賞味期限は？</p>
+				  <p class="Q text-[15px] lg:text-[16px]">賞味期限は？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 8 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
@@ -261,9 +269,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 
         <li class="relative border-b border-gray-200">
 
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 9 ? selected = 9 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 9 ? selected = 9 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">国産ですか？</p>
+				  <p class="Q text-[15px] lg:text-[16px]">国産ですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 9 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
@@ -277,9 +285,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 		</li>
 
          <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 3 ? selected = 3 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 3 ? selected = 3 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">何歳から与えられますか?</p>
+				  <p class="Q text-[15px] lg:text-[16px]">何歳から与えられますか?</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 3 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
@@ -293,9 +301,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 
 
          <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 4 ? selected = 4 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 4 ? selected = 4 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">食物アレルギーがある子にも与えてもいいですか？</p>
+				  <p class="Q text-[15px] lg:text-[16px]">食物アレルギーがある子にも与えてもいいですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 4 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
@@ -308,9 +316,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 		</li>
 
           <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 5 ? selected = 5 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 5 ? selected = 5 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">薬と併用しても大丈夫ですか？</p>
+				  <p class="Q text-[15px] lg:text-[16px]">薬と併用しても大丈夫ですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 5 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
@@ -323,9 +331,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 		</li>
 
          <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 6 ? selected = 6 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 6 ? selected = 6 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">今摂取しているサプリメントと併用しても大丈夫ですか？</p>
+				  <p class="Q text-[15px] lg:text-[16px]">今摂取しているサプリメントと併用しても大丈夫ですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 6 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
@@ -338,9 +346,9 @@ import figureSp from "../../images/miranest-sub01-sp.jpg?webp";
 		</li>
 
            <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left text-[15px] lg:text-[16px] text-left bg-golden text-white" @click="selected !== 7 ? selected = 7 : selected = null">
+			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 7 ? selected = 7 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q">保管方法は？</p>
+				  <p class="Q text-[15px] lg:text-[16px]">保管方法は？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 7 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>

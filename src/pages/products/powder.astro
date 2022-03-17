@@ -213,21 +213,21 @@ import BirdNestSp from "../../images/miranest-powder-sub01sp.jpg";
      <section class="mt-10 lg:mt-32 px-3 lg:px-52 lg:h-[70rem]">
 
   <h2 class="text-h2 lg:text-4xl  text-center mb-7  lg:px-auto">Q&A</h2>
-<div class="bg-white mx-auto border border-gray-200" x-data="{selected:1}">
+<div class="bg-white mx-auto border border-gray-200 mb-12" x-data="{selected:1}">
 		<ul class="shadow-box">
 
 		<li class="relative border-b border-gray-200">
 
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 1 ? selected = 1 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 1 ? selected = 1 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">保存料・着色料などは入っていますか？</p>
+				  <p class="Q text-[14px] lg:text-[18px] leading-[23px]">保存料・着色料などは入っていますか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 1 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">香料、着色料、保存料は不使用です。ご安心ください。</p>
+					<p class="A text-[14px] lg:text-[18px] leading-[23px] py-[1.1rem]">香料、着色料、保存料は不使用です。ご安心ください。</p>
 
 			</div>
 
@@ -235,16 +235,16 @@ import BirdNestSp from "../../images/miranest-powder-sub01sp.jpg";
 
         <li class="relative border-b border-gray-200">
 
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 2 ? selected = 2 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 2 ? selected = 2 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">サプリメントの形状や味はどのようなものですか？</p>
+				  <p class="Q text-[14px] lg:text-[18px] leading-[23px]">サプリメントの形状や味はどのようなものですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 2 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">食事や水に混ぜやすいパウダータイプです<br>味は毎日食べ続けやすいチキン風味に仕上げました。</p>
+					<p class="A text-[14px] lg:text-[18px] leading-[23px] py-[1.1rem]">食事や水に混ぜやすいパウダータイプです<br>味は毎日食べ続けやすいチキン風味に仕上げました。</p>
 
 			</div>
 
@@ -252,16 +252,16 @@ import BirdNestSp from "../../images/miranest-powder-sub01sp.jpg";
 
         <li class="relative border-b border-gray-200">
 
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 8 ? selected = 8 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 8 ? selected = 8 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">賞味期限は？</p>
+				  <p class="Q text-[14px] lg:text-[18px] leading-[23px]">賞味期限は？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 8 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container8" x-bind:style="selected == 8 ? 'max-height: ' + $refs.container8.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">賞味期限は製造日から2年間です。未開封、開封後ともに高温多湿・直射日光をさけ、涼しいところで保管いただくことで2年間ご使用いただけます。</p>
+					<p class="A text-[14px] lg:text-[18px] leading-[23px] py-[1.1rem]">賞味期限は製造日から2年間です。未開封、開封後ともに高温多湿・直射日光をさけ、涼しいところで保管いただくことで2年間ご使用いただけます。</p>
 
 			</div>
 
@@ -269,93 +269,93 @@ import BirdNestSp from "../../images/miranest-powder-sub01sp.jpg";
 
         <li class="relative border-b border-gray-200">
 
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 9 ? selected = 9 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 9 ? selected = 9 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">国産ですか？</p>
+				  <p class="Q text-[14px] lg:text-[18px] leading-[23px]">国産ですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 9 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container9" x-bind:style="selected == 9 ? 'max-height: ' + $refs.container9.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">はい。商品は国内で製造しております。「ツバメの巣粉末」をはじめ、原材料は一部、海外のものを使用しております。</p>
+					<p class="A text-[14px] lg:text-[18px] leading-[23px] py-[1.1rem]">はい。商品は国内で製造しております。「ツバメの巣粉末」をはじめ、原材料は一部、海外のものを使用しております。</p>
 
 			</div>
 
 		</li>
 
          <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 3 ? selected = 3 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 3 ? selected = 3 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">何歳から与えられますか?</p>
+				  <p class="Q text-[14px] lg:text-[18px] leading-[23px]">何歳から与えられますか?</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 3 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">生後3ヶ月後であれば与えて問題ございません。生後3ヶ月未満でのご使用はお控えください。</p>
+					<p class="A text-[14px] lg:text-[18px] leading-[23px] py-[1.1rem]">生後3ヶ月後であれば与えて問題ございません。生後3ヶ月未満でのご使用はお控えください。</p>
 
 			</div>
 		</li>
 
 
          <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 4 ? selected = 4 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 4 ? selected = 4 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">食物アレルギーがある子にも与えてもいいですか？</p>
+				  <p class="Q text-[14px] lg:text-[18px] leading-[23px]">食物アレルギーがある子にも与えてもいいですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 4 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container4" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">原材料をご確認の上、食物アレルギーがある場合はお控えください。</p>
+					<p class="A text-[14px] lg:text-[18px] leading-[23px] py-[1.1rem]">原材料をご確認の上、食物アレルギーがある場合はお控えください。</p>
 
 			</div>
 		</li>
 
           <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 5 ? selected = 5 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 5 ? selected = 5 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">薬と併用しても大丈夫ですか？</p>
+				  <p class="Q text-[14px] lg:text-[18px] leading-[23px]">薬と併用しても大丈夫ですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 5 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container5" x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">薬を服用中あるいは通院中は獣医師に相談の上、与えてください。</p>
+					<p class="A text-[14px] lg:text-[18px] leading-[23px] py-[1.1rem]">薬を服用中あるいは通院中は獣医師に相談の上、与えてください。</p>
 
 			</div>
 		</li>
 
          <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 6 ? selected = 6 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 6 ? selected = 6 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">今摂取しているサプリメントと併用しても大丈夫ですか？</p>
+				  <p class="Q text-[14px] lg:text-[18px] leading-[23px]">今摂取しているサプリメントと併用しても大丈夫ですか？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 6 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container6" x-bind:style="selected == 6 ? 'max-height: ' + $refs.container6.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">併用いただいても問題ありません。ただしお腹の調子を見ながら調整してください。</p>
+					<p class="A text-[14px] lg:text-[18px] leading-[23px] py-[1.1rem]">併用いただいても問題ありません。ただしお腹の調子を見ながら調整してください。</p>
 
 			</div>
 		</li>
 
            <li class="relative border-b border-gray-200">
-			<button type="button" class="w-full px-8 py-6 text-left  text-left bg-golden text-white" @click="selected !== 7 ? selected = 7 : selected = null">
+			<button type="button" class="w-full px-8 py-[1.1rem] text-left  text-left bg-golden text-white" @click="selected !== 7 ? selected = 7 : selected = null">
 				<div class="flex items-center justify-between ">
-				  <p class="Q text-[15px] lg:text-[16px]">保管方法は？</p>
+				  <p class="Q text-[15px] lg:text-[18px] leading-[23px]">保管方法は？</p>
                   <svg fill="currentColor" viewBox="0 0 20 20" :class="selected == 7 ? 'rotate-180' : 'rotate-0'" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 				</div>
 			</button>
 
 			<div class="relative px-8 overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container7" x-bind:style="selected == 7 ? 'max-height: ' + $refs.container7.scrollHeight + 'px' : ''">
 
-					<p class="A text-[15px] lg:text-[16px] py-6">高温多湿・直射似日光をさけ、涼しいところで保管してください。</p>
+					<p class="A text-[15px] lg:text-[18px] leading-[23px] py-[1.1rem]">高温多湿・直射似日光をさけ、涼しいところで保管してください。</p>
 
 			</div>
 		</li>

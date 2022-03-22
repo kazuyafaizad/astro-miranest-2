@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import HeroImgPC from '../images/about.jpg'
+import HeroImgSP from '../images/about-sp.jpg'
+
+import Prez from '../images/about-miranest/pc/S__5759196.png'
+import PrezSign from '../images/inatomisign.png'
+import MissionHeader from '../images/about-sub.jpg'
+import MissionHeaderSP from '../images/about-sub-sp.jpg'
+import SustainableHeader from '../images/miranest-sub06.jpg'
+import SustainableHeaderSp from '../images/miranest-sub06-sp.jpg'
+import SisterBrand from '../images/about-sub-foot.jpg'
+import SisterBrandSp from '../images/about-sub-foot_sp.jpg'
+
+import { Icon } from 'astro-icon';
+
+---
+<style lang="scss">
+        .second-header {
+            display: inline-block;
+            left: 32%;
+            width: 30%;
+            top: 50%;
+            text-align: left;
+            letter-spacing: 0.1rem;
+        }
+        .grid-01 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow:scroll;
+        }
+
+</style>
+<BaseLayout>
+    <section class="relative">
+            <div class="absolute top-0 px-5 lg:px-32 flex w-full h-full flex items-center">
+            </div>
+             <picture>
+                <source srcset={HeroImgSP} media="(max-width:480px)" />
+                <img
+                 alt="アナツバメの巣だけが持つ”奇跡”を愛する家族へ"
+                decoding="async"
+                width="1451"
+                height="967"
+                src={HeroImgPC} class="w-full"/>
+            </picture>
+    </section>
+
+    <section class="mt-10 lg:mt-32 lg:px-32">
+        <div class="px-3 lg:px-auto">
+        <h2 class="text-h2 lg:text-4xl  text-center mb-7  tracking-widest">BRAND STORY</h2>
+        <p class="text-[21px] leading-[43px] lg:text-3xl lg:mx-40 my-6 lg:my-12">
+            ミラネストは、100％天然アナツバメの巣BRANDである「BI-SU」のご愛用者たちの実体験から生まれました。
+        </p>
+
+         <p class="text-base lg:mx-32 my-6 lg:my-12">
+            愛犬が肌や毛並みに苦しむ姿に心を痛めた飼い主が自身が健康のために食べていた”BI-SU”商品を与えたところ、健康的な輝き、肌や毛並みの美しさに感動されたお客様がたくさんいらっしゃいました。
+        </p>
+
+        <p class="text-base lg:mx-32">
+            この奇跡のような体験と感動をもっと多くの人に届けたい思いから「ミラネスト」が誕生しました。 その名の由来はBI-SU代表、日本人唯一のツバメの巣ハンターの稲冨がアナツバメの巣が肌や毛に与える効果から <span class="underline">「奇跡（ミラクル）の巣（ネスト）」</span>としたことから名付けられました。
+        </p>
+
+        <p class="text-base lg:mx-32 my-6 lg:my-12">最高級アナツバメの巣だけが持つ”奇跡”を愛する家族へ。</p>
+        </div>
+
+         <div class="mt-10 lg:mt-12 flex flex-col-reverse lg:flex-row py-5 lg:py-20 gap-5 lg:gap-20 px-3 lg:pl-20 lg:pr-0 bg-main-gray shadow-xl" data-aos="fade-up" data-aos-easing="linear">
+                <div class="lg:w-3/6 w-full lg:px-auto">
+                <h2 class="mb-5 text-h2 lg:text-3xl">絶対に信用できる物だけをお届けしています</h2>
+                <p class="text-base">ツバメの巣市場ではニセモノが出回っています。「本物」をお届けするのは私たちの使命でもあります。 <br>自分でジャングルの奥地まで飛び、命がけで断崖絶壁を登り「この目で見て」「この手で触れて」絶対に信用できる物だけをお届けしています。 </p>
+                <p class="text-base lg:my-12">生態系と自然保護を使命とし、役目を終えた巣のみを採取することで、ツバメたちも幸せにしていきたいのです。</p>
+                </div>
+                <div class="lg:w-3/6 w-full " >
+                    <img src={Prez} alt="Mr Inatomi" width="491" height="295">
+                    <div class="flex flex-col lg:flex-row mt-12">
+                    <p  class="text-[15px] lg:w-2/3">エムスタイルジャパン株式会社 代表取締役社長 <br>ツバメの巣ハンター</p>
+                    <figure  class="w-1/2 self-end lg:w-1/3 mb-10">
+                      <Icon name="signature2021" class="w-full"/>
+                    </figure>
+                    </div>
+                </div>
+
+         </div>
+    </section>
+
+    <section class="mt-10 lg:mt-32 lg:px-32">
+            <picture>
+                <source srcset={MissionHeaderSP}  media="(max-width:480px)" />
+                <img src={MissionHeader} alt="Mission" width="1144" height="763">
+            </picture>
+        <div class="px-3 lg:px-auto ">
+        <h2 class="text-h2 lg:text-4xl  text-center mb-7 tracking-widest mt-12">MISSION</h2>
+        <p class="text-[21px] leading-[43px] lg:text-3xl lg:mx-40 my-6 lg:my-12">
+            最高級アナツバメの巣だけが持つ”奇跡”を世界中のペットへ
+        </p>
+
+         <p class="text-base lg:mx-32 my-6 lg:my-12">
+            大切なパートナーであり、ときには我が子のように甘え、わたしたちを癒やしてくれるペットたち。多くの愛犬家が来年もその先もずっと健康で幸せに生きてほしいと願っています。
+        </p>
+
+        <p class="text-base lg:mx-32">
+            しかし、生まれながらに不安や心配を抱えている子たち。外部環境やストレス、加齢による不調から輝きや健やかさを失っているわんちゃんが世界中に多く存在しています。
+        </p>
+
+        <p class="text-base lg:mx-32 my-6 lg:my-12">
+            私たちミラネストは、”本物”のアナツバメの巣だけが持つ、驚きの効果で世界中の苦しむペットと飼い主を救い、健やかで輝く未来をつくる、世界初ペットのためのツバメの巣ブランドです。
+        </p>
+        </div>
+
+    </section>
+
+    <picture class="mt-10 lg:mt-32 ">
+        <source srcset={SustainableHeaderSp} media="(max-width:480px)" />
+        <img src={SustainableHeader} alt="Sustainable" width="1400" height="415">
+    </picture>
+        <div class="px-3 lg:px-32 mb-12">
+            <h2 class="text-h2 lg:text-4xl  text-center mb-7 px-3 lg:px-auto tracking-widest mt-12">Sustainable</h2>
+            <p class="text-[21px] leading-[43px] lg:text-3xl lg:mx-40 my-6 lg:my-12">
+                本物を追求し、人とペット、地球の未来を豊かにする。
+            </p>
+
+            <p class="text-base lg:mx-32 my-6 lg:my-12">
+                ミラネストが使用しているアナツバメの巣は、代表自らがツバメの巣ハンターとして、マレーシア山間部で採取した最高峰の品質と評される100％天然の”本物”です。 市場に多く出回っているニセモノや養殖モノと安全性や成分、効果が全く違います。
+            </p>
+
+            <p class="text-base lg:mx-32">
+                アナツバメは、繁殖期の間に雄が約30日間かけて、唾液を固めて巣をつくります。
+            </p>
+
+            <p class="text-base lg:mx-32 my-6 lg:my-12">
+                また、アナツバメは一度子育てに使った巣は二度と使いません。ヒナが確実に巣立ったものだけを採取。自然環境もツバメたちの生態系も一切壊さない、完全なる自然の恵みをそのままお届けしています。
+            </p>
+            <div class="flex justify-center">
+            <a href="/products/powder" class="mt-8 w-10/12 lg:w-4/12 mx-auto text-center bg-main-brown text-white shadow-xl px-3 py-3 inline-block text-xl" >商品の購入はこちら</a>
+            </div>
+        </div>
+
+         <div class="mb-12 mt-10 lg:mt-40 ">
+            <h2 class="text-h2 lg:text-4xl  text-center mb-3 px-3 lg:px-auto tracking-widest mt-12">Sister Brand</h2>
+
+            <div class="relative">
+             <div class="flex justify-center ">
+            <a href="https://www.bi-su.jp/" class=" border border-white　 w-9/12 lg:w-3/12 mx-auto text-center transform translate-y-1/2 -translate-x-1/2 top-[65%] lg:top-[75%] left-1/2 text-white absolute text-white shadow-xl px-3 py-3 text-xl hover:bg-white hover:text-black hover:transition hover:duration-[700ms] hover:opacity-80" >BI-SU公式サイトはこちら</a>
+            </div>
+            <picture >
+                 <source srcset={SisterBrandSp} media="(max-width:480px)" />
+                 <img src={SisterBrand} alt="sister brand" width="1400" height="458" class="w-full">
+            </picture>
+            </div>
+
+        </div>
+
+
+
+</BaseLayout>

@@ -1,13 +1,13 @@
 ---
 import '../styles/global.css'
-const { title = "世界高水準ペット用ツバメの巣栄養補助食品", description = "「ミラネスト」では、最も希少価値の高いマレーシア山間部で採れた 高品質の天然アナツバメの巣を贅沢に使用した、 元気と健康を保つ世界高水準ペット用ツバメの巣栄養補助食品パウダー" } = Astro.props;
+const { title = "世界高水準ペット用ツバメの巣栄養補助食品", description = "「ミラネスト」では、最も希少価値の高いマレーシア山間部で採れた 高品質の天然アナツバメの巣を贅沢に使用した、 元気と健康を保つ世界高水準ペット用ツバメの巣栄養補助食品パウダー",keywords } = Astro.props;
 
 ---
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="title" content={title} >
-    <meta name="description" property="og:description" content="「ミラネスト」では、最も希少価値の高いマレーシア山間部で採れた 高品質の天然アナツバメの巣を贅沢に使用した、 元気と健康を保つ世界高水準ペット用ツバメの巣栄養補助食品パウダー">
-    <meta name="keywords" content="ペット,栄養,補助,食品,ツバメの巣,パウダー,ゼリー,ミラネスト,犬,猫,ツバメ,世界高水準">
+    <meta name="description" property="og:description" content={description}>
+    <meta name="keywords" content={keywords}>
     <meta name="copyright" content="M-Style Japan"/>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>{title} | ミラネスト</title>

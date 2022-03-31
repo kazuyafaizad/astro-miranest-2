@@ -8,6 +8,10 @@ import Prd1 from "../../images/products-sub.jpg";
 import Prd2 from "../../images/products-sub-main.jpg";
 import Prd3 from "../../images/miranest-sub03.jpg";
 
+
+import Prd4 from "../../images/products-sub-001.jpg";
+import Prd5 from "../../images/products-sub-002.jpg";
+
 import Img9 from "../../images/products/pc/product-pc9.png";
 import Img1sp from "../../images/products/sp/img-1.png";
 
@@ -24,6 +28,14 @@ import BirdNestSp from "../../images/miranest-powder-sub01sp.jpg";
 
 ---
 <style lang="scss">
+
+.swiper {
+  width: 100%;
+}
+.swiper-button-next, .swiper-button-prev{
+    top:50%;
+    color:#333333;
+}
         .second-header {
             display: inline-block;
             left: 32%;
@@ -123,11 +135,37 @@ import BirdNestSp from "../../images/miranest-powder-sub01sp.jpg";
 
 
   <section class="mt-10 lg:mt-32 px-3 lg:px-52">
-    <div class="grid lg:grid-cols-1 gap-20">
+    <div class="grid grid-cols-1 gap-20">
          <div class="flex items-center flex-col lg:flex-row gap-20">
-            <div class="grid-1 justify-items-center w-full lg:w-1/2">
-                        <img src={Prd1} >
+            <div class="w-full lg:w-1/2">
+            <!-- Slider main container -->
+            <div class="swiper ">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                                <img src={Prd1} class="" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                            <img src={Prd4} class="" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                            <img src={Prd5} class="" alt="...">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
+
+            </div>
+
 
             <div class="lg:p-5  w-full lg:w-1/2">
                         <div class="product-title mb-5">
@@ -398,6 +436,22 @@ import BirdNestSp from "../../images/miranest-powder-sub01sp.jpg";
 		</ul>
      </section>
 
+  <script defer>
+            const swiper = new Swiper('.swiper', {
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
 
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                autoplay:true
+                });
+
+
+        </script>
 
 </BaseLayout>

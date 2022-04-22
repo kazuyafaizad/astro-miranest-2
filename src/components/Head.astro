@@ -19,7 +19,10 @@ const { title = "世界高水準ペット用ツバメの巣栄養補助食品", 
     <meta name="theme-color" content="#ffffff">
     <title>{title}</title>
     <link rel="icon" href="/favicon.ico"/>
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <script hoist src="../js/common.js">
-    // Processed! Bundled! ESM imports work, even to npm packages.
+    <script src="//unpkg.com/alpinejs" is:inline defer/>
+    <script >
+     import '../js/common.js';
     </script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" is:inline  ></script>

@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "types": [
+      "vite/client", // if using vite
+      // ...
+    ]
   }
 }
